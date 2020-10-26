@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NTs-nj-edx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NTs-nj-edx">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -50,6 +50,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="bAp-Y2-H6x"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="eeZ-HA-3u6" firstAttribute="leading" secondItem="bAp-Y2-H6x" secondAttribute="leading" id="0u9-ld-VE1"/>
@@ -60,7 +61,6 @@
                             <constraint firstItem="PPr-oj-Mpq" firstAttribute="bottom" secondItem="bAp-Y2-H6x" secondAttribute="bottom" id="lGu-07-MOU"/>
                             <constraint firstItem="PPr-oj-Mpq" firstAttribute="top" secondItem="eeZ-HA-3u6" secondAttribute="bottom" id="p85-gv-t0K"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="bAp-Y2-H6x"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aN7-es-nZp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -271,6 +271,17 @@
             <point key="canvasLocation" x="157" y="80"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Zgt-w4-qQw">
+            <size key="intrinsicContentSize" width="191" height="102"/>
+        </designable>
+        <designable name="dwQ-CS-gz3">
+            <size key="intrinsicContentSize" width="1239" height="21"/>
+        </designable>
+        <designable name="pUm-f4-zm1">
+            <size key="intrinsicContentSize" width="857" height="21"/>
+        </designable>
+    </designables>
     <resources>
         <image name="dr_greger" width="500" height="500"/>
         <image name="logo" width="2666" height="695"/>
