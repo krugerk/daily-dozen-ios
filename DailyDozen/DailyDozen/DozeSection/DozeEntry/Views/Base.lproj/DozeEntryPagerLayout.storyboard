@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0HD-X6-u6e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0HD-X6-u6e">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -135,6 +135,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="rUX-Nf-zTn"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="L1U-z7-hZy" firstAttribute="leading" secondItem="rUX-Nf-zTn" secondAttribute="leading" id="BQc-hx-ubb"/>
@@ -145,7 +146,6 @@
                             <constraint firstItem="L1U-z7-hZy" firstAttribute="bottom" secondItem="rUX-Nf-zTn" secondAttribute="bottom" id="r89-KM-geL"/>
                             <constraint firstItem="BQF-ze-lmn" firstAttribute="top" secondItem="rUX-Nf-zTn" secondAttribute="top" id="zCS-Gs-Mwf"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="rUX-Nf-zTn"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="Qfe-bW-SP4" id="Xic-hZ-fGN"/>
@@ -156,12 +156,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rba-Fd-AgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="RQM-JY-Khm">
                     <connections>
-                        <action selector="viewSwipped:" destination="0HD-X6-u6e" id="IQ7-Yn-ZdM"/>
+                        <action selector="viewSwiped:" destination="0HD-X6-u6e" id="IQ7-Yn-ZdM"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="vyh-52-kiv">
                     <connections>
-                        <action selector="viewSwipped:" destination="0HD-X6-u6e" id="uqg-zt-hHd"/>
+                        <action selector="viewSwiped:" destination="0HD-X6-u6e" id="uqg-zt-hHd"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>

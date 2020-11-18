@@ -47,7 +47,7 @@ The Daily Dozen iOS App is licensed under the GPLv3
 
 **3.2.1 (App Store: July 7, 2020)**
 
-* Restructured to support international localization in general 
+* Restructured to support international localization in general
     * Instances of static English `String` replaced with localizable `NSLocalizedString`
     * Modified Storyboard UI layouts to adapt to string length variance of different languages. 
 * Adds Spanish
