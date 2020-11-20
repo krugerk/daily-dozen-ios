@@ -140,7 +140,7 @@ class WeightHistoryViewController: UIViewController {
 
         lineChartView.xAxis.valueFormatter = self
         setViewModel()
-        //updateChart(fromDate: Date(), toDate: Date()) // :!!!:
+        //updateChart(fromDate: DateManager.currentDatetime(), toDate: DateManager.currentDatetime()) // :!!!:
     }
     
     // -------------------------
@@ -281,7 +281,7 @@ class WeightHistoryViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func editDataButtonPressed(_ sender: UIButton) {
-        let viewController = WeightEntryPagerBuilder.instantiateController(date: Date())
+        let viewController = WeightEntryPagerBuilder.instantiateController(date: DateManager.currentDatetime())
         navigationController?.pushViewController(viewController, animated: true)
     }
     

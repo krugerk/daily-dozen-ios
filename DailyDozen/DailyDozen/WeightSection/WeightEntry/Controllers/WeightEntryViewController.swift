@@ -28,7 +28,7 @@ class WeightEntryViewController: UIViewController {
     
     // MARK: - Properties
     private let realm = RealmProvider()
-    public var currentViewDateWeightEntry = Date() {
+    public var currentViewDateWeightEntry = DateManager.currentDatetime() {
         didSet {
             LogService.shared.debug("@DATE \(currentViewDateWeightEntry.datestampKey) WeightEntryViewController")
         }
@@ -232,7 +232,7 @@ class WeightEntryViewController: UIViewController {
     }
     
     func getTimeNow() -> String {
-        let dateNow = Date()
+        let dateNow = DateManager.currentDatetime()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "hh:mm a"
         let timeNow = dateFormatter.string(from: dateNow)
@@ -326,10 +326,10 @@ extension WeightEntryViewController: UITextFieldDelegate {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "hh:mm a"
             if textField == timeAMInput {
-                timeAMInput.text = dateFormatter.string(from: Date())
+                timeAMInput.text = dateFormatter.string(from: DateManager.currentDatetime())
             }
             if textField == timePMInput {
-                timePMInput.text = dateFormatter.string(from: Date())
+                timePMInput.text = dateFormatter.string(from: DateManager.currentDatetime())
             }
         }
         return true // return NO to disallow editing.

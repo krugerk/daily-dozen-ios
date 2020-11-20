@@ -34,7 +34,7 @@ class WeightEntryPagerViewController: UIViewController {
     // MARK: - Properties
 
     /// 
-    fileprivate var currentDate = Date() {
+    fileprivate var currentDate = DateManager.currentDatetime() {
         didSet {
             LogService.shared.debug("@DATE \(currentDate.datestampKey) WeightEntryPagerViewController")
         }
@@ -50,7 +50,7 @@ class WeightEntryPagerViewController: UIViewController {
     }
     @IBOutlet private weak var datePicker: UIDatePicker! {
         didSet {
-            datePicker.maximumDate = Date() // today
+            datePicker.maximumDate = DateManager.currentDatetime() // today
         }
     }
 
@@ -63,7 +63,7 @@ class WeightEntryPagerViewController: UIViewController {
 
         title = NSLocalizedString("weightEntry.heading", comment: "Weight entry heading")
         
-        if currentDate.isInCurrentDayWith(Date()) {
+        if currentDate.isInCurrentDayWith(DateManager.currentDatetime()) {
             backButton.superview?.isHidden = true
             dateButton.setTitle(NSLocalizedString("dateButtonTitle.today", comment: "Date button 'Today' title"), for: .normal)
         } else {
@@ -84,7 +84,7 @@ class WeightEntryPagerViewController: UIViewController {
     /// - Parameter date: The current date.
     func updateDate(_ date: Date) {
         currentDate = date
-        if currentDate.isInCurrentDayWith(Date()) {
+        if currentDate.isInCurrentDayWith(DateManager.currentDatetime()) {
             backButton.superview?.isHidden = true
             dateButton.setTitle(NSLocalizedString("dateButtonTitle.today", comment: "Date button 'Today' title"), for: .normal)
         } else {
@@ -102,16 +102,16 @@ class WeightEntryPagerViewController: UIViewController {
     // MARK: - Actions
     @IBAction private func dateButtonPressed(_ sender: UIButton) {
         datePicker.isHidden = false
-        datePicker.maximumDate = Date() // today
+        datePicker.maximumDate = DateManager.currentDatetime() // today
         dateButton.isHidden = true
     }
 
     @IBAction private func dateChanged(_ sender: UIDatePicker) {
         dateButton.isHidden = false
         datePicker.isHidden = true
-        datePicker.maximumDate = Date() // today
+        datePicker.maximumDate = DateManager.currentDatetime() // today
         currentDate = datePicker.date
-        if currentDate.isInCurrentDayWith(Date()) {
+        if currentDate.isInCurrentDayWith(DateManager.currentDatetime()) {
             backButton.superview?.isHidden = true
             dateButton.setTitle(NSLocalizedString("dateButtonTitle.today", comment: "Date button 'Today' title"), for: .normal)
         } else {
@@ -125,17 +125,17 @@ class WeightEntryPagerViewController: UIViewController {
     }
 
     @IBAction private func viewSwiped(_ sender: UISwipeGestureRecognizer) {
-        let today = Date()
+        let today = DateManager.currentDatetime()
         let interval = sender.direction == .left ? -1 : 1
         guard let swipedDate = datePicker.date.adding(.day, value: interval), 
               swipedDate <= today 
         else { return }
 
         datePicker.setDate(swipedDate, animated: false)
-        datePicker.maximumDate = Date() // today
+        datePicker.maximumDate = DateManager.currentDatetime() // today
         currentDate = datePicker.date
 
-        if currentDate.isInCurrentDayWith(Date()) {
+        if currentDate.isInCurrentDayWith(DateManager.currentDatetime()) {
             backButton.superview?.isHidden = true
             dateButton.setTitle(NSLocalizedString("dateButtonTitle.today", comment: "Date button 'Today' title"), for: .normal)
         } else {
@@ -155,7 +155,7 @@ class WeightEntryPagerViewController: UIViewController {
     }
 
     @IBAction private func backButtonPressed(_ sender: UIButton) {
-        updateDate(Date())
+        updateDate(DateManager.currentDatetime())
     }
 
     // MARK: - Navigation

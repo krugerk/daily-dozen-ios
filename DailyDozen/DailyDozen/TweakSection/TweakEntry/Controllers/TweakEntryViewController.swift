@@ -42,7 +42,7 @@ class TweakEntryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setViewModel(date: Date())
+        setViewModel(date: DateManager.currentDatetime())
         
         tableView.dataSource = dataProvider
         tableView.delegate = self

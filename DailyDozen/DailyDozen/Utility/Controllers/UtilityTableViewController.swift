@@ -242,4 +242,8 @@ class UtilityTableViewController: UITableViewController {
     }
     */
 
+    @IBAction func doUtilityTestAddOneDayBtn(_ sender: UIButton) {
+        DateManager.incrementDay()
+    }
+    
 }

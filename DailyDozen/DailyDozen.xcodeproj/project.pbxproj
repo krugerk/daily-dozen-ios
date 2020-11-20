@@ -16,6 +16,7 @@
 		492474A323DB677A00D7D918 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 492474A123DB677A00D7D918 /* InfoPlist.strings */; };
 		492A1E702409B3FA00F6C37C /* TweakDetailActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492A1E6F2409B3FA00F6C37C /* TweakDetailActivityCell.swift */; };
 		492A1E722409B41000F6C37C /* TweakDetailDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492A1E712409B41000F6C37C /* TweakDetailDescriptionCell.swift */; };
+		492EEB102568551B00543AF5 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492EEB0F2568551B00543AF5 /* DateManager.swift */; };
 		4930360724760CBD00746D49 /* DatabaseMaintainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930360624760CBD00746D49 /* DatabaseMaintainer.swift */; };
 		4933A74B23EE267600CE4631 /* DozeTextsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4933A74A23EE267500CE4631 /* DozeTextsProvider.swift */; };
 		4933A74D23EE28C500CE4631 /* DozeDetailInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4933A74C23EE28C500CE4631 /* DozeDetailInfo.swift */; };
@@ -167,6 +168,7 @@
 		492A1E77240A055700F6C37C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/DozeDetailSizeUnitHeader.strings; sourceTree = "<group>"; };
 		492A1E79240A05D600F6C37C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TweakDetailActivityUnitHeader.xib; sourceTree = "<group>"; };
 		492A1E7C240A05FA00F6C37C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/TweakDetailActivityUnitHeader.strings; sourceTree = "<group>"; };
+		492EEB0F2568551B00543AF5 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		4930360624760CBD00746D49 /* DatabaseMaintainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseMaintainer.swift; sourceTree = "<group>"; };
 		4933A74A23EE267500CE4631 /* DozeTextsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DozeTextsProvider.swift; sourceTree = "<group>"; };
 		4933A74C23EE28C500CE4631 /* DozeDetailInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DozeDetailInfo.swift; sourceTree = "<group>"; };
@@ -2053,6 +2055,7 @@
 				4944B99123AD7A1A008DFA30 /* ChartDataEntryExtension.swift */,
 				CFECDFF7201EF7C1003E8572 /* Colors.swift */,
 				CF2680011FB477AD004A6200 /* Date.swift */,
+				492EEB0F2568551B00543AF5 /* DateManager.swift */,
 				CF9EC1BF202196B100C7B3CA /* Fonts.swift */,
 				CFAAB3761F9F3FDF00B24748 /* URL.swift */,
 				49D9B07A240DCA1F000E9822 /* UIViewExtension.swift */,
@@ -2598,6 +2601,7 @@
 				497A8F0A24748E88001BEDCA /* SettingsManager.swift in Sources */,
 				4941D731237E13DC00ED84B5 /* DataWeightRecord.swift in Sources */,
 				4916451423EE4C410077731D /* TweakDetailViewModel.swift in Sources */,
+				492EEB102568551B00543AF5 /* DateManager.swift in Sources */,
 				499B82FB239CD4D300E4AD19 /* WeightHistoryViewController.swift in Sources */,
 				498170A123920DD60033882C /* TweakEntryPagerViewController.swift in Sources */,
 				4981708F2391B1790033882C /* TweakEntryStateCell.swift in Sources */,

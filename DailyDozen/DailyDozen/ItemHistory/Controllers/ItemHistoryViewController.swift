@@ -60,7 +60,7 @@ class ItemHistoryViewController: UIViewController {
 extension ItemHistoryViewController: FSCalendarDataSource {
 
     func maximumDate(for calendar: FSCalendar) -> Date {
-        return Date()
+        return DateManager.currentDatetime()
     }
 
     func calendar(_ calendar: FSCalendar, cellFor date: Date, at position: FSCalendarMonthPosition) -> FSCalendarCell {
@@ -69,7 +69,7 @@ extension ItemHistoryViewController: FSCalendarDataSource {
                 .dequeueReusableCell(withIdentifier: Strings.cell, for: date, at: .current) as? DateCell
             else { fatalError("There should be a cell") }
 
-        guard date < Date() else { return cell }
+        guard date < DateManager.currentDatetime() else { return cell }
 
         let itemsDict = realm.getDailyTracker(date: date).itemsDict
         if let statesCount = itemsDict[itemType]?.count {
