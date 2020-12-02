@@ -55,6 +55,13 @@ class DozeEntryPagerViewController: UIViewController {
     @IBOutlet private weak var datePicker: UIDatePicker! {
         didSet {
             datePicker.maximumDate = DateManager.currentDatetime() // today
+            
+            if #available(iOS 13.4, *) {
+                // Compact style with overlay
+                datePicker.preferredDatePickerStyle = .compact
+                // After mode and style are set apply UIView sizeToFit().
+                datePicker.sizeToFit()
+            }
         }
     }
 

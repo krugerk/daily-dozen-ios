@@ -5,7 +5,7 @@
 //  Copyright © 2019 Nutritionfacts.org. All rights reserved.
 //
 // swiftlint :ENABLED: disable file_length
-// swiftlint :ENABLED: disable function_body_length
+// swiftlint:disable function_body_length
 
 import UIKit
 import HealthKit
@@ -33,8 +33,8 @@ class WeightEntryViewController: UIViewController {
             LogService.shared.debug("@DATE \(currentViewDateWeightEntry.datestampKey) WeightEntryViewController")
         }
     }
-    private var timePickerAM: UIDatePicker?
-    private var timePickerPM: UIDatePicker?
+    private var timePickerAM: UIDatePicker!
+    private var timePickerPM: UIDatePicker!
     
     var pidAM: String {
         return "\(currentViewDateWeightEntry.datestampKey).am"
@@ -73,7 +73,7 @@ class WeightEntryViewController: UIViewController {
             let date = Date(healthkit: "\(datestampKey) \(timeText)"),
             var weight = Double(weightText),
             weight > 5.0 {
-                        
+            
             // Update local data
             if SettingsManager.isImperial() {
                 weight = weight / 2.2046 // kg = lbs * 2.2046
@@ -174,16 +174,25 @@ class WeightEntryViewController: UIViewController {
         appDelegate.realmDelegate = self
         
         // AM Morning
-        // :TBD: timePickerAM = UIDatePicker() // may need min-max contraints?
-        timePickerAM = UIDatePicker()
-        timePickerAM?.datePickerMode = .time
-        timePickerAM?.addTarget(self, action: #selector(WeightEntryViewController.timeChangedAM(timePicker:)), for: .valueChanged)
+        timePickerAM = UIDatePicker() // :TBD:???: add min-max contraints?
+        timePickerAM.datePickerMode = .time
+        if #available(iOS 13.4, *) {
+            // Expressly use inline wheel (UIPickerView) style.
+            timePickerAM.preferredDatePickerStyle = .wheels
+            timePickerAM.sizeToFit()
+        }
+        timePickerAM.addTarget(self, action: #selector(WeightEntryViewController.timeChangedAM(timePicker:)), for: .valueChanged)
         timeAMInput.inputView = timePickerAM // assign initial value
         
         // PM Evening
-        timePickerPM = UIDatePicker()
-        timePickerPM?.datePickerMode = .time
-        timePickerPM?.addTarget(self, action: #selector(WeightEntryViewController.timeChangedPM(timePicker:)), for: .valueChanged)
+        timePickerPM = UIDatePicker() // :TBD:???: add min-max contraints?
+        timePickerPM.datePickerMode = .time
+        if #available(iOS 13.4, *) {
+            // Expressly use inline wheel (UIPickerView) style.
+            timePickerPM.preferredDatePickerStyle = .wheels
+            timePickerPM.sizeToFit()
+        }        
+        timePickerPM.addTarget(self, action: #selector(WeightEntryViewController.timeChangedPM(timePicker:)), for: .valueChanged)
         timePMInput.inputView = timePickerPM
         
         setViewModel(viewDate: currentViewDateWeightEntry)
@@ -215,7 +224,7 @@ class WeightEntryViewController: UIViewController {
             name: Notification.Name(rawValue: "BodyMassDataAvailable"),
             object: nil)
     }
-        
+    
     override func viewWillAppear(_ animated: Bool) {
         LogService.shared.debug("WeightEntryViewController viewWillAppear")
         super.viewWillAppear(animated)
@@ -247,7 +256,6 @@ class WeightEntryViewController: UIViewController {
     }
     ///
     @objc func timeChangedAM(timePicker: UIDatePicker) {
-        
         let dateFormatter = DateFormatter()
         let min = dateFormatter.date(from: "12:00")      //creating min time
         let max = dateFormatter.date(from: "11:59")
@@ -259,11 +267,14 @@ class WeightEntryViewController: UIViewController {
     }
     
     @objc func timeChangedPM(timePicker: UIDatePicker) {
-        
         let dateFormatter = DateFormatter()
+        let min = dateFormatter.date(from: "12:00")      //creating min time
+        let max = dateFormatter.date(from: "11:59")
         dateFormatter.dateFormat = "hh:mm a"
+        timePicker.minimumDate = min
+        timePicker.maximumDate = max
         timePMInput.text = dateFormatter.string(from: timePicker.date)
-        view.endEditing(true)
+        //view.endEditing(true)
     }
     
     /// Set the current date.
@@ -283,12 +294,14 @@ class WeightEntryViewController: UIViewController {
         let recordAM = HealthSynchronizer.shared.syncWeightToShow(date: viewDate, ampm: .am)
         timeAMInput.text = recordAM.time
         weightAM.text = recordAM.weight
-        timePickerAM?.setDate(viewDate, animated: false)
-                
+        timePickerAM.setDate(viewDate, animated: false)
+        
         let recordPM = HealthSynchronizer.shared.syncWeightToShow(date: viewDate, ampm: .pm)
         timePMInput.text = recordPM.time
         weightPM.text = recordPM.weight
-        timePickerPM?.setDate(viewDate, animated: false)
+        if timePickerPM != nil {
+            timePickerPM.setDate(viewDate, animated: false)
+        }
     }
     
     /*
