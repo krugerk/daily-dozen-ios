@@ -28,7 +28,7 @@ class WeightEntryViewController: UIViewController {
     
     // MARK: - Properties
     private let realm = RealmProvider()
-    public var currentViewDateWeightEntry = DateManager.currentDatetime() {
+    public var currentViewDateWeightEntry: Date = DateManager.currentDatetime() {
         didSet {
             LogService.shared.debug("@DATE \(currentViewDateWeightEntry.datestampKey) WeightEntryViewController")
         }

@@ -53,7 +53,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="dateButtonPressed:" destination="3nE-WX-8lJ" eventType="touchUpInside" id="4l6-Nd-LQZ"/>
+                                            <action selector="tweakDateButtonPressed:" destination="3nE-WX-8lJ" eventType="touchUpInside" id="4l6-Nd-LQZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -148,9 +148,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="7XY-Lo-Hwf" id="6Lb-IQ-LYt"/>
-                        <outlet property="dateButton" destination="iHh-5a-01X" id="fy5-Rj-Qbv"/>
-                        <outlet property="datePicker" destination="0Tj-nT-if9" id="BUb-e9-79X"/>
+                        <outlet property="tweakBackButton" destination="7XY-Lo-Hwf" id="6Lb-IQ-LYt"/>
+                        <outlet property="tweakDateButton" destination="iHh-5a-01X" id="fy5-Rj-Qbv"/>
+                        <outlet property="tweakDatePicker" destination="0Tj-nT-if9" id="BUb-e9-79X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWd-mL-HoF" userLabel="First Responder" sceneMemberID="firstResponder"/>

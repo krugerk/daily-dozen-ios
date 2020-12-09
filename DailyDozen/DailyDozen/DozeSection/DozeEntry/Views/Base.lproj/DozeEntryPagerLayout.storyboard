@@ -19,13 +19,7 @@
                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="BQF-ze-lmn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                 <subviews>
-                                    <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Y2o-Dk-Qso">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                                        <connections>
-                                            <action selector="dateChanged:" destination="0HD-X6-u6e" eventType="valueChanged" id="4IK-tb-0fP"/>
-                                        </connections>
-                                    </datePicker>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OC8-wt-JgC" customClass="RoundedButton" customModule="DailyDozen" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OC8-wt-JgC" customClass="RoundedButton" customModule="DailyDozen" customModuleProvider="target">
                                         <rect key="frame" x="10" y="5" width="355" height="40"/>
                                         <color key="backgroundColor" red="0.49803921569999998" green="0.75294117650000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
@@ -53,21 +47,17 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="dateButtonPressed:" destination="0HD-X6-u6e" eventType="touchUpInside" id="pYb-t8-oWb"/>
+                                            <action selector="dozeDateButtonPressed:" destination="0HD-X6-u6e" eventType="touchUpInside" id="pYb-t8-oWb"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="OC8-wt-JgC" secondAttribute="trailing" constant="10" id="7PN-f8-PCU"/>
-                                    <constraint firstItem="Y2o-Dk-Qso" firstAttribute="top" secondItem="BQF-ze-lmn" secondAttribute="top" id="7bW-Cj-GI0"/>
-                                    <constraint firstAttribute="bottom" secondItem="Y2o-Dk-Qso" secondAttribute="bottom" id="Bnm-ZX-r5e"/>
-                                    <constraint firstAttribute="trailing" secondItem="Y2o-Dk-Qso" secondAttribute="trailing" id="NR1-Qi-vlN"/>
                                     <constraint firstAttribute="bottom" secondItem="OC8-wt-JgC" secondAttribute="bottom" constant="5" id="NfV-ai-W3o"/>
                                     <constraint firstAttribute="height" constant="50" id="Wpa-SS-vTl"/>
                                     <constraint firstItem="OC8-wt-JgC" firstAttribute="top" secondItem="BQF-ze-lmn" secondAttribute="top" constant="5" id="iM1-iW-Mtq"/>
                                     <constraint firstItem="OC8-wt-JgC" firstAttribute="leading" secondItem="BQF-ze-lmn" secondAttribute="leading" constant="10" id="zX4-Ir-21s"/>
-                                    <constraint firstItem="Y2o-Dk-Qso" firstAttribute="leading" secondItem="BQF-ze-lmn" secondAttribute="leading" id="zX8-S9-Ze5"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="L1U-z7-hZy">
@@ -100,7 +90,7 @@
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJT-dy-You" customClass="RoundedView" customModule="DailyDozen" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="587" width="375" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfe-bW-SP4">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfe-bW-SP4">
                                                 <rect key="frame" x="134" y="-1" width="107" height="32"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="Back to today">
@@ -148,9 +138,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="Qfe-bW-SP4" id="Xic-hZ-fGN"/>
-                        <outlet property="dateButton" destination="OC8-wt-JgC" id="Unk-CP-gAS"/>
-                        <outlet property="datePicker" destination="Y2o-Dk-Qso" id="e9x-SE-X0d"/>
+                        <outlet property="dozeBackButton" destination="Qfe-bW-SP4" id="Xic-hZ-fGN"/>
+                        <outlet property="dozeDateButton" destination="OC8-wt-JgC" id="Unk-CP-gAS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rba-Fd-AgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
