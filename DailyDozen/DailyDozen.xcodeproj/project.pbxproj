@@ -53,6 +53,7 @@
 		4941D735237E266300ED84B5 /* DataCountAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4941D734237E266300ED84B5 /* DataCountAttributes.swift */; };
 		4943720D2487702300632053 /* HealthSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943720C2487702300632053 /* HealthSynchronizer.swift */; };
 		4944B99223AD7A1A008DFA30 /* ChartDataEntryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4944B99123AD7A1A008DFA30 /* ChartDataEntryExtension.swift */; };
+		494A722D2580BC630057C692 /* RoundedDatepicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A722C2580BC630057C692 /* RoundedDatepicker.swift */; };
 		495020DA2399DC780092D6F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495020D82399DC780092D6F5 /* LaunchScreen.storyboard */; };
 		4955013A23CD453200C72FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4955013723CD453200C72FB3 /* Assets.xcassets */; };
 		495DAAEB23A06C330036077C /* WeightReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DAAEA23A06C330036077C /* WeightReport.swift */; };
@@ -230,6 +231,7 @@
 		4941D734237E266300ED84B5 /* DataCountAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCountAttributes.swift; sourceTree = "<group>"; };
 		4943720C2487702300632053 /* HealthSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSynchronizer.swift; sourceTree = "<group>"; };
 		4944B99123AD7A1A008DFA30 /* ChartDataEntryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataEntryExtension.swift; sourceTree = "<group>"; };
+		494A722C2580BC630057C692 /* RoundedDatepicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedDatepicker.swift; sourceTree = "<group>"; };
 		494F23D12530EB4900C99246 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		494F23E02530EFFC00C99246 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/FirstLaunch.strings"; sourceTree = "<group>"; };
 		494F23E12530EFFC00C99246 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -2114,6 +2116,7 @@
 				CFBEE2331FDE9A57005C0F45 /* RoundedView.swift */,
 				CFD1BA321FCD24920057F549 /* RoundedButton.swift */,
 				49AC03B625802506006CC073 /* RoundedTextfield.swift */,
+				494A722C2580BC630057C692 /* RoundedDatepicker.swift */,
 				49F0377A233AD9B600FFD2EE /* UIButtonCheckbox.swift */,
 			);
 			path = Views;
@@ -2652,6 +2655,7 @@
 				CFC4A84F1F9761FF00B5AC75 /* DozeEntryPagerViewController.swift in Sources */,
 				4943720D2487702300632053 /* HealthSynchronizer.swift in Sources */,
 				495DAAEB23A06C330036077C /* WeightReport.swift in Sources */,
+				494A722D2580BC630057C692 /* RoundedDatepicker.swift in Sources */,
 				CFD1BA331FCD24920057F549 /* RoundedButton.swift in Sources */,
 				49D9B07B240DCA1F000E9822 /* UIViewExtension.swift in Sources */,
 				49F8D1DE23906B29003E139F /* TweakEntryDataProvider.swift in Sources */,

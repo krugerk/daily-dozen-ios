@@ -7,14 +7,13 @@
 
 import UIKit
 
-// MARK: - Builder 
-class UtilityBuilder {
+// MARK: - Controller
+class UtilityTableViewController: UITableViewController {
 
-    // MARK: - Methods
     /// Instantiates and returns the initial view controller for a storyboard.
     ///
     /// - Returns: The initial view controller in the storyboard.
-    static func instantiateController() -> UIViewController {
+    static func newInstance() -> UIViewController { // :???: UITableViewController?
         let storyboard = UIStoryboard(name: "UtilityLayout", bundle: nil)
         guard
             let viewController = storyboard.instantiateInitialViewController()
@@ -23,11 +22,7 @@ class UtilityBuilder {
 
         return viewController
     }
-}
-
-// MARK: - Controller
-class UtilityTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]

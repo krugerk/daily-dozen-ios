@@ -8,15 +8,12 @@
 import UIKit
 import SimpleAnimation
 
-// MARK: - Builder
-
-class WeightEntryPagerBuilder {
-
-    // MARK: - Methods
+class WeightEntryPagerViewController: UIViewController {
+    
     /// Instantiates and returns the initial view controller for a storyboard.
     ///
     /// - Returns: The initial view controller in the storyboard.
-    static func instantiateController(date: Date) -> WeightEntryPagerViewController {
+    static func newInstance(date: Date) -> WeightEntryPagerViewController {
         let storyboard = UIStoryboard(name: "WeightEntryPagerLayout", bundle: nil)
         guard
             let viewController = storyboard.instantiateViewController(withIdentifier: "WeightEntryPagerLayoutID") as? WeightEntryPagerViewController
@@ -24,11 +21,7 @@ class WeightEntryPagerBuilder {
         viewController.currentDate = date
         return viewController
     }
-}
 
-// MARK: - Controller
-class WeightEntryPagerViewController: UIViewController {
-    
     @IBOutlet private weak var weightBackButton: UIButton!
 
     // MARK: - Properties

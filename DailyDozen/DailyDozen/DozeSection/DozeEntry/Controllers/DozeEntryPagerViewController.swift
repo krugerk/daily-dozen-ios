@@ -8,15 +8,12 @@
 import UIKit
 import SimpleAnimation
 
-// MARK: - Builder
+class DozeEntryPagerViewController: UIViewController {
 
-class DozeEntryPagerBuilder {
-
-    // MARK: - Methods
     /// Instantiates and returns the initial view controller for a storyboard.
     ///
     /// - Returns: The initial view controller in the storyboard.
-    static func instantiateController() -> UIViewController {
+    static func newInstance() -> UIViewController {
         let storyboard = UIStoryboard(name: "DozeEntryPagerLayout", bundle: nil)
         guard
             let viewController = storyboard.instantiateInitialViewController()
@@ -24,10 +21,6 @@ class DozeEntryPagerBuilder {
 
         return viewController
     }
-}
-
-// MARK: - Controller
-class DozeEntryPagerViewController: UIViewController {
 
     // MARK: - Properties
     
@@ -98,7 +91,7 @@ class DozeEntryPagerViewController: UIViewController {
         
         if UserDefaults.standard.bool(forKey: SettingsKeys.hasSeenFirstLaunch) == false {
             UserDefaults.standard.set(true, forKey: SettingsKeys.hasSeenFirstLaunch)
-            let viewController = FirstLaunchBuilder.instantiateController()
+            let viewController = FirstLaunchViewController.newInstance()
             navigationController?.pushViewController(viewController, animated: true)
         }
 
@@ -123,27 +116,23 @@ class DozeEntryPagerViewController: UIViewController {
         dozeDatePicker.maximumDate = DateManager.currentDatetime() // today
         
         // :!!!:???:
-        let myDatePicker: UIDatePicker = UIDatePicker()
-        // setting properties of the datePicker
-        myDatePicker.timeZone = NSTimeZone.local
-        myDatePicker.datePickerMode = .date
-        if #available(iOS 13.4, *) {
-            // Expressly use inline wheel (UIPickerView) style.
-            myDatePicker.preferredDatePickerStyle = .wheels
-            myDatePicker.sizeToFit()
-        }
-        //myDatePicker.datePickerStyle
-        //myDatePicker.frame = CGRect(x: 0, y: 15, width: 270, height: 200)
-
-        let alertController = UIAlertController(title: "Title\n\n\n\n\n\n\n\n\n\n\n\n\n\n", message: nil, preferredStyle: UIAlertController.Style.alert)
-        alertController.view.addSubview(myDatePicker)
-        let somethingAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
-        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
-        alertController.addAction(somethingAction)
-        alertController.addAction(cancelAction)
-        self.present(alertController, animated: true, completion: {})
 
     }
+    
+    // :WIP:
+    
+    //var datePicker: UIDatePicker?
+    //func showDatePicker() {
+    //    datePicker = UIDatePicker()
+    //    datePicker?.date = Date()
+    //    datePicker?.locale = .current
+    //    if #available(iOS 13.4, *) {
+    //        datePicker?.preferredDatePickerStyle = .compact
+    //    } else {
+    //        // Fallback on earlier versions
+    //    }
+    //    datePicker?.addTarget(self, action: #selector(handleDateSelection), for: .valueChanged)
+    //}
 
     @objc private func dozeDateChanged(datePicker: UIDatePicker) {
         dozeDateButton.isHidden = false

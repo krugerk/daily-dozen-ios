@@ -8,14 +8,12 @@
 import UIKit
 import UserNotifications
 
-// MARK: - Builder
-class SettingsBuilder {
+class SettingsViewController: UITableViewController {
     
-    // MARK: - Methods
     /// Instantiates and returns the initial view controller for a storyboard.
     ///
     /// - Returns: The initial view controller in the storyboard.
-    static func instantiateController() -> SettingsViewController {
+    static func newInstance() -> SettingsViewController {
         let storyboard = UIStoryboard(name: "SettingsLayout", bundle: nil)
         guard
             let viewController = storyboard
@@ -25,10 +23,7 @@ class SettingsBuilder {
         
         return viewController
     }
-}
 
-class SettingsViewController: UITableViewController {
-    
     // Measurement Units
     @IBOutlet weak var unitMeasureToggle: UISegmentedControl!
     // Daily Reminder
@@ -209,7 +204,7 @@ class SettingsViewController: UITableViewController {
     // MARK: - Utilities
     
     @IBAction func doUtilityShowAdvancedBtn(_ sender: UIButton) {
-        let viewController = UtilityBuilder.instantiateController()
+        let viewController = UtilityTableViewController.newInstance()
         navigationController?.pushViewController(viewController, animated: true)
     }
         

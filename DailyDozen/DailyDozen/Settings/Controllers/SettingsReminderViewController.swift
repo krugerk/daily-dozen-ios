@@ -7,10 +7,6 @@
 
 import UIKit
 
-class SettingsReminderViewControllerBuilder {
-    
-}
-
 class SettingsReminderViewController: UITableViewController {
     
     private struct Content {

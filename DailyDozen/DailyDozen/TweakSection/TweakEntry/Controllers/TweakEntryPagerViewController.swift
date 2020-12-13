@@ -8,15 +8,13 @@
 import UIKit
 import SimpleAnimation
 
-// MARK: - Builder
+// MARK: - Controller
+class TweakEntryPagerViewController: UIViewController {
 
-class TweakEntryPagerBuilder {
-
-    // MARK: - Methods
     /// Instantiates and returns the initial view controller for a storyboard.
     ///
     /// - Returns: The initial view controller in the storyboard.
-    static func instantiateController() -> UIViewController {
+    static func newInstance() -> UIViewController {
         let storyboard = UIStoryboard(name: "TweakEntryPagerLayout", bundle: nil)
         guard
             let viewController = storyboard.instantiateInitialViewController()
@@ -24,10 +22,6 @@ class TweakEntryPagerBuilder {
 
         return viewController
     }
-}
-
-// MARK: - Controller
-class TweakEntryPagerViewController: UIViewController {
 
     // MARK: - Properties
     private var currentDate = DateManager.currentDatetime() {
