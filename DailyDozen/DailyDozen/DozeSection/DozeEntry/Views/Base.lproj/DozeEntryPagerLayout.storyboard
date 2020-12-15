@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0HD-X6-u6e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0HD-X6-u6e">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,45 +20,22 @@
                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="BQF-ze-lmn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OC8-wt-JgC" customClass="RoundedButton" customModule="DailyDozen" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Today" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ksi-aP-rm4" customClass="RoundedTextfield" customModule="DailyDozen" customModuleProvider="target">
                                         <rect key="frame" x="10" y="5" width="355" height="40"/>
-                                        <color key="backgroundColor" red="0.49803921569999998" green="0.75294117650000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="BrandGreen"/>
+                                        <color key="tintColor" name="BrandGreen"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                        <state key="normal" title="Today">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="dozeDateButtonPressed:" destination="0HD-X6-u6e" eventType="touchUpInside" id="pYb-t8-oWb"/>
-                                        </connections>
-                                    </button>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="OC8-wt-JgC" secondAttribute="trailing" constant="10" id="7PN-f8-PCU"/>
-                                    <constraint firstAttribute="bottom" secondItem="OC8-wt-JgC" secondAttribute="bottom" constant="5" id="NfV-ai-W3o"/>
+                                    <constraint firstItem="Ksi-aP-rm4" firstAttribute="leading" secondItem="BQF-ze-lmn" secondAttribute="leading" constant="10" id="CFI-Um-g09"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ksi-aP-rm4" secondAttribute="trailing" constant="10" id="MdZ-Lr-crW"/>
                                     <constraint firstAttribute="height" constant="50" id="Wpa-SS-vTl"/>
-                                    <constraint firstItem="OC8-wt-JgC" firstAttribute="top" secondItem="BQF-ze-lmn" secondAttribute="top" constant="5" id="iM1-iW-Mtq"/>
-                                    <constraint firstItem="OC8-wt-JgC" firstAttribute="leading" secondItem="BQF-ze-lmn" secondAttribute="leading" constant="10" id="zX4-Ir-21s"/>
+                                    <constraint firstItem="Ksi-aP-rm4" firstAttribute="top" secondItem="BQF-ze-lmn" secondAttribute="top" constant="5" id="cxb-fp-pUd"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ksi-aP-rm4" secondAttribute="bottom" constant="5" id="yoM-ae-IMJ"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="L1U-z7-hZy">
@@ -139,7 +117,7 @@
                     </view>
                     <connections>
                         <outlet property="dozeBackButton" destination="Qfe-bW-SP4" id="Xic-hZ-fGN"/>
-                        <outlet property="dozeDateButton" destination="OC8-wt-JgC" id="Unk-CP-gAS"/>
+                        <outlet property="dozeDateTextField" destination="Ksi-aP-rm4" id="WdA-qD-ATH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rba-Fd-AgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -165,4 +143,9 @@
             <point key="canvasLocation" x="1063" y="464"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="BrandGreen">
+            <color red="0.49799999594688416" green="0.75300002098083496" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
