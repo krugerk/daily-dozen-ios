@@ -1,5 +1,5 @@
 //
-//  UITextFieldExtension.swift
+//  UITextField.swift
 //  DailyDozen
 //
 //  Copyright © 2020 Nutritionfacts.org. All rights reserved.
@@ -19,18 +19,21 @@ extension UITextField {
         let screenWidth = UIScreen.main.bounds.width
 
         let datePicker = UIDatePicker()
-        datePicker.frame = CGRect(x: 0, y: 0, width: screenWidth, height: 128) // 216
+        datePicker.frame = CGRect(x: 0, y: 0, width: screenWidth, height: 128) // 216 | 128
         datePicker.datePickerMode = datePickerMode
         if #available(iOS 14, *) { // Added condition for iOS 14 and above
             // .compact => small non-selector view => old style wheels
             // .wheels  => old style wheels
             // .inline  => new style calendar quick select
-            datePicker.preferredDatePickerStyle = .inline
+            datePicker.preferredDatePickerStyle = .wheels
             datePicker.sizeToFit()
+            //datePicker.sizeThatFits(CGSize(width: 0, height: 216))
         }
-        self.inputView = datePicker
-        // self.tintColor // match background color to "hide" caret
-        
+        self.inputView = datePicker // UIView
+        let color = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
+        self.tintColor = color // match background color to "hide" caret .greenColor, .white
+        self.selectedTextRange = nil
+                
         let toolBar = UIToolbar()
         toolBar.frame = CGRect(x: 0, y: 0, width: screenWidth, height: 44)
         toolBar.isOpaque = false
@@ -39,7 +42,7 @@ extension UITextField {
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: target, action: doneAction)
         let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         toolBar.setItems([cancelButton, flexSpace, todayButton, flexSpace, doneButton], animated: true)
-        //self.inputAccessoryView = toolBar
+        self.inputAccessoryView = toolBar
         return datePicker
     }
     
