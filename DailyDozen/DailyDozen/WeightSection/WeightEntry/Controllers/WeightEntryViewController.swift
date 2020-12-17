@@ -332,7 +332,7 @@ extension WeightEntryViewController: UIPickerViewDelegate {
 extension WeightEntryViewController: UITextFieldDelegate {
     // :1:
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        //LogService.shared.debug("textFieldShouldBeginEditing")
+        LogService.shared.debug("textFieldShouldBeginEditing")
         
         // :===: should solve initial picker registration
         if textField.text == nil || textField.text!.isEmpty {
@@ -340,16 +340,18 @@ extension WeightEntryViewController: UITextFieldDelegate {
             dateFormatter.dateFormat = "hh:mm a"
             if textField == timeAMInput {
                 timeAMInput.text = dateFormatter.string(from: DateManager.currentDatetime())
+                timeAMInput.selectedTextRange = nil // no selection. hide caret.
             }
             if textField == timePMInput {
                 timePMInput.text = dateFormatter.string(from: DateManager.currentDatetime())
+                timePMInput.selectedTextRange = nil // no selection. hide caret.
             }
         }
-        return true // return NO to disallow editing.
+        return false // return true to disallow editing.
     }
     // :2:
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        //LogService.shared.debug("textFieldDidBeginEditing")
+        LogService.shared.debug("textFieldDidBeginEditing")
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

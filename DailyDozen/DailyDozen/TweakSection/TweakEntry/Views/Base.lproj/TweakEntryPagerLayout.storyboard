@@ -117,7 +117,7 @@
                     </view>
                     <connections>
                         <outlet property="tweakBackButton" destination="7XY-Lo-Hwf" id="6Lb-IQ-LYt"/>
-                        <outlet property="tweakDateTextField" destination="YWB-e7-bAF" id="E5Z-Pj-ZMg"/>
+                        <outlet property="tweakDateBarField" destination="YWB-e7-bAF" id="E5Z-Pj-ZMg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWd-mL-HoF" userLabel="First Responder" sceneMemberID="firstResponder"/>

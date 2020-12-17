@@ -24,56 +24,53 @@ class TweakEntryPagerViewController: UIViewController {
     }
 
     // MARK: - Properties
-    private var currentDate = DateManager.currentDatetime() {
-        didSet {
-            LogService.shared.debug("@DATE \(currentDate.datestampKey) TweakEntryPagerViewController")
-            if currentDate.isInCurrentDayWith(DateManager.currentDatetime()) {
-                tweakBackButton.superview?.isHidden = true
-                tweakDateButton.setTitle(NSLocalizedString("dateButtonTitle.today", comment: "Date button 'Today' title"), for: .normal)
-            } else {
-                tweakBackButton.superview?.isHidden = false
-                tweakDateButton.setTitle(tweakDatePicker.date.dateString(for: .long), for: .normal)
-            }
-        }
-    }
+    
+    /// Current page display date "truth"
+    private var tweakPageDate = DateManager.currentDatetime()
 
     // MARK: - Outlets
     
-    @IBOutlet weak var tweakDateTextField: RoundedTextfield!
-    
-    private var tweakDateButton: UIButton! {
-        didSet {
-            tweakDateButton.layer.borderWidth = 1
-            tweakDateButton.layer.borderColor = tweakDateButton.titleColor(for: .normal)?.cgColor
-            tweakDateButton.layer.cornerRadius = 5
-        }
-    }
-    
-    private var tweakDatePicker: UIDatePicker! {
-        didSet {
-            tweakDatePicker.maximumDate = DateManager.currentDatetime() // today
-            
-            if #available(iOS 13.4, *) {
-                // Compact style with overlay
-                tweakDatePicker.preferredDatePickerStyle = .compact
-                // After mode and style are set apply UIView sizeToFit().
-                tweakDatePicker.sizeToFit()
-            }
-        }
-    }
-
     @IBOutlet private weak var tweakBackButton: UIButton!
+    @IBOutlet weak var tweakDateBarField: RoundedTextfield!
+    private var tweakDateBarPicker: UIDatePicker!
 
     // MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        navigationController?.navigationBar.barTintColor = UIColor.greenColor
-        navigationController?.navigationBar.tintColor = UIColor.white
+        if let navBar = navigationController?.navigationBar {
+            navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+            navBar.barTintColor = UIColor.greenColor
+            navBar.tintColor = UIColor.white            
+        }
 
         title = NSLocalizedString("navtab.tweaks", comment: "21 Tweaks (proper noun) navigation tab")
+        
+        tweakDateBarPicker = tweakDateBarField.datePicker(
+            target: self, 
+            cancelAction: #selector(tweakDateBarCancelAction), 
+            doneAction: #selector(tweakDateBarDoneAction), 
+            todayAction: #selector(tweakDateBarTodayAction), 
+            datePickerMode: .date
+        )
+        tweakDateBarField.addTarget(self, action: #selector(dateBarTouchDown), for: .touchDown)
+        updatePageDate(DateManager.currentDatetime())
     }
 
+    @objc func tweakDateBarCancelAction() {
+        updatePageDate(tweakPageDate) // same date
+        self.tweakDateBarField.resignFirstResponder()
+    }
+    
+    @objc func tweakDateBarDoneAction() {
+        updatePageDate(tweakDateBarPicker.date)
+        self.tweakDateBarField.resignFirstResponder()
+    }
+    
+    @objc func tweakDateBarTodayAction() {
+        updatePageDate(DateManager.currentDatetime())
+        self.tweakDateBarField.resignFirstResponder()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
@@ -82,46 +79,48 @@ class TweakEntryPagerViewController: UIViewController {
     }
 
     // MARK: - Methods
+    
     /// Updates UI for the current date.
     ///
     /// - Parameter date: The current date.
-    func updateDate(_ date: Date) {
-        currentDate = date
-        tweakDatePicker.setDate(date, animated: false)
-
-        guard let viewController = children.first as? TweakEntryViewController else { return }
-        viewController.view.fadeOut().fadeIn()
-        viewController.setViewModel(date: currentDate)
+    func updatePageDate(_ date: Date) {
+        let order = Calendar.current.compare(date, to: tweakPageDate, toGranularity: .day)
+        tweakPageDate = date
+        tweakDateBarPicker.setDate(tweakPageDate, animated: false)
+        tweakDateBarPicker.maximumDate = DateManager.currentDatetime()
+        
+        if tweakPageDate.isInCurrentDayWith(DateManager.currentDatetime()) {
+            tweakBackButton.superview?.isHidden = true
+            tweakDateBarField.text = NSLocalizedString("dateButtonTitle.today", comment: "Date button 'Today' title")
+        } else {
+            tweakBackButton.superview?.isHidden = false
+            tweakDateBarField.text = tweakDateBarPicker.date.dateString(for: .long)
+        }
+        
+        if order != .orderedSame {
+            guard let viewController = children.first as? DozeEntryViewController else { return }
+            viewController.view.fadeOut().fadeIn()
+            viewController.setViewModel(date: tweakPageDate)
+        }
     }
 
     // MARK: - Actions
-    @IBAction private func tweakDateButtonPressed(_ sender: UIButton) {
-        tweakDatePicker.isHidden = false
-        tweakDatePicker.maximumDate = DateManager.currentDatetime() // today
-        tweakDateButton.isHidden = true
-    }
 
-    @IBAction private func dateChanged(_ sender: UIDatePicker) {
-        tweakDateButton.isHidden = false
-        tweakDatePicker.isHidden = true
-        tweakDatePicker.maximumDate = DateManager.currentDatetime() // today
-        currentDate = tweakDatePicker.date
-
-        guard let viewController = children.first as? TweakEntryViewController else { return }
-        viewController.view.fadeOut().fadeIn()
-        viewController.setViewModel(date: tweakDatePicker.date)
+    @objc private func dateBarTouchDown(_ sender: UITextField) {
+        tweakDateBarField.text = tweakDateBarPicker.date.dateString(for: .long)
+        tweakDateBarPicker.maximumDate = DateManager.currentDatetime() // today
     }
 
     @IBAction private func viewSwiped(_ sender: UISwipeGestureRecognizer) {
         let today = DateManager.currentDatetime()
         let interval = sender.direction == .left ? -1 : 1
-        guard let swipedDate = tweakDatePicker.date.adding(.day, value: interval), 
+        guard let swipedDate = tweakDateBarPicker.date.adding(.day, value: interval), 
               swipedDate <= today 
         else { return }
 
-        tweakDatePicker.setDate(swipedDate, animated: false)
-        tweakDatePicker.maximumDate = DateManager.currentDatetime() // today
-        currentDate = tweakDatePicker.date
+        tweakDateBarPicker.setDate(swipedDate, animated: false)
+        tweakDateBarPicker.maximumDate = DateManager.currentDatetime() // today
+        updatePageDate(tweakDateBarPicker.date)
 
         guard let viewController = children.first as? TweakEntryViewController else { return }
 
@@ -131,10 +130,10 @@ class TweakEntryPagerViewController: UIViewController {
             viewController.view.slideOut(x: view.frame.width).slideIn(x: -view.frame.width)
         }
 
-        viewController.setViewModel(date: tweakDatePicker.date)
+        viewController.setViewModel(date: tweakDateBarPicker.date)
     }
 
     @IBAction private func backButtonPressed(_ sender: UIButton) {
-        updateDate(DateManager.currentDatetime())
+        updatePageDate(DateManager.currentDatetime())
     }
 }

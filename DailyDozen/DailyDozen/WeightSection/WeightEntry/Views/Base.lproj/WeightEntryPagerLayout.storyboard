@@ -117,7 +117,7 @@
                     </view>
                     <connections>
                         <outlet property="weightBackButton" destination="OIQ-oh-3QN" id="oJB-Bz-pFg"/>
-                        <outlet property="weightDateTextField" destination="pKR-lY-XXM" id="NxN-bO-IwX"/>
+                        <outlet property="weightDateBarField" destination="pKR-lY-XXM" id="NxN-bO-IwX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7S-gw-XaM" userLabel="First Responder" sceneMemberID="firstResponder"/>

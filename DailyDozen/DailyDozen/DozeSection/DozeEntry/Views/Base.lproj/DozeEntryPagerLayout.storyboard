@@ -117,7 +117,7 @@
                     </view>
                     <connections>
                         <outlet property="dozeBackButton" destination="Qfe-bW-SP4" id="Xic-hZ-fGN"/>
-                        <outlet property="dozeDateTextField" destination="Ksi-aP-rm4" id="WdA-qD-ATH"/>
+                        <outlet property="dozeDateBarField" destination="Ksi-aP-rm4" id="WdA-qD-ATH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rba-Fd-AgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
