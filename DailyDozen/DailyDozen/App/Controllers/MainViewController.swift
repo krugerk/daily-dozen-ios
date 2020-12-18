@@ -71,13 +71,14 @@ class MainViewController: UIViewController {
 
         // Notification Content
         let content = UNMutableNotificationContent()
-        content.title = "DailyDozen app." // :NYI:ToBeLocalized:
-        content.subtitle = "Do you remember about the app?" // :NYI:ToBeLocalized:
-        content.body = "Use this app on a daily basis!" // :NYI:ToBeLocalized:
+        content.title = SettingsReminderContent.title
+        content.subtitle = SettingsReminderContent.subtitle
+        content.body = SettingsReminderContent.body
         content.badge = 1
         if UserDefaults.standard.bool(forKey: SettingsKeys.reminderSoundPref) {
             content.sound = UNNotificationSound.default
         }
+        // NOTE: URL requires at the image is outside the assets catalog
         if let url = Bundle.main.url(forResource: SettingsReminderContent.img, withExtension: SettingsReminderContent.png),
            let attachment = try? UNNotificationAttachment(identifier: "", url: url, options: nil) { 
             content.attachments.append(attachment)

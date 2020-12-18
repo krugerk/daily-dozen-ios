@@ -46,47 +46,45 @@ class SettingsReminderViewController: UITableViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
-        guard reminderSwitch.isOn else { return }
-        
+        // Store Settings
+        UserDefaults.standard.set(settingsDatePicker.date.hour, forKey: SettingsKeys.reminderHourPref)
+        UserDefaults.standard.set(settingsDatePicker.date.minute, forKey: SettingsKeys.reminderMinutePref)
         UserDefaults.standard.set(soundSwitch.isOn, forKey: SettingsKeys.reminderSoundPref)
+        // Clear Requests
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         
-        if UserDefaults.standard.integer(forKey: SettingsKeys.reminderHourPref) != settingsDatePicker.date.hour ||
-            UserDefaults.standard.integer(forKey: SettingsKeys.reminderMinutePref) != settingsDatePicker.date.minute {
-            // Default Value Updates
-            UserDefaults.standard.set(settingsDatePicker.date.hour, forKey: SettingsKeys.reminderHourPref)
-            UserDefaults.standard.set(settingsDatePicker.date.minute, forKey: SettingsKeys.reminderMinutePref)
-            
-            UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
-            
-            // Notification Content
-            let content = UNMutableNotificationContent()
-            content.title = SettingsReminderContent.title
-            content.subtitle = SettingsReminderContent.subtitle
-            content.body = SettingsReminderContent.body
-            content.badge = 1
-            if soundSwitch.isOn {
-                content.sound = UNNotificationSound.default 
-            }
-            if let url = Bundle.main.url(forResource: SettingsReminderContent.img, withExtension: SettingsReminderContent.png),
-               let attachment = try? UNNotificationAttachment(identifier: "", url: url, options: nil) { 
-                content.attachments.append(attachment)
-            }
-            
-            // Notification Time Trigger
-            var timeComponents = DateComponents()
-            timeComponents.hour = settingsDatePicker.date.hour
-            timeComponents.minute = settingsDatePicker.date.minute
-            let dateTrigger = UNCalendarNotificationTrigger(dateMatching: timeComponents, repeats: true)
-            
-            // Post Notification Request
-            let request = UNNotificationRequest(identifier: SettingsKeys.reminderRequestID, content: content, trigger: dateTrigger)
-            UNUserNotificationCenter.current().add(request) { (error) in
-                if let error = error {
-                    LogService.shared.error(
-                        "SettingsReminderViewController viewWillDisappear \(error.localizedDescription)"
-                    )
-                }
+        if reminderSwitch.isOn == false {
+            return // done
+        }
+        
+        // Notification Content
+        let content = UNMutableNotificationContent()
+        content.title = SettingsReminderContent.title
+        content.subtitle = SettingsReminderContent.subtitle
+        content.body = SettingsReminderContent.body
+        content.badge = 1
+        if soundSwitch.isOn {
+            content.sound = UNNotificationSound.default 
+        }
+        // NOTE: URL requires at the image is outside the assets catalog
+        if let url = Bundle.main.url(forResource: SettingsReminderContent.img, withExtension: SettingsReminderContent.png),
+           let attachment = try? UNNotificationAttachment(identifier: "", url: url, options: nil) { 
+            content.attachments.append(attachment)
+        }
+        
+        // Notification Time Trigger
+        var timeComponents = DateComponents()
+        timeComponents.hour = settingsDatePicker.date.hour
+        timeComponents.minute = settingsDatePicker.date.minute
+        let dateTrigger = UNCalendarNotificationTrigger(dateMatching: timeComponents, repeats: true)
+        
+        // Post Notification Request
+        let request = UNNotificationRequest(identifier: SettingsKeys.reminderRequestID, content: content, trigger: dateTrigger)
+        UNUserNotificationCenter.current().add(request) { (error) in
+            if let error = error {
+                LogService.shared.error(
+                    "SettingsReminderViewController viewWillDisappear \(error.localizedDescription)"
+                )
             }
         }
     }
