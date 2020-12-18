@@ -7,15 +7,16 @@
 
 import UIKit
 
+struct SettingsReminderContent {
+    static let title = "DailyDozen app." // :NYI:ToBeLocalized:
+    static let subtitle = "Do you remember about the app?" // :NYI:ToBeLocalized:
+    static let body = "Update your servings for today!" // :NYI:ToBeLocalized:
+    static let img = "dr_greger"
+    static let png = "png"
+}
+
 class SettingsReminderViewController: UITableViewController {
     
-    private struct Content {
-        static let title = "DailyDozen app."
-        static let subtitle = "Do you remember about the app?"
-        static let body = "Update your servings for today!"
-        static let img = "dr_greger"
-        static let png = "png"
-    }
     @IBOutlet weak var settingsDatePicker: UIDatePicker!
     @IBOutlet weak var reminderSwitch: UISwitch!
     @IBOutlet weak var soundSwitch: UISwitch!
@@ -27,10 +28,10 @@ class SettingsReminderViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            settingsDatePicker.datePickerMode = .time
-            settingsDatePicker.date.hour = UserDefaults.standard.integer(forKey: SettingsKeys.reminderHourPref)
-            settingsDatePicker.date.minute = UserDefaults.standard.integer(forKey: SettingsKeys.reminderMinutePref)
-            
+        settingsDatePicker.datePickerMode = .time
+        settingsDatePicker.date.hour = UserDefaults.standard.integer(forKey: SettingsKeys.reminderHourPref)
+        settingsDatePicker.date.minute = UserDefaults.standard.integer(forKey: SettingsKeys.reminderMinutePref)
+        
         let canNotificate = UserDefaults.standard.bool(forKey: SettingsKeys.reminderCanNotify)
         reminderSwitch.isOn = canNotificate
         if reminderSwitch.isOn {
@@ -52,35 +53,34 @@ class SettingsReminderViewController: UITableViewController {
         
         if UserDefaults.standard.integer(forKey: SettingsKeys.reminderHourPref) != settingsDatePicker.date.hour ||
             UserDefaults.standard.integer(forKey: SettingsKeys.reminderMinutePref) != settingsDatePicker.date.minute {
+            // Default Value Updates
             UserDefaults.standard.set(settingsDatePicker.date.hour, forKey: SettingsKeys.reminderHourPref)
             UserDefaults.standard.set(settingsDatePicker.date.minute, forKey: SettingsKeys.reminderMinutePref)
             
             UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
             
-            // Alert content
+            // Notification Content
             let content = UNMutableNotificationContent()
-            content.title = Content.title
-            content.subtitle = Content.subtitle
-            content.body = Content.body
+            content.title = SettingsReminderContent.title
+            content.subtitle = SettingsReminderContent.subtitle
+            content.body = SettingsReminderContent.body
             content.badge = 1
+            if soundSwitch.isOn {
+                content.sound = UNNotificationSound.default 
+            }
+            if let url = Bundle.main.url(forResource: SettingsReminderContent.img, withExtension: SettingsReminderContent.png),
+               let attachment = try? UNNotificationAttachment(identifier: "", url: url, options: nil) { 
+                content.attachments.append(attachment)
+            }
             
-            guard
-                let url = Bundle.main.url(forResource: Content.img, withExtension: Content.png),
-                let attachment = try? UNNotificationAttachment(identifier: SettingsKeys.imgID, url: url, options: nil)
-                else { return }
+            // Notification Time Trigger
+            var timeComponents = DateComponents()
+            timeComponents.hour = settingsDatePicker.date.hour
+            timeComponents.minute = settingsDatePicker.date.minute
+            let dateTrigger = UNCalendarNotificationTrigger(dateMatching: timeComponents, repeats: true)
             
-            content.attachments.append(attachment)
-            
-            if soundSwitch.isOn { content.sound = UNNotificationSound.default }
-            
-            var dateComponents = DateComponents()
-            dateComponents.hour = UserDefaults.standard.integer(forKey: SettingsKeys.reminderHourPref)
-            dateComponents.minute = UserDefaults.standard.integer(forKey: SettingsKeys.reminderMinutePref)
-            
-            let dateTrigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-            // post notification request
-            let request = UNNotificationRequest(identifier: SettingsKeys.requestID, content: content, trigger: dateTrigger)
-            
+            // Post Notification Request
+            let request = UNNotificationRequest(identifier: SettingsKeys.reminderRequestID, content: content, trigger: dateTrigger)
             UNUserNotificationCenter.current().add(request) { (error) in
                 if let error = error {
                     LogService.shared.error(

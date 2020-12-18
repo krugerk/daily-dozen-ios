@@ -18,7 +18,7 @@ class WeightEntryPagerViewController: UIViewController {
         guard
             let viewController = storyboard.instantiateViewController(withIdentifier: "WeightEntryPagerLayoutID") as? WeightEntryPagerViewController
         else { fatalError("Did not instantiate `WeightEntryPagerViewController`") }
-        viewController.updatePageDate(date)
+        viewController.weightPageDate = date
         return viewController
     }
         
@@ -32,8 +32,9 @@ class WeightEntryPagerViewController: UIViewController {
     @IBOutlet private weak var weightBackButton: UIButton!
     @IBOutlet weak var weightDateBarField: RoundedTextfield!    
     private var weightDateBarPicker: UIDatePicker!
-    
+        
     // MARK: - UIViewController
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let navBar = navigationController?.navigationBar {
@@ -48,11 +49,10 @@ class WeightEntryPagerViewController: UIViewController {
             target: self, 
             cancelAction: #selector(weightDateBarCancelAction), 
             doneAction: #selector(weightDateBarDoneAction), 
-            todayAction: #selector(weightDateBarTodayAction), 
-            datePickerMode: .date
+            todayAction: #selector(weightDateBarTodayAction)
         )
         weightDateBarField.addTarget(self, action: #selector(dateBarTouchDown), for: .touchDown)
-        updatePageDate(DateManager.currentDatetime())
+        updatePageDate(weightPageDate)
     }
     
     @objc func weightDateBarCancelAction() {
@@ -95,7 +95,7 @@ class WeightEntryPagerViewController: UIViewController {
         }
         
         if order != .orderedSame {
-            guard let viewController = children.first as? DozeEntryViewController else { return }
+            guard let viewController = children.first as? WeightEntryViewController else { return }
             viewController.view.fadeOut().fadeIn()
             viewController.setViewModel(date: weightPageDate)
         }

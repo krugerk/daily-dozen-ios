@@ -49,8 +49,7 @@ class TweakEntryPagerViewController: UIViewController {
             target: self, 
             cancelAction: #selector(tweakDateBarCancelAction), 
             doneAction: #selector(tweakDateBarDoneAction), 
-            todayAction: #selector(tweakDateBarTodayAction), 
-            datePickerMode: .date
+            todayAction: #selector(tweakDateBarTodayAction)
         )
         tweakDateBarField.addTarget(self, action: #selector(dateBarTouchDown), for: .touchDown)
         updatePageDate(DateManager.currentDatetime())
@@ -98,7 +97,7 @@ class TweakEntryPagerViewController: UIViewController {
         }
         
         if order != .orderedSame {
-            guard let viewController = children.first as? DozeEntryViewController else { return }
+            guard let viewController = children.first as? TweakEntryViewController else { return }
             viewController.view.fadeOut().fadeIn()
             viewController.setViewModel(date: tweakPageDate)
         }

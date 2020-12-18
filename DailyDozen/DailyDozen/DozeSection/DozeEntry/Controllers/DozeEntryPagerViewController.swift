@@ -48,8 +48,7 @@ class DozeEntryPagerViewController: UIViewController {
             target: self, 
             cancelAction: #selector(dozeDateBarCancelAction), 
             doneAction: #selector(dozeDateBarDoneAction), 
-            todayAction: #selector(dozeDateBarTodayAction), 
-            datePickerMode: .date
+            todayAction: #selector(dozeDateBarTodayAction)
         )
         dozeDateBarField.addTarget(self, action: #selector(dateBarTouchDown), for: .touchDown)
         updatePageDate(DateManager.currentDatetime())
