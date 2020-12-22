@@ -13,7 +13,7 @@ class UtilityTableViewController: UITableViewController {
     /// Instantiates and returns the initial view controller for a storyboard.
     ///
     /// - Returns: The initial view controller in the storyboard.
-    static func newInstance() -> UIViewController { // :???: UITableViewController?
+    static func newInstance() -> UIViewController {
         let storyboard = UIStoryboard(name: "UtilityLayout", bundle: nil)
         guard
             let viewController = storyboard.instantiateInitialViewController()
