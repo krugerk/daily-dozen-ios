@@ -69,9 +69,9 @@ class SettingsViewController: UITableViewController {
         }
         
         #if targetEnvironment(simulator)
-        //LogService.shared.debug("::::: SIMULATOR ENVIRONMENT: SettingsViewController :::::")
+        // LogService.shared.debug("::::: SIMULATOR ENVIRONMENT: SettingsViewController :::::")
         advancedUtilitiesTableViewCell.isHidden = false
-        //LogService.shared.debug(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n")
+        // LogService.shared.debug(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n")
         #endif
         #if DEBUG
         advancedUtilitiesTableViewCell.isHidden = false
@@ -147,7 +147,7 @@ class SettingsViewController: UITableViewController {
     }
     
     @IBAction func doTweaksVisibilityChanged(_ sender: UISegmentedControl) {
-        //LogService.shared.debug("selectedSegmentIndex = \(segmentedControl.selectedSegmentIndex)")
+        // LogService.shared.debug("selectedSegmentIndex = \(segmentedControl.selectedSegmentIndex)")
         let show21Tweaks = UserDefaults.standard.bool(forKey: SettingsKeys.show21TweaksPref)
         if tweakVisibilityController.selectedSegmentIndex == 0
             && show21Tweaks {

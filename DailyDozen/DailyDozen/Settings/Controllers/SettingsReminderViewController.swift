@@ -60,7 +60,7 @@ class SettingsReminderViewController: UITableViewController {
         // Notification Content
         let content = UNMutableNotificationContent()
         content.title = SettingsReminderContent.title
-        //content.subtitle = SettingsReminderContent.subtitle // not used
+        // content.subtitle = SettingsReminderContent.subtitle // not used
         content.body = SettingsReminderContent.body
         content.badge = 1
         if soundSwitch.isOn {

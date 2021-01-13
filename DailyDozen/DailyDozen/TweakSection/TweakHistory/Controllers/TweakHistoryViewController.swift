@@ -10,9 +10,9 @@ import Charts
 import RealmSwift
 
 // MARK: - Nested
-//enum TimeScale: Int {
-//    case day, month, year
-//}
+// enum TimeScale: Int {
+//     case day, month, year
+// }
 
 /// Historic record of daily checkbox tally.
 class TweakHistoryViewController: UIViewController {

@@ -9,8 +9,8 @@ import Foundation
 
 enum DataCountType: String, CaseIterable {
     
-    //case date
-    //case streak
+    // case date
+    // case streak
     // Daily Dozen Servings NIDs (Native IDs)
     case dozeBeans
     case dozeBerries

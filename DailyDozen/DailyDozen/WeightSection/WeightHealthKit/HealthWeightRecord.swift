@@ -58,14 +58,14 @@ struct HealthWeightRecord {
             // -- HKQuantityType > HKQuantityAggregationStyle --
             // -- Double,  discreteArithmetic
             //let quantityType: HKQuantityType = sample.quantityType
-            //let aggregationStyle: HKQuantityAggregationStyle = quantityType.aggregationStyle
-            //s.append( "style:\(aggregationStyle.rawValue) " )
-            //quantityType.isMaximumDurationRestricted // iOS 13+
-            //quantityType.isMinimumDurationRestricted // iOS 13+
+            // let aggregationStyle: HKQuantityAggregationStyle = quantityType.aggregationStyle
+            // s.append( "style:\(aggregationStyle.rawValue) " )
+            // quantityType.isMaximumDurationRestricted // iOS 13+
+            // quantityType.isMinimumDurationRestricted // iOS 13+
             
             // -- HKSourceRevision > HKSource --
             let sourceRevision = sample.sourceRevision
-            //sourceRevision.operatingSystemVersion.majorVersion
+            // sourceRevision.operatingSystemVersion.majorVersion
             let source: HKSource = sourceRevision.source
             // com.nutritionfacts.dailydozen DailyDozen
             // com.apple.Health              Health  
@@ -73,12 +73,12 @@ struct HealthWeightRecord {
             
             // --- METADATA ---
             // metadata: { HKWasUserEntered = 1; } created by Health app
-            //s.metadata       // [String: Any]?
+            // s.metadata       // [String: Any]?
             
-            //s.append( "\n" )
-            //s.append( "*** \(sample.debugDescription) ***\n" )
-            //s.append( "### \(sample.description) ###\n" )
-            //s.append( "\((sample.device != nil) ? sample.device.debugDescription : "nil-device")\n" )
+            // s.append( "\n" )
+            // s.append( "*** \(sample.debugDescription) ***\n" )
+            // s.append( "### \(sample.description) ###\n" )
+            // s.append( "\((sample.device != nil) ? sample.device.debugDescription : "nil-device")\n" )
             
             s.append("\n")
         }

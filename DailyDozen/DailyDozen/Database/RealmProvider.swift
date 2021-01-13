@@ -408,9 +408,9 @@ class RealmProvider {
     
     func saveDailyTracker() {
         guard let tracker = unsavedDailyTracker else {
-            //LogService.shared.debug(
+            // LogService.shared.debug(
             //    "RealmProvider saveDailyTracker unsavedDailyTracker is nil"
-            //)
+            // )
             return
         }
         saveDailyTracker(tracker: tracker)
