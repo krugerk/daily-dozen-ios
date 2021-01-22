@@ -11,6 +11,7 @@
 
 /* Records: Daily Tally */
 "dateButtonTitle.today"="Hoy";
+"dateBackButtonTitle"="Back to today";
 "historyRecord.movingMean"="Media móvil";
 "historyRecordDoze.heading"="Historial de porciones";
 "historyRecordDoze.legend"="Porciones";

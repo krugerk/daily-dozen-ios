@@ -1,3 +1,6 @@
+/* Back to today */
+"dateBackButtonTitle" = "Powrót do dzisiaj";
+
 /* Records: Daily Tally */
 "dateButtonTitle.today" = "Dzisiaj";
 
@@ -101,7 +104,7 @@
 "streakDaysFormat" = "%d days";
 
 /* display heading */
-"tweakCompleteIntentions.heading" = " Spełnij swoje intencje implementacyjne";
+"tweakCompleteIntentions.heading" = "Spełnij swoje intencje implementacyjne";
 
 /* display heading */
 "tweakDailyBlackCumin.heading" = "Czarnuszka (¼ łyżeczki)";
