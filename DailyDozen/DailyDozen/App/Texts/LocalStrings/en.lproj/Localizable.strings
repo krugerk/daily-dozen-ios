@@ -1,10 +1,3 @@
-/* 
-  Localizable.strings
-  DailyDozen
-
-  Copyright © 2019 Nutritionfacts.org. All rights reserved.
-*/
-
 /* Daily Dozen (proper noun) navigation tab */
 "navtab.doze"="Daily Dozen";
 /* 21 Tweaks (proper noun) navigation tab */
@@ -96,13 +89,26 @@
 "tweakNightlySleep.heading"="Sufficient Sleep";
 "tweakNightlyTrendelenbrug.heading"="Trendelenburg";
 
-/* ***** Daily Reminder ***** */
-
-/* daily_reminder_settings */
-"dailyReminder.settings"="Daily Reminder Settings";
-/* daily_reminder_title */
+/* daily_reminder_title alert title */
 "dailyReminder.title"="Daily Dozen Reminder";
-/* daily_reminder_subtitle */
-/* "dailyReminder.subtitle"=""; not used */
-/* daily_reminder_text */
+
+/* daily_reminder_text alert text */
 "dailyReminder.text"="Update your servings for today";
+
+/* daily_reminder_settings settings screen title */
+"dailyReminder.settings"="Daily Reminder Settings";
+
+/* enable_daily_reminder */
+"dailyReminder.enable"="Enable Daily Reminders";
+
+/* remind_me_at */
+"dailyReminder.time"="Remind me at";
+
+/* play_sound */
+"dailyReminder.sound"="Play Sound";
+
+/* 'on' as in 'on or off' */
+"dailyReminder.state.on"="On";
+
+/* 'off' as in 'on or off' */
+"dailyReminder.state.off"="Off";

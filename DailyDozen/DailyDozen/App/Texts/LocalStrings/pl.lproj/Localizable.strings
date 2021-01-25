@@ -1,3 +1,27 @@
+/* daily_reminder_title alert title */
+"dailyReminder.title"="Recordatorio de la Docena Diaria";
+
+/* daily_reminder_text alert text */
+"dailyReminder.text"="Actualiza las porciones de hoy";
+
+/* daily_reminder_settings settings screen title */
+"dailyReminder.settings"="Daily Reminder Settings";
+
+/* enable_daily_reminder */
+"dailyReminder.enable"="Enable Daily Reminders";
+
+/* remind_me_at */
+"dailyReminder.time"="Remind me at";
+
+/* play_sound */
+"dailyReminder.sound"="Play Sound";
+
+/* 'on' as in 'on or off' */
+"dailyReminder.state.on"="On";
+
+/* 'off' as in 'on or off' */
+"dailyReminder.state.off"="Off";
+
 /* Back to today */
 "dateBackButtonTitle" = "Powrót do dzisiaj";
 
@@ -5,28 +29,28 @@
 "dateButtonTitle.today" = "Dzisiaj";
 
 /* ***** Daily Dozen ***** */
-"dozeBeans.heading" = "Beans";
+"dozeBeans.heading" = "Rośliny strączkowe";
 
 /* display heading. */
-"dozeBerries.heading" = "Berries";
+"dozeBerries.heading" = "Jagody";
 
 /* display heading */
-"dozeBeverages.heading" = "Beverages";
+"dozeBeverages.heading" = "Napoje";
 
 /* display heading */
-"dozeExercise.heading" = "Exercise";
+"dozeExercise.heading" = "Ćwiczenia";
 
 /* display heading */
-"dozeFlaxseeds.heading" = "Flaxseeds";
+"dozeFlaxseeds.heading" = "Siemię lniane";
 
 /* display heading */
-"dozeFruitsOther.heading" = "Other Fruits";
+"dozeFruitsOther.heading" = "Inne owoce";
 
 /* display heading */
-"dozeGreens.heading" = "Greens";
+"dozeGreens.heading" = "Warzywa liściaste";
 
 /* display heading */
-"dozeNuts.heading" = "Nuts and Seeds";
+"dozeNuts.heading" = "Orzechy i nasiona";
 
 /* Daily Dozen other info confirm */
 "dozeOtherInfo.confirm" = "OK";
@@ -38,16 +62,16 @@
 "dozeOtherInfo.title" = "Supplements";
 
 /* display heading */
-"dozeSpices.heading" = "Herbs and Spices";
+"dozeSpices.heading" = "Zioła i przyprawy";
 
 /* display heading */
-"dozeVegetablesCruciferous.heading" = "Cruciferous Vegetables";
+"dozeVegetablesCruciferous.heading" = "Warzywa kapustne";
 
 /* display heading */
-"dozeVegetablesOther.heading" = "Other Vegetables";
+"dozeVegetablesOther.heading" = "Inne warzywa";
 
 /* display heading */
-"dozeWholeGrains.heading" = "Whole Grains";
+"dozeWholeGrains.heading" = "Pełnoziarniste zboża";
 
 /* (No Comment) */
 "historyRecord.movingMean" = "Moving Average";
@@ -95,7 +119,7 @@
 "otherOmega3.heading" = "Plant-based Omega 3s";
 
 /* ***** Daily Dozen Other ***** */
-"otherVitaminB12.heading" = "Vitamin B12";
+"otherVitaminB12.heading" = "Witamina B12";
 
 /* display heading */
 "otherVitaminD.heading" = "Vitamin D";

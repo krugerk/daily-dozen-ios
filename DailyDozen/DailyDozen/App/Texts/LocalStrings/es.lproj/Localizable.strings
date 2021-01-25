@@ -1,5 +1,3 @@
-
-
 /* Daily Dozen (proper noun) navigation tab */
 "navtab.doze"="Docena Diaria";
 /* 21 Tweaks (proper noun) navigation tab */
@@ -163,13 +161,26 @@
 /* display heading */
 "tweakWeightTwice.heading" = "Pesarse dos veces al día";
 
-/* ***** Daily Reminder ***** */
-
-/* daily_reminder_settings */
-"dailyReminder.settings"="Ajustes del recordatorio diario";
-/* daily_reminder_title */
+/* daily_reminder_title alert title */
 "dailyReminder.title"="Recordatorio de la Docena Diaria";
-/* daily_reminder_subtitle */
-/* "dailyReminder.subtitle"=""; not used */
-/* daily_reminder_text */
+
+/* daily_reminder_text alert text */
 "dailyReminder.text"="Actualiza las porciones de hoy";
+
+/* daily_reminder_settings settings screen title */
+"dailyReminder.settings"="Daily Reminder Settings";
+
+/* enable_daily_reminder */
+"dailyReminder.enable"="Enable Daily Reminders";
+
+/* remind_me_at */
+"dailyReminder.time"="Remind me at";
+
+/* play_sound */
+"dailyReminder.sound"="Play Sound";
+
+/* 'on' as in 'on or off' */
+"dailyReminder.state.on"="On";
+
+/* 'off' as in 'on or off' */
+"dailyReminder.state.off"="Off";
