@@ -18,19 +18,19 @@ class SettingsViewController: UITableViewController {
         guard
             let viewController = storyboard
                 .instantiateInitialViewController() as? SettingsViewController
-            else { fatalError("Did not instantiate `SettingsViewController`") }
+        else { fatalError("Did not instantiate `SettingsViewController`") }
         viewController.title = NSLocalizedString("navtab.preferences", comment: "Preferences (aka Settings, Configuration) navigation tab. Choose word different from 'Tweaks' translation")
         
         return viewController
     }
-
-    // Measurement Units
+    
+    /// Measurement Units
     @IBOutlet weak var unitMeasureToggle: UISegmentedControl!
-    // Daily Reminder
+    /// Daily Reminder
     @IBOutlet weak var reminderIsOn: UILabel!
     // @IBOutlet weak var reminderSwitch: UISwitch!
     @IBOutlet weak var soundSwitch: UISwitch!
-    // 21 Tweaks Visibility
+    /// 21 Tweaks Visibility
     @IBOutlet weak var tweakVisibilityController: UISegmentedControl!
     
     // Advance Utilities
@@ -56,9 +56,9 @@ class SettingsViewController: UITableViewController {
         // Reminder
         let canNotificate = UserDefaults.standard.bool(forKey: SettingsKeys.reminderCanNotify)
         if canNotificate {
-            reminderIsOn.text = "On"
+            reminderIsOn.text = NSLocalizedString("reminder.state.on", comment: "'On' as in 'On or Off'")
         } else {
-            reminderIsOn.text = "Off"
+            reminderIsOn.text = NSLocalizedString("reminder.state.off", comment: "'Off' as in 'On or Off'")
         }
         
         // 21 Tweaks Visibility
@@ -83,17 +83,17 @@ class SettingsViewController: UITableViewController {
         super.viewWillAppear(animated)
         let canNotificate = UserDefaults.standard.bool(forKey: SettingsKeys.reminderCanNotify)
         if canNotificate {
-            reminderIsOn.text = "On"
+            reminderIsOn.text = NSLocalizedString("reminder.state.on", comment: "'On' as in 'On or Off'")
         } else {
-            reminderIsOn.text = "Off"
+            reminderIsOn.text = NSLocalizedString("reminder.state.off", comment: "'Off' as in 'On or Off'")
         }
     }
-        
+    
     func setUnitsMeasureSegment() {
         let shouldShowUnitsToggle = UserDefaults.standard.bool(forKey: SettingsKeys.unitsTypeToggleShowPref)
         guard let unitTypePrefStr =  UserDefaults.standard.string(forKey: SettingsKeys.unitsTypePref),
-            let unitTypePref = UnitsType(rawValue: unitTypePrefStr)
-            else { return } // :!!!:MEC:review
+              let unitTypePref = UnitsType(rawValue: unitTypePrefStr)
+        else { return } // :!!!:MEC:review
         if  shouldShowUnitsToggle == true {
             unitMeasureToggle.selectedSegmentIndex = UnitsSegmentState.toggleUnitsState.rawValue
         } else {
@@ -158,7 +158,7 @@ class SettingsViewController: UITableViewController {
                 object: 2, // Dozen, More, Settings
                 userInfo: nil)
         } else if tweakVisibilityController.selectedSegmentIndex == 1
-            && show21Tweaks == false {
+                    && show21Tweaks == false {
             // Toggle to show 2nd tab
             UserDefaults.standard.set(true, forKey: SettingsKeys.show21TweaksPref)
             NotificationCenter.default.post(
@@ -184,5 +184,24 @@ class SettingsViewController: UITableViewController {
         let viewController = UtilityTableViewController.newInstance()
         navigationController?.pushViewController(viewController, animated: true)
     }
-        
+    
+    // MARK: - UITableViewDataSource
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let sectionName: String
+        switch section {
+        case 0:
+            sectionName = NSLocalizedString("IFs-g0-SPV.headerTitle", comment: "Measurement Units")
+        case 1: // GiY-ao-2ee.headerTitle
+            sectionName = NSLocalizedString("reminder.heading", comment: "Daily Reminder")
+        case 2: // 
+            sectionName = NSLocalizedString("WdR-XV-IyP.headerTitle", comment: "21 Tweaks Visibility")
+        case 3: // Bx8-EJ-3BK.headerTitle Developer Extras
+            sectionName = ""
+        default:
+            sectionName = ""
+        }
+        return sectionName
+    }
+    
 }
