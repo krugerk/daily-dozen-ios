@@ -5,9 +5,6 @@
 /* Class = "UITableViewSection"; footerTitle = "Set to always be one unit type or enable the 'Units:' toggle button."; ObjectID = "IFs-g0-SPV"; */
 "IFs-g0-SPV.footerTitle" = "Set to always be one unit type or enable the 'Units:' toggle button.";
 
-/* Class = "UITableViewSection"; headerTitle = "Measurement Units"; ObjectID = "IFs-g0-SPV"; */
-"IFs-g0-SPV.headerTitle" = "Measurement Units";
-
 /* Class = "UISegmentedControl"; OZO-Xa-v5G.segmentTitles[0] = "Daily Dozen Only"; ObjectID = "OZO-Xa-v5G"; */
 "OZO-Xa-v5G.segmentTitles[0]" = "Daily Dozen Only";
 
@@ -25,9 +22,6 @@
 
 /* Class = "UITableViewSection"; footerTitle = "For health alone, use \"Daily Dozen Only\". For health and weight loss use \"Daily Dozen + 21 Tweaks\"."; ObjectID = "WdR-XV-IyP"; */
 "WdR-XV-IyP.footerTitle" = "For health alone, use \"Daily Dozen Only\". For health and weight loss use \"Daily Dozen + 21 Tweaks\".";
-
-/* Class = "UITableViewSection"; headerTitle = "21 Tweaks Visibility"; ObjectID = "WdR-XV-IyP"; */
-"WdR-XV-IyP.headerTitle" = "21 Tweaks Visibility";
 
 /* Class = "UILabel"; text = "On"; ObjectID = "XFw-2q-BdT"; */
 "XFw-2q-BdT.text" = "On";

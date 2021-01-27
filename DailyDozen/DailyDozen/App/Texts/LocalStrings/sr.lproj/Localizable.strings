@@ -40,19 +40,25 @@
 "reminder.heading"="Daily Reminder";
 
 /* enable_daily_reminder */
-"reminder.setting.enable"="Enable Daily Reminders";
+"reminder.settings.enable"="Enable Daily Reminders";
 
 /* remind_me_at */
-"reminder.setting.time"="Remind me at";
+"reminder.settings.time"="Remind me at";
 
 /* play_sound */
-"reminder.setting.sound"="Play Sound";
+"reminder.settings.sound"="Play Sound";
 
 /* 'On' as in 'On or Off' */
 "reminder.state.on"="On";
 
 /* 'Off' as in 'On or Off' */
 "reminder.state.off"="Off";
+
+/* Class = "UITableViewSection"; headerTitle = "Measurement Units"; ObjectID = "IFs-g0-SPV"; */
+"settings.units.header" = "Measurement Units";
+
+/* Class = "UITableViewSection"; headerTitle = "21 Tweaks Visibility"; ObjectID = "WdR-XV-IyP"; */
+"settings.tweak.header" = "21 Tweaks Visibility";
 
 "urlSegmentInfoMenu.videos"="videos";
 "urlSegmentInfoMenu.book"="book";

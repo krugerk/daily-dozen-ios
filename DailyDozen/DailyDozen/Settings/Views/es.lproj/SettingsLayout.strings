@@ -4,9 +4,6 @@
 /* Class = "UITableViewSection"; footerTitle = "Set to always be one unit type or enable the 'Units:' toggle button."; ObjectID = "IFs-g0-SPV"; */
 "IFs-g0-SPV.footerTitle" = "Configure siempre un tipo de unidad o active el botón de alternancia 'Unidades:'.";
 
-/* Class = "UITableViewSection"; headerTitle = "Measurement Units"; ObjectID = "IFs-g0-SPV"; */
-"IFs-g0-SPV.headerTitle" = "Unidades de medida";
-
 /* Class = "UILabel"; text = "Enable Reminders"; ObjectID = "itH-G7-Kal"; */
 "itH-G7-Kal.text" = "Configuración del Recordatorio Diario";
 
@@ -33,9 +30,6 @@
 
 /* Class = "UITableViewSection"; footerTitle = "For health alone, use \"Daily Dozen Only\". For health and weight loss use \"Daily Dozen + 21 Tweaks\"."; ObjectID = "WdR-XV-IyP"; */
 "WdR-XV-IyP.footerTitle" = "Solo para la salud, use \"Docena Diaria solamente\". Para la salud y la pérdida de peso, use \"Docena Diaria + 21 Ajustes\".";
-
-/* Class = "UITableViewSection"; headerTitle = "21 Tweaks Visibility"; ObjectID = "WdR-XV-IyP"; */
-"WdR-XV-IyP.headerTitle" = "Visibilidad de 21 Ajustes";
 
 /* Class = "UILabel"; text = "On"; ObjectID = "XFw-2q-BdT"; */
 "XFw-2q-BdT.text" = "En";

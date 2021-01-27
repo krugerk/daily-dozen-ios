@@ -190,12 +190,12 @@ class SettingsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let sectionName: String
         switch section {
-        case 0:
-            sectionName = NSLocalizedString("IFs-g0-SPV.headerTitle", comment: "Measurement Units")
+        case 0: // IFs-g0-SPV.headerTitle
+            sectionName = NSLocalizedString("settings.units.header", comment: "Measurement Units")
         case 1: // GiY-ao-2ee.headerTitle
             sectionName = NSLocalizedString("reminder.heading", comment: "Daily Reminder")
-        case 2: // 
-            sectionName = NSLocalizedString("WdR-XV-IyP.headerTitle", comment: "21 Tweaks Visibility")
+        case 2: // WdR-XV-IyP.headerTitle
+            sectionName = NSLocalizedString("settings.tweak.header", comment: "21 Tweaks Visibility")
         case 3: // Bx8-EJ-3BK.headerTitle Developer Extras
             sectionName = ""
         default:
