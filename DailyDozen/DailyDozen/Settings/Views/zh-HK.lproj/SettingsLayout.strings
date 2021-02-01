@@ -22,18 +22,3 @@
 
 /* Class = "UITableViewSection"; footerTitle = "For health alone, use \"Daily Dozen Only\". For health and weight loss use \"Daily Dozen + 21 Tweaks\"."; ObjectID = "WdR-XV-IyP"; */
 "WdR-XV-IyP.footerTitle" = "For health alone, use \"Daily Dozen Only\". For health and weight loss use \"Daily Dozen + 21 Tweaks\".";
-
-/* Class = "UILabel"; text = "On"; ObjectID = "XFw-2q-BdT"; */
-"XFw-2q-BdT.text" = "On";
-
-/* Class = "UILabel"; text = "Play Sound"; ObjectID = "YP6-dP-Y62"; */
-"YP6-dP-Y62.text" = "Play Sound";
-
-/* Class = "UILabel"; text = "Enable Reminders"; ObjectID = "itH-G7-Kal"; */
-"itH-G7-Kal.text" = "Enable Reminders";
-
-/* Class = "UILabel"; text = "Remind me at:"; ObjectID = "kR3-Sa-Fpt"; */
-"kR3-Sa-Fpt.text" = "Remind me at:";
-
-/* Class = "UILabel"; text = "Enable Reminders"; ObjectID = "pjz-An-Ls5"; */
-"pjz-An-Ls5.text" = "Enable Reminders";

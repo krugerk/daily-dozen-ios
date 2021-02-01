@@ -27,6 +27,7 @@ class SettingsViewController: UITableViewController {
     /// Measurement Units
     @IBOutlet weak var unitMeasureToggle: UISegmentedControl!
     /// Daily Reminder
+    @IBOutlet weak var reminderLabel: UILabel!
     @IBOutlet weak var reminderIsOn: UILabel!
     // @IBOutlet weak var reminderSwitch: UISwitch!
     @IBOutlet weak var soundSwitch: UISwitch!
@@ -60,6 +61,7 @@ class SettingsViewController: UITableViewController {
         } else {
             reminderIsOn.text = NSLocalizedString("reminder.state.off", comment: "'Off' as in 'On or Off'")
         }
+        reminderLabel.text = NSLocalizedString("reminder.settings.enable", comment: "Enable Reminders")
         
         // 21 Tweaks Visibility
         if UserDefaults.standard.bool(forKey: SettingsKeys.show21TweaksPref) {
