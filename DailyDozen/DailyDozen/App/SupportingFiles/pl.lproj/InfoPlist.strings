@@ -8,5 +8,5 @@
 "NSHealthShareUsageDescription" = "Funkcja 21 Adaptacji uzyskuje dostęp do danych HealthKit, aby zapewnić aktualizacje Twoich codziennych pomiarów wagi.";
 
 /* Privacy - Health Update Usage Description */
-"NSHealthUpdateUsageDescription" = "Funkcja 21 adaptacji może zapisywać dane z wagą w HealthKit, aby pomóc Ci śledzić Twoje postępy.";
+"NSHealthUpdateUsageDescription" = "Funkcja 21 Adaptacji może zapisywać dane z wagą w HealthKit, aby pomóc Ci śledzić Twoje postępy.";
 
