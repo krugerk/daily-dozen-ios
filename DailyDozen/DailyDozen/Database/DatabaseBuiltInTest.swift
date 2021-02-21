@@ -19,11 +19,11 @@ public struct DatabaseBuiltInTest {
         LogService.shared.debug(">>> :DEBUG:WAYPOINT: DatabaseBuiltInTest runSuite()")        
         LogService.shared.debug(">>> HKHealthStore.isHealthDataAvailable() \(HKHealthStore.isHealthDataAvailable())")
         
-        // HealthManager.shared.exportHKWeight(name: "BIT00")
-        // DatabaseBuiltInTest.shared.doGenerateDBHistoryBIT(numberOfDays: 3, defaultDB: false)
-        // DatabaseBuiltInTest.shared.doGenerateDBHistoryBIT(numberOfDays: 365*3, defaultDB: false) // 1095 days, 2190 weight entries
+        //HealthManager.shared.exportHKWeight(name: "BIT00")
+        //DatabaseBuiltInTest.shared.doGenerateDBHistoryBIT(numberOfDays: 3, defaultDB: false)
+        //DatabaseBuiltInTest.shared.doGenerateDBHistoryBIT(numberOfDays: 365*3, defaultDB: false) // 1095 days, 2190 weight entries
         
-        // doGenerateHKSampleDataBIT()
+        //doGenerateHKSampleDataBIT()
         // :!!!:NYI: BIT runSuite()
     }
     
