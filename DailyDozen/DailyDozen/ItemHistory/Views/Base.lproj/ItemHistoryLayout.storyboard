@@ -36,7 +36,7 @@
                                         <constraints>
                                             <constraint firstItem="sLd-Kq-bLv" firstAttribute="leading" secondItem="eLp-p5-Aq7" secondAttribute="leading" constant="8" id="3Xd-dh-5lh"/>
                                             <constraint firstItem="sLd-Kq-bLv" firstAttribute="centerY" secondItem="eLp-p5-Aq7" secondAttribute="centerY" id="GSR-mq-Eor"/>
-                                            <constraint firstAttribute="trailing" secondItem="sLd-Kq-bLv" secondAttribute="trailing" constant="8" id="Tly-q5-2qa"/>
+                                            <constraint firstAttribute="trailing" secondItem="sLd-Kq-bLv" secondAttribute="trailing" constant="8" id="QA2-d0-rCA"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfE-tr-lZf" customClass="FSCalendar">
@@ -194,7 +194,7 @@
     </scenes>
     <resources>
         <namedColor name="BrandGreen">
-            <color red="0.41176470588235292" green="0.29803921568627451" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.49803921568627452" green="0.75294117647058822" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

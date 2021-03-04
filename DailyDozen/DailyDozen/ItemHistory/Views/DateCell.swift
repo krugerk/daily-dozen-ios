@@ -46,7 +46,7 @@ class DateCell: FSCalendarCell {
         if count == maximum {
             borderView.backgroundColor = UIColor.yellowColor
         } else if count > 0 {
-            borderView.backgroundColor = UIColor.yellowColor
+            borderView.backgroundColor = UIColor.yellow
         } else {
             borderView.backgroundColor = UIColor.white
         }
