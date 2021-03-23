@@ -11,8 +11,8 @@ class DozeEntryDataProvider: NSObject, UITableViewDataSource {
     
     // MARK: - Nested
     private struct Strings {
-        static let dozeTableViewCell = "dozeTableViewCell"
-        static let dozeStateCell = "dozeStateCell"
+        static let dozeEntryRowSid = "DozeEntryRowSid"
+        static let dozeItemStateCheckboxSid = "DozeItemStateCheckboxSid"
     }
     
     var viewModel: DozeEntryViewModel!
@@ -33,9 +33,9 @@ class DozeEntryDataProvider: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let realm = RealmProvider()
         guard
-            let dozeTableViewCell = tableView
-                .dequeueReusableCell(withIdentifier: Strings.dozeTableViewCell) as? DozeEntryTableViewCell else {
-                fatalError("Expected `DozeEntryTableViewCell`")
+            let dozeEntryRow: DozeEntryRow = tableView
+                .dequeueReusableCell(withIdentifier: Strings.dozeEntryRowSid) as? DozeEntryRow else {
+                fatalError("Expected `DozeEntryRow`")
         }
         guard
             let servingsSection = DozeEntrySections(rawValue: indexPath.section) else {
@@ -61,7 +61,7 @@ class DozeEntryDataProvider: NSObject, UITableViewDataSource {
             }
         }
         
-        dozeTableViewCell.configure(
+        dozeEntryRow.configure(
             heading: itemType.headingDisplay,
             tag: rowIndex,
             imageName: itemType.imageName,
@@ -73,7 +73,7 @@ class DozeEntryDataProvider: NSObject, UITableViewDataSource {
         let itemPid = viewModel.itemPid(rowIndex: rowIndex)
         realm.updateStreak(streak, pid: itemPid)
         
-        return dozeTableViewCell
+        return dozeEntryRow
     }
 }
 
@@ -86,9 +86,9 @@ extension DozeEntryDataProvider: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: Strings.dozeStateCell,
+            withReuseIdentifier: Strings.dozeItemStateCheckboxSid,
             for: indexPath)
-        guard let stateCell = cell as? DozeEntryStateCell else {
+        guard let stateCell = cell as? DozeItemStateCheckbox else {
             fatalError("There should be a cell")
         }
         
