@@ -181,6 +181,10 @@ class UtilityTableViewController: UITableViewController {
         DatabaseBuiltInTest.shared.doGenerateDBLegacyDataBIT()
     }
     
+    @IBAction func doUtilityTestGenerateStreaksBtn(_ sender: UIButton) {
+        DatabaseBuiltInTest.shared.doGenerateDBStreaksBIT()
+    }
+    
     // MARK: - UI
     
     private struct Strings { // :NYI:LOCALIZE: localize utility strings

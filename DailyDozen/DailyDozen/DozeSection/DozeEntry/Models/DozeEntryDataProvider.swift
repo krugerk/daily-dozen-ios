@@ -32,24 +32,23 @@ class DozeEntryDataProvider: NSObject, UITableViewDataSource {
     // Row Cell At Index
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let realm = RealmProvider()
-        guard
-            let dozeEntryRow: DozeEntryRow = tableView
-                .dequeueReusableCell(withIdentifier: Strings.dozeEntryRowSid) as? DozeEntryRow else {
-                fatalError("Expected `DozeEntryRow`")
+        guard let dozeEntryRow = tableView.dequeueReusableCell(
+            withIdentifier: Strings.dozeEntryRowSid
+        ) as? DozeEntryRow else {
+            fatalError("Expected `DozeEntryRow`")
         }
-        guard
-            let servingsSection = DozeEntrySections(rawValue: indexPath.section) else {
-                fatalError("Expected `servingsSection`")
+        guard let servingsSection = DozeEntrySections(rawValue: indexPath.section) else {
+            fatalError("Expected `servingsSection`")
         }
         var rowIndex = indexPath.row
         if servingsSection == .supplements {
             rowIndex += tableView.numberOfRows(inSection: 0)
         }
-        let itemType = viewModel.itemType(rowIndex: rowIndex)
+        let itemType: DataCountType = viewModel.itemType(rowIndex: rowIndex)
         
         // Determine Tracker Streak value for this itemType
-        let states = viewModel.dozeItemStates(rowIndex: rowIndex)
-        let countNow = states.filter { $0 }.count
+        let states: [Bool] = viewModel.dozeItemStates(rowIndex: rowIndex)
+        let countNow = states.filter { $0 }.count // count `true`
         var streak = states.count == countNow ? 1 : 0        
         if streak > 0 {
             let yesterday = viewModel.trackerDate.adding(.day, value: -1)!
@@ -61,11 +60,7 @@ class DozeEntryDataProvider: NSObject, UITableViewDataSource {
             }
         }
         
-        dozeEntryRow.configure(
-            heading: itemType.headingDisplay,
-            tag: rowIndex,
-            imageName: itemType.imageName,
-            streak: streak)
+        dozeEntryRow.configure(itemType: itemType, tag: rowIndex, streak: streak)
         
         // viewModel: DozeEntryViewModel tracker
         // tracker: DailyTracker getPid
