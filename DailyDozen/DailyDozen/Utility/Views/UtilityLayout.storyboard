@@ -182,8 +182,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlB-LT-cca">
-                                                    <rect key="frame" x="135.66666666666666" y="7" width="119" height="30"/>
-                                                    <state key="normal" title="Generate Streaks"/>
+                                                    <rect key="frame" x="133" y="7" width="124" height="30"/>
+                                                    <state key="normal" title="Simulate Progress"/>
                                                     <connections>
                                                         <action selector="doUtilityTestGenerateLegacyBtn:" destination="CD1-9a-Pcp" eventType="touchUpInside" id="9sX-Mo-N7I"/>
                                                         <action selector="doUtilityTestGenerateStreaksBtn:" destination="CD1-9a-Pcp" eventType="touchUpInside" id="xmJ-jb-TYi"/>
