@@ -4,6 +4,7 @@
 //
 //  Copyright © 2020 Nutritionfacts.org. All rights reserved.
 //
+// swiftlint:disable function_body_length
 
 import Foundation
 import HealthKit
@@ -100,12 +101,12 @@ public struct DatabaseBuiltInTest {
         
         let calendar = Calendar.current
         let today = DateManager.currentDatetime() // today
-
+        
         let dateComponents = DateComponents(
             calendar: calendar,
             year: today.year, month: today.month, day: today.day,
             hour: 0, minute: 0, second: 0
-            )
+        )
         var date = calendar.date(from: dateComponents)!
         
         let weightBase = 65.0 // kg
@@ -115,14 +116,14 @@ public struct DatabaseBuiltInTest {
         for i in 0..<numberOfDays { 
             let stepByDay = DateComponents(day: -1)
             date = calendar.date(byAdding: stepByDay, to: date)!
-
+            
             // Add data counts
             realmProvider.saveCount(3, date: date, countType: .dozeBeans) // 0-3
             realmProvider.saveCount(Int.random(in: 0...3), date: date, countType: .dozeFruitsOther) // 0-3
-
+            
             let stepByAm = DateComponents(hour: Int.random(in: 7...8), minute: Int.random(in: 1...59))
             let dateAm = calendar.date(byAdding: stepByAm, to: date)!
-
+            
             let stepByPm = DateComponents(hour: Int.random(in: 21...23), minute: Int.random(in: 1...59))
             let datePm = calendar.date(byAdding: stepByPm, to: date)!
             
@@ -130,7 +131,7 @@ public struct DatabaseBuiltInTest {
             let x = Double(i)
             let weightAm = weightBase + weightAmplitude * sin(x * weightCycleStep)
             let weightPm = weightBase - weightAmplitude * sin(x * weightCycleStep)
-
+            
             realmProvider.saveDBWeight(date: dateAm, ampm: .am, kg: weightAm)
             realmProvider.saveDBWeight(date: datePm, ampm: .pm, kg: weightPm)
             
@@ -157,19 +158,19 @@ public struct DatabaseBuiltInTest {
         
         let calendar = Calendar.current
         let today = DateManager.currentDatetime() // today
-
+        
         let dateComponents = DateComponents(
             calendar: calendar,
             year: today.year, month: today.month, day: today.day,
             hour: 0, minute: 0, second: 0
-            )
+        )
         var date = calendar.date(from: dateComponents)!
         
         for _ in 0..<numberOfDays { 
             let stepByDay = DateComponents(day: -1)
             date = calendar.date(byAdding: stepByDay, to: date)!
             let dozely = realmProviderLegacy.getDozeLegacy(for: date)
-
+            
             // Add data states
             // #0 beans
             realmProviderLegacy.saveStatesLegacy([true, true, true], id: dozely.items[0].id)
@@ -210,43 +211,62 @@ public struct DatabaseBuiltInTest {
         let realmDb = realmMngr.realmDb
         
         let today = Date()
+        print("[\(Date().getCurrentBenchmarkSeconds)]")
         // 2 days 
-        print(":BIT: 2 days …")
+        print("  2 days … ")
         for i in 0 ..< 2 {
             let date = today.adding(days: -i)
             realmDb.saveCount(3, date: date, countType: .dozeFruitsOther)
         }
-        for i in 0 ..< 2 {
+        // 7 days 
+        print("  7 days …")
+        for i in 0 ..< 7 {
+            let date = today.adding(days: -i)
+            realmDb.saveCount(1, date: date, countType: .dozeBerries)
+        }
+        // 14 days 
+        print("  14 days …")
+        for i in 0 ..< 14 {
+            let date = today.adding(days: -i)
+            realmDb.saveCount(3, date: date, countType: .dozeBeans)
+        }
+        // 100 days 
+        print("  100 days …")
+        for i in 0 ..< 100 {
+            let date = today.adding(days: -i)
+            realmDb.saveCount(1, date: date, countType: .dozeSpices)
+            realmDb.saveCount(3, date: date, countType: .dozeWholeGrains)
+            realmDb.saveCount(5, date: date, countType: .dozeBeverages)
+        }
+        print("[\(Date().getCurrentBenchmarkSeconds)]")
+
+        // 2 days 
+        for i in (0 ..< 2).reversed() {
             let date = today.adding(days: -i)
             realmDb.saveCount(3, date: date, countType: .tweakMealVinegar)
         }
         // 7 days 
-        print(":BIT: 7 days …")
-        for i in 0 ..< 7 {
+        print("  7 days …")
+        for i in (0 ..< 7).reversed() {
             let date = today.adding(days: -i)
-                realmDb.saveCount(1, date: date, countType: .dozeBerries)
-                realmDb.saveCount(3, date: date, countType: .tweakMealNegCal)
+            realmDb.saveCount(3, date: date, countType: .tweakMealNegCal)
         }
         // 14 days 
-        print(":BIT: 14 days …")
-        for i in 0 ..< 14 {
+        print("  14 days …")
+        for i in (0 ..< 14).reversed() {
             let date = today.adding(days: -i)
-            realmDb.saveCount(3, date: date, countType: .dozeBeans)
             realmDb.saveCount(3, date: date, countType: .tweakMealWater)
         }
         // 100 days 
-        print(":BIT: 100 days …")
-        for i in stride(from: 0, to: 99, by: 1) {
+        print("  100 days …")
+        for i in (0 ..< 100).reversed() {
             let date = today.adding(days: -i)
-            //realmDb.saveCount(1, date: date, countType: .dozeFruitsOther)
-            //realmDb.saveCount(3, date: date, countType: .dozeWholeGrains)
-            realmDb.saveCount(5, date: date, countType: .dozeBeverages)
-            //realmDb.saveCount(1, date: date, countType: .tweakDailyNutriYeast)
-            //realmDb.saveCount(2, date: date, countType: .tweakDailyCumin)
-            //realmDb.saveCount(3, date: date, countType: .tweakDailyGreenTea)
+            realmDb.saveCount(1, date: date, countType: .tweakDailyNutriYeast)
+            realmDb.saveCount(2, date: date, countType: .tweakDailyCumin)
+            realmDb.saveCount(3, date: date, countType: .tweakDailyGreenTea)
         }
-        print(":BIT: Simulate Progress done.")
-
+        print("[\(Date().getCurrentBenchmarkSeconds)]")
+        
         LogService.shared.debug(
             "••EXIT•• UtilityTableViewController doGenerateDBStreaksBIT()"
         )
@@ -268,5 +288,5 @@ public struct DatabaseBuiltInTest {
         // check for BIT in metadata
         HealthManager.shared.deleteHKWeight(key: "DailyDozen", values: ["BIT"])
     }
-
+    
 }
