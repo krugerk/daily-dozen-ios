@@ -54,7 +54,10 @@ class DozeEntryRow: UITableViewCell {
                 if itemType == .dozeBeverages {
                     // Daily Dozen beverages has 5 checkboxs overlays the streak indicator on small screens.
                     // which requires the `%d days` label to be shortened to just then number.
-                    streakFormat = "d%" // no units
+                    streakFormat = "%d" // no units
+                    if streak > 999 {
+                        streakFormat = "🏆" // trophy prize    
+                    }
                 }
                 itemStreakLabel.text = String(format: streakFormat, streak)
                 superview.isHidden = false
