@@ -250,6 +250,7 @@
                                                     <outlet property="itemImage" destination="IS4-2B-57z" id="vlA-b4-uNb"/>
                                                     <outlet property="itemInfoButton" destination="YC8-Tt-A17" id="dbr-pG-ndq"/>
                                                     <outlet property="itemStateCollection" destination="WgI-63-9dY" id="BEP-II-uA7"/>
+                                                    <outlet property="itemStatesWidth" destination="b4F-ac-RQS" id="roT-Mi-9by"/>
                                                     <outlet property="itemStreakLabel" destination="cW5-dD-Zy0" id="Uk1-u7-y36"/>
                                                 </connections>
                                             </tableViewCell>

@@ -44,7 +44,7 @@ class DozeEntryDataProvider: NSObject, UITableViewDataSource {
             rowIndex += tableView.numberOfRows(inSection: 0)
         }
         let itemType: DataCountType = viewModel.itemType(rowIndex: rowIndex)
-        
+                
         // Determine Tracker Streak value for this itemType
         let states: [Bool] = viewModel.dozeItemStates(rowIndex: rowIndex)
         let countNow = states.filter { $0 }.count // count `true`
@@ -53,7 +53,7 @@ class DozeEntryDataProvider: NSObject, UITableViewDataSource {
             streak = viewModel.itemStreak(rowIndex: rowIndex)
         }
         
-        dozeEntryRow.configure(itemType: itemType, tag: rowIndex, streak: streak)        
+        dozeEntryRow.configure(itemType: itemType, tag: rowIndex, streak: streak)
         return dozeEntryRow
     }
 }
@@ -73,7 +73,7 @@ extension DozeEntryDataProvider: UICollectionViewDataSource {
             fatalError("There should be a cell")
         }
         
-        let states = viewModel.dozeItemStates(rowIndex: collectionView.tag)
+        let states: [Bool] = viewModel.dozeItemStates(rowIndex: collectionView.tag)
         stateCell.configure(with: states[indexPath.row])
         return stateCell // individual checkbox
     }
