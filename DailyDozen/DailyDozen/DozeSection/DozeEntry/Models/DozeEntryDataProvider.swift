@@ -44,11 +44,11 @@ class DozeEntryDataProvider: NSObject, UITableViewDataSource {
             rowIndex += tableView.numberOfRows(inSection: 0)
         }
         let itemType: DataCountType = viewModel.itemType(rowIndex: rowIndex)
-                
+        
         // Determine Tracker Streak value for this itemType
         let states: [Bool] = viewModel.dozeItemStates(rowIndex: rowIndex)
         let countNow = states.filter { $0 }.count // count `true`
-        var streak = states.count == countNow ? 1 : 0    
+        var streak = states.count == countNow ? 1 : 0
         if streak > 0 {
             streak = viewModel.itemStreak(rowIndex: rowIndex)
         }

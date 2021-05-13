@@ -36,7 +36,7 @@ class DozeEntryRow: UITableViewCell {
         itemCalendarButton.tag = tag
         itemImage.image = UIImage(named: itemType.imageName)
         itemDataCountType = itemType
-                
+        
         if let superview = itemStreakLabel.superview {
             if streak > oneDay { // "1 day" streaks are not shown
                 var streakFormat = NSLocalizedString("streakDaysFormat", comment: "streak days format")
@@ -62,13 +62,13 @@ class DozeEntryRow: UITableViewCell {
                 superview.isHidden = false
                 
                 if streak < oneWeek {
-                    superview.backgroundColor = UIColor.streakBronzeColor
+                    superview.backgroundColor = ColorManager.style.streakBronze
                     itemStreakLabel.textColor = UIColor.white
                 } else if streak < twoWeeks {
-                    superview.backgroundColor = UIColor.streakSilverColor
+                    superview.backgroundColor = ColorManager.style.streakSilver
                     itemStreakLabel.textColor = UIColor.black
                 } else {
-                    superview.backgroundColor = UIColor.streakGoldColor
+                    superview.backgroundColor = ColorManager.style.streakGold
                     itemStreakLabel.textColor = UIColor.black
                 }
                 

@@ -63,6 +63,7 @@
 		498F724D239E08C0004E501B /* FirstLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498F724C239E08C0004E501B /* FirstLaunchViewController.swift */; };
 		498F724F239E2EA3004E501B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498F724E239E2EA3004E501B /* HealthKit.framework */; };
 		498F7251239E3007004E501B /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498F7250239E3007004E501B /* HealthManager.swift */; };
+		499267F1264C595E0012DB7D /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499267F0264C595E0012DB7D /* ColorManager.swift */; };
 		499B82FB239CD4D300E4AD19 /* WeightHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B82FA239CD4D300E4AD19 /* WeightHistoryViewController.swift */; };
 		49AC03B725802506006CC073 /* RoundedTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AC03B625802506006CC073 /* RoundedTextfield.swift */; };
 		49B93E502477361100144C80 /* DatabaseBuiltInTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B93E4F2477361100144C80 /* DatabaseBuiltInTest.swift */; };
@@ -427,6 +428,7 @@
 		498F724C239E08C0004E501B /* FirstLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLaunchViewController.swift; sourceTree = "<group>"; };
 		498F724E239E2EA3004E501B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		498F7250239E3007004E501B /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		499267F0264C595E0012DB7D /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		499B82FA239CD4D300E4AD19 /* WeightHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightHistoryViewController.swift; sourceTree = "<group>"; };
 		49AC03B625802506006CC073 /* RoundedTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextfield.swift; sourceTree = "<group>"; };
 		49B93E4F2477361100144C80 /* DatabaseBuiltInTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseBuiltInTest.swift; sourceTree = "<group>"; };
@@ -1054,6 +1056,7 @@
 			children = (
 				4944B99123AD7A1A008DFA30 /* ChartDataEntry.swift */,
 				CFECDFF7201EF7C1003E8572 /* Colors.swift */,
+				499267F0264C595E0012DB7D /* ColorManager.swift */,
 				CF2680011FB477AD004A6200 /* Date.swift */,
 				492EEB0F2568551B00543AF5 /* DateManager.swift */,
 				CF9EC1BF202196B100C7B3CA /* Fonts.swift */,
@@ -1582,6 +1585,7 @@
 				CFF72AFE1FB9BAAA001CC2E9 /* LinkService.swift in Sources */,
 				49DB104D238E255D00E77E52 /* DozeEntryViewModel.swift in Sources */,
 				492A1E722409B41000F6C37C /* TweakDetailDescriptionCell.swift in Sources */,
+				499267F1264C595E0012DB7D /* ColorManager.swift in Sources */,
 				496917DD238716BD00A9A743 /* RealmManagerLegacy.swift in Sources */,
 				CFC4A8541F9776A500B5AC75 /* DozeEntryViewController.swift in Sources */,
 				4981709D2391B89E0033882C /* TweakHistoryViewModel.swift in Sources */,
