@@ -48,6 +48,8 @@
 		497A8F0A24748E88001BEDCA /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497A8F0924748E88001BEDCA /* SettingsManager.swift */; };
 		497A8F0C2474AFC8001BEDCA /* DataWeightValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497A8F0B2474AFC8001BEDCA /* DataWeightValues.swift */; };
 		497F91B2240990B600464E4E /* TweakDetailSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497F91B1240990B600464E4E /* TweakDetailSections.swift */; };
+		4980CC992654932A00E6307D /* BusyBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4980CC982654932A00E6307D /* BusyBarViewController.swift */; };
+		4980CC9F2654A1F300E6307D /* AlertBusyBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4980CC9E2654A1F200E6307D /* AlertBusyBarView.xib */; };
 		4981708F2391B1790033882C /* TweakItemStateCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981708E2391B1790033882C /* TweakItemStateCheckbox.swift */; };
 		498170912391B19E0033882C /* TweakEntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498170902391B19E0033882C /* TweakEntryRow.swift */; };
 		498170952391B6AB0033882C /* TweakEntrySections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498170942391B6AB0033882C /* TweakEntrySections.swift */; };
@@ -96,10 +98,12 @@
 		49D9B07B240DCA1F000E9822 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9B07A240DCA1F000E9822 /* UIView.swift */; };
 		49DB104D238E255D00E77E52 /* DozeEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB104C238E255D00E77E52 /* DozeEntryViewModel.swift */; };
 		49DB104F238E257D00E77E52 /* TweakEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB104E238E257D00E77E52 /* TweakEntryViewModel.swift */; };
+		49EA7D61265F221800239BCA /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EA7D60265F221800239BCA /* UIApplication.swift */; };
 		49F0377B233AD9B600FFD2EE /* UIButtonCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0377A233AD9B600FFD2EE /* UIButtonCheckbox.swift */; };
 		49F66B74258874EB00002DB2 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F66B73258874EB00002DB2 /* UITextField.swift */; };
 		49F8D1DC23905B70003E139F /* TweakEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8D1DB23905B70003E139F /* TweakEntryViewController.swift */; };
 		49F8D1DE23906B29003E139F /* TweakEntryDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8D1DD23906B29003E139F /* TweakEntryDataProvider.swift */; };
+		49FF226526583DB700ED848B /* AlertBusyBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF226426583DB700ED848B /* AlertBusyBar.swift */; };
 		BD68BC5B2FB6D632F16CE9CD /* Pods_DailyDozenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715D60F634E9BCD998C66B77 /* Pods_DailyDozenTests.framework */; };
 		BED5BB460CE3AEE8CF585899 /* Pods_DailyDozen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F514690D725E67AD54735EB9 /* Pods_DailyDozen.framework */; };
 		CF12918F1FC42DD300D1C17E /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF12918E1FC42DD300D1C17E /* DateCell.swift */; };
@@ -367,6 +371,8 @@
 		497A8F0924748E88001BEDCA /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		497A8F0B2474AFC8001BEDCA /* DataWeightValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWeightValues.swift; sourceTree = "<group>"; };
 		497F91B1240990B600464E4E /* TweakDetailSections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakDetailSections.swift; sourceTree = "<group>"; };
+		4980CC982654932A00E6307D /* BusyBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyBarViewController.swift; sourceTree = "<group>"; };
+		4980CC9E2654A1F200E6307D /* AlertBusyBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertBusyBarView.xib; sourceTree = "<group>"; };
 		4981708E2391B1790033882C /* TweakItemStateCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakItemStateCheckbox.swift; sourceTree = "<group>"; };
 		498170902391B19E0033882C /* TweakEntryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakEntryRow.swift; sourceTree = "<group>"; };
 		498170942391B6AB0033882C /* TweakEntrySections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakEntrySections.swift; sourceTree = "<group>"; };
@@ -420,10 +426,12 @@
 		49D9B07A240DCA1F000E9822 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		49DB104C238E255D00E77E52 /* DozeEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DozeEntryViewModel.swift; sourceTree = "<group>"; };
 		49DB104E238E257D00E77E52 /* TweakEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweakEntryViewModel.swift; sourceTree = "<group>"; };
+		49EA7D60265F221800239BCA /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		49F0377A233AD9B600FFD2EE /* UIButtonCheckbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonCheckbox.swift; sourceTree = "<group>"; };
 		49F66B73258874EB00002DB2 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		49F8D1DB23905B70003E139F /* TweakEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakEntryViewController.swift; sourceTree = "<group>"; };
 		49F8D1DD23906B29003E139F /* TweakEntryDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakEntryDataProvider.swift; sourceTree = "<group>"; };
+		49FF226426583DB700ED848B /* AlertBusyBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBusyBar.swift; sourceTree = "<group>"; };
 		6ED3A55B48F7069CAE75156C /* Pods-DailyDozenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyDozenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyDozenTests/Pods-DailyDozenTests.release.xcconfig"; sourceTree = "<group>"; };
 		715D60F634E9BCD998C66B77 /* Pods_DailyDozenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyDozenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4AA01331AD98C99ADB2BC0 /* Pods-DailyDozen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyDozen.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyDozen/Pods-DailyDozen.release.xcconfig"; sourceTree = "<group>"; };
@@ -924,8 +932,8 @@
 		CF13930F1FE0042800DD8679 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				490CC2112414A295005505DC /* Models */,
 				490A01252410808800C3EEEA /* Controllers */,
+				490CC2112414A295005505DC /* Models */,
 				4946DEE524106E430054AEBB /* Views */,
 			);
 			path = Settings;
@@ -1021,6 +1029,7 @@
 				CFAAB3761F9F3FDF00B24748 /* URL.swift */,
 				49D9B07A240DCA1F000E9822 /* UIView.swift */,
 				49F66B73258874EB00002DB2 /* UITextField.swift */,
+				49EA7D60265F221800239BCA /* UIApplication.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1068,6 +1077,7 @@
 		CFD1BA311FCD24220057F549 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4980CC9E2654A1F200E6307D /* AlertBusyBarView.xib */,
 				49BA5142264249A700944F72 /* FirstLaunch.storyboard */,
 				49B9801C25F6124B009BA5A9 /* LaunchScreen.storyboard */,
 				49BA514426424A3800944F72 /* Main.storyboard */,
@@ -1135,8 +1145,10 @@
 		CFE698501F974F0F00CD7905 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				498F724C239E08C0004E501B /* FirstLaunchViewController.swift */,
 				CF55BC4E2020450D00003D0D /* AlertBuilder.swift */,
+				49FF226426583DB700ED848B /* AlertBusyBar.swift */,
+				4980CC982654932A00E6307D /* BusyBarViewController.swift */,
+				498F724C239E08C0004E501B /* FirstLaunchViewController.swift */,
 				497390A823A5941900492D92 /* MainViewController.swift */,
 			);
 			path = Controllers;
@@ -1371,6 +1383,7 @@
 				49B97FF725F5F47F009BA5A9 /* DozeEntryPagerLayout.storyboard in Resources */,
 				49BA512826411E3800944F72 /* WeightEntryPagerLayout.storyboard in Resources */,
 				49BA511A2640A0D600944F72 /* DozeEntryExtrasHeader.xib in Resources */,
+				4980CC9F2654A1F300E6307D /* AlertBusyBarView.xib in Resources */,
 				49B97FFF25F5F719009BA5A9 /* TweakEntryPagerLayout.storyboard in Resources */,
 				49BA512226411C3B00944F72 /* DozeHistoryLayout.storyboard in Resources */,
 				49BA51322641F57800944F72 /* DozeDetailSizeUnitHeader.xib in Resources */,
@@ -1566,6 +1579,7 @@
 				497A8F0A24748E88001BEDCA /* SettingsManager.swift in Sources */,
 				4941D731237E13DC00ED84B5 /* DataWeightRecord.swift in Sources */,
 				4916451423EE4C410077731D /* TweakDetailViewModel.swift in Sources */,
+				49FF226526583DB700ED848B /* AlertBusyBar.swift in Sources */,
 				492EEB102568551B00543AF5 /* DateManager.swift in Sources */,
 				499B82FB239CD4D300E4AD19 /* WeightHistoryViewController.swift in Sources */,
 				498170A123920DD60033882C /* TweakEntryPagerViewController.swift in Sources */,
@@ -1613,9 +1627,11 @@
 				CFF72AFB1FB9A499001CC2E9 /* UnitsType.swift in Sources */,
 				493A8B9A235E93DA00A5009A /* SettingsKeys.swift in Sources */,
 				CFC4A84F1F9761FF00B5AC75 /* DozeEntryPagerViewController.swift in Sources */,
+				49EA7D61265F221800239BCA /* UIApplication.swift in Sources */,
 				4943720D2487702300632053 /* HealthSynchronizer.swift in Sources */,
 				495DAAEB23A06C330036077C /* WeightReport.swift in Sources */,
 				CFD1BA331FCD24920057F549 /* RoundedButton.swift in Sources */,
+				4980CC992654932A00E6307D /* BusyBarViewController.swift in Sources */,
 				49D9B07B240DCA1F000E9822 /* UIView.swift in Sources */,
 				49F8D1DE23906B29003E139F /* TweakEntryDataProvider.swift in Sources */,
 				498170912391B19E0033882C /* TweakEntryRow.swift in Sources */,

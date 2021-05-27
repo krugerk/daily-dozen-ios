@@ -28,7 +28,8 @@ class UtilityTableViewController: UITableViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         navigationController?.navigationBar.barTintColor = ColorManager.style.mainMedium
         navigationController?.navigationBar.tintColor = UIColor.white
-
+        // default height (in points) for each row in the table view
+        self.tableView.rowHeight = 42
     }
 
     // MARK: - Table view data source
@@ -52,10 +53,11 @@ class UtilityTableViewController: UITableViewController {
         
         let str = "\(Strings.utilityDbExportMsg): \"\(backupFilename)\"."
         
-        let alert = UIAlertController(title: "", message: str, preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "", message: str, preferredStyle: .alert)
         let okAction = UIAlertAction(title: Strings.utilityConfirmOK, style: .default, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
+        //self.parent?.present(alert, animated: true, completion: nil)
         
         //let activityViewController = UIActivityViewController(
         //    activityItems: [URL.inDocuments(filename: backupFilename)],
@@ -86,7 +88,7 @@ class UtilityTableViewController: UITableViewController {
     }
     
     @IBAction func doUtilitySettingsClearBtn(_ sender: UIButton) {
-        let alert = UIAlertController(title: "", message: Strings.utilitySettingsClearMsg, preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "", message: Strings.utilitySettingsClearMsg, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: Strings.utilityConfirmCancel, style: .cancel, handler: nil)
         alert.addAction(cancelAction)
         let clearAction = UIAlertAction(title: Strings.utilityConfirmClear, style: .destructive) { (_: UIAlertAction) -> Void in
@@ -148,7 +150,7 @@ class UtilityTableViewController: UITableViewController {
         )
         #endif
         
-        let alert = UIAlertController(title: "", message: str, preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "", message: str, preferredStyle: .alert)
         let okAction = UIAlertAction(title: Strings.utilityConfirmOK, style: .default, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
@@ -157,7 +159,7 @@ class UtilityTableViewController: UITableViewController {
     // MARK: - Test Database
     
     @IBAction func doUtilityTestClearHistoryBtn(_ sender: UIButton) {
-        let alert = UIAlertController(title: "", message: Strings.utilityTestHistoryClearMsg, preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "", message: Strings.utilityTestHistoryClearMsg, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: Strings.utilityConfirmCancel, style: .cancel, handler: nil)
         alert.addAction(cancelAction)
         let clearAction = UIAlertAction(title: Strings.utilityConfirmClear, style: .destructive) { (_: UIAlertAction) -> Void in
@@ -182,15 +184,41 @@ class UtilityTableViewController: UITableViewController {
     }
     
     /// "Simulate Progress"
+    var debugFlag = true
     @IBAction func doUtilityTestGenerateStreaksBtn(_ sender: UIButton) {
-        let alert = UIAlertController(title: "", message: Strings.utilityTestStreaksMsg, preferredStyle: .actionSheet)
+        if debugFlag {
+            let busyBar = AlertBusyBar(parent: self)
+            busyBar.setText("Generate Streaks Test")
+            busyBar.setProgress(0.4)
+            busyBar.show()
+            return
+        }
+        
+        let alert = UIAlertController(title: "", message: Strings.utilityTestStreaksMsg, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: Strings.utilityConfirmCancel, style: .cancel, handler: nil)
         alert.addAction(cancelAction)
         let clearAction = UIAlertAction(title: Strings.utilityConfirmOK, style: .destructive) { (_: UIAlertAction) -> Void in
-            DatabaseBuiltInTest.shared.doGenerateDBStreaksBIT()
+            DispatchQueue.main.async(execute: {
+                let busyBar = AlertBusyBar(parent: self)
+                busyBar.setText("Generate Streaks")
+                busyBar.show()
+                DatabaseBuiltInTest.shared.doGenerateDBStreaksBIT(busyBar: busyBar)
+                busyBar.completed()
+            })
         }
         alert.addAction(clearAction)
-        present(alert, animated: true, completion: nil)
+        
+        //present(alert, animated: true, completion: nil)
+        
+        //self.parent?.present(alert, animated: true, completion: nil)
+        
+        //self.navigationController?.present(alert, animated: true, completion: nil)
+
+        //DispatchQueue.main.async(execute: {
+        //    self.present(alert, animated: true)
+        //})
+        
+        self.view.window?.rootViewController?.present(alert, animated: true, completion: nil)
     }
     
     // MARK: - UI
