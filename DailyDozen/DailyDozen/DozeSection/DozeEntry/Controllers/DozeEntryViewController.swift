@@ -194,17 +194,10 @@ extension DozeEntryViewController: UICollectionViewDelegate {
         // Update Tracker Count
         let countAfter = checkmarkStates.filter { $0 }.count
         
-        let a = AlertBusyBar(parent: self)
-        a.setText("Updating progress")
-        a.setProgress(0.7)
+        let busyAlert = AlertActivityBar()
+        busyAlert.setText("Updating progress") // :NYI:LOCALIZE:
         
-        //view.addSubview(progressView) // :PROGRESS:
-        // :PROGRESS:B: view.addSubview(UpdateProgressView())
-        //progressView.setProgress(0.25, animated: false) // :PROGRESS:
         realm.saveCount(countAfter, date: itemDate, countType: itemType)
-        //progressView.setProgress(0.75, animated: true) // :PROGRESS:
-        //progressView.isHidden = true // :PROGRESS:
-
         tableView.reloadData()
         
         guard !dataProvider.viewModel.itemInfo(rowIndex: rowIndex).isSupplemental else {

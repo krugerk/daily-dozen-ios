@@ -57,7 +57,6 @@ class UtilityTableViewController: UITableViewController {
         let okAction = UIAlertAction(title: Strings.utilityConfirmOK, style: .default, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
-        //self.parent?.present(alert, animated: true, completion: nil)
         
         //let activityViewController = UIActivityViewController(
         //    activityItems: [URL.inDocuments(filename: backupFilename)],
@@ -116,6 +115,7 @@ class UtilityTableViewController: UITableViewController {
     
     func doUtilitySettingsShow() {
         var str = ""
+
         str.append(contentsOf: "reminderCanNotify: ")
         str.append(contentsOf: ": \(UserDefaults.standard.object(forKey: SettingsKeys.reminderCanNotify) ?? "nil")\n")
 
@@ -184,41 +184,26 @@ class UtilityTableViewController: UITableViewController {
     }
     
     /// "Simulate Progress"
-    var debugFlag = true
     @IBAction func doUtilityTestGenerateStreaksBtn(_ sender: UIButton) {
-        if debugFlag {
-            let busyBar = AlertBusyBar(parent: self)
-            busyBar.setText("Generate Streaks Test")
-            busyBar.setProgress(0.4)
-            busyBar.show()
-            return
-        }
-        
         let alert = UIAlertController(title: "", message: Strings.utilityTestStreaksMsg, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: Strings.utilityConfirmCancel, style: .cancel, handler: nil)
         alert.addAction(cancelAction)
-        let clearAction = UIAlertAction(title: Strings.utilityConfirmOK, style: .destructive) { (_: UIAlertAction) -> Void in
-            DispatchQueue.main.async(execute: {
-                let busyBar = AlertBusyBar(parent: self)
-                busyBar.setText("Generate Streaks")
-                busyBar.show()
-                DatabaseBuiltInTest.shared.doGenerateDBStreaksBIT(busyBar: busyBar)
-                busyBar.completed()
-            })
+        let generateAction = UIAlertAction(title: Strings.utilityConfirmOK, style: .destructive) { (_: UIAlertAction) -> Void in
+            let busyAlert = AlertActivityBar()
+            busyAlert.setText("Generating Progress Data") // :NYI:LOCALIZE:
+            busyAlert.show()
+            DispatchQueue.global(qos: .userInitiated).async {
+                // lower priority job here
+                DatabaseBuiltInTest.shared.doGenerateDBStreaksBIT(activityProgress: busyAlert)
+                DispatchQueue.main.async {
+                    // update ui here
+                    busyAlert.completed()
+                }
+            }
         }
-        alert.addAction(clearAction)
-        
-        //present(alert, animated: true, completion: nil)
-        
-        //self.parent?.present(alert, animated: true, completion: nil)
-        
-        //self.navigationController?.present(alert, animated: true, completion: nil)
-
-        //DispatchQueue.main.async(execute: {
-        //    self.present(alert, animated: true)
-        //})
-        
-        self.view.window?.rootViewController?.present(alert, animated: true, completion: nil)
+        alert.addAction(generateAction)
+                
+        UIApplication.shared.topViewController()?.present(alert, animated: true, completion: nil)
     }
     
     // MARK: - UI
