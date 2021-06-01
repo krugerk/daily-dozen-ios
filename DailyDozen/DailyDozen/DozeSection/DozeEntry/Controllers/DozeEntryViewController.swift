@@ -41,14 +41,6 @@ class DozeEntryViewController: UIViewController {
         return "\(dozeDailyStateCount) / \(dozeDailyStateCountMaximum)"
     }
     
-    // progress bar for when updating checkbox history
-    private let progressView: UIProgressView = {
-        let progressView = UIProgressView(progressViewStyle: .default)
-        progressView.trackTintColor = .gray // background
-        progressView.progressTintColor = .systemPink // foreground
-        return progressView
-    }()
-
     // MARK: - UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
