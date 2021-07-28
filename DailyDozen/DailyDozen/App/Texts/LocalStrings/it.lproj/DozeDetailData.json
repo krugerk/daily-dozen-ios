@@ -120,7 +120,7 @@
         },
         {
           "text" : "Concord grapes",
-          "topic" : "topics/concord-grapes"
+          "topic" : "topics/grapes"
         },
         {
           "text" : "Cranberries",
@@ -208,7 +208,7 @@
         },
         {
           "text" : "Peppermint tea",
-          "topic" : ""
+          "topic" : "topics/peppermint"
         },
         {
           "text" : "Rooibos tea",
@@ -628,7 +628,7 @@
         },
         {
           "text" : "Beet greens",
-          "topic" : "topics/beet-greens"
+          "topic" : "topics/beets"
         },
         {
           "text" : "Collard greens",
@@ -1016,7 +1016,7 @@
         },
         {
           "text" : "Purple potatoes",
-          "topic" : "topics/purple-potatoes"
+          "topic" : "topics/potatoes"
         },
         {
           "text" : "Pumpkin",
