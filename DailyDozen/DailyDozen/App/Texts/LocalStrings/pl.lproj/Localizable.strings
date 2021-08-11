@@ -365,7 +365,7 @@
 "info_app_about_overview" = "Korzystaj z tej aplikacji codziennie, aby śledzić żywność i porady, które polecam dla optymalnego zdrowia i długowieczności w moich książkach „Jak nie umrzeć przedwcześni” i „How Not to Diet”.";
 
 /* Info About: version number */
-"info_app_about_version" = "wersja 3.2.7";
+"info_app_about_version" = "wersja 3.2.11";
 
 /* Info About: open source software credits */
 "info_app_about_oss_credits" = "Używane są następujące biblioteki open source: RealmSwift, Charts, FSCalendar, SimpleAnimation i ActiveLabel.";

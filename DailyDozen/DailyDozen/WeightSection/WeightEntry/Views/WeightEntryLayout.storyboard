@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tz1-ri-aeh">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,26 +11,26 @@
             <objects>
                 <viewController storyboardIdentifier="WeightEntryLayoutID" id="tz1-ri-aeh" customClass="WeightEntryViewController" customModule="DailyDozen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d7q-BO-nhL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morning (upon waking)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCp-N8-5Uc">
-                                <rect key="frame" x="10" y="10" width="300" height="21.5"/>
+                                <rect key="frame" x="10" y="10" width="580" height="21.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gIb-kj-REZ" userLabel="AM Time Stack View">
-                                <rect key="frame" x="10" y="41.5" width="300" height="34"/>
+                                <rect key="frame" x="10" y="41.5" width="580" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBJ-Im-BZk" userLabel="TimeAMLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="145" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-JE-Xra">
-                                        <rect key="frame" x="155" y="0.0" width="145" height="34"/>
+                                        <rect key="frame" x="295" y="0.0" width="285" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -42,16 +40,16 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="E11-KB-6RL" userLabel="AM Weight Stack View">
-                                <rect key="frame" x="10" y="80.5" width="300" height="34"/>
+                                <rect key="frame" x="10" y="80.5" width="580" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="lbs." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgz-om-dEk" userLabel="WeightAMLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="145" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="bbx-Qc-Tgp">
-                                        <rect key="frame" x="155" y="0.0" width="145" height="34"/>
+                                        <rect key="frame" x="295" y="0.0" width="285" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <connections>
@@ -64,10 +62,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="nDi-0z-LlH" userLabel="AM Clear Save">
-                                <rect key="frame" x="120" y="119.5" width="80" height="30"/>
+                                <rect key="frame" x="120" y="119.5" width="360" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRG-eE-YhG" userLabel="ClearAM">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="30"/>
                                         <state key="normal" title="Clear"/>
                                         <connections>
                                             <action selector="clearWeightAMButtonPressed:" destination="tz1-ri-aeh" eventType="touchUpInside" id="MNu-JR-ro6"/>
@@ -76,22 +74,22 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evening (right before bed)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77g-xa-ali">
-                                <rect key="frame" x="10" y="164.5" width="300" height="21.5"/>
+                                <rect key="frame" x="10" y="164.5" width="580" height="21.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="E9m-JH-ZcT" userLabel="PM Time Stack View">
-                                <rect key="frame" x="10" y="196" width="300" height="34"/>
+                                <rect key="frame" x="10" y="196" width="580" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3G-kp-d2S" userLabel="TimePMLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="145" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="cVd-c3-qI1">
-                                        <rect key="frame" x="155" y="0.0" width="145" height="34"/>
+                                        <rect key="frame" x="295" y="0.0" width="285" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -101,16 +99,16 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eFn-rL-ZdX" userLabel="PM Weight Stack View">
-                                <rect key="frame" x="10" y="235" width="300" height="34"/>
+                                <rect key="frame" x="10" y="235" width="580" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lbs." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zV0-lA-zHj" userLabel="WeightPMLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="145" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="EoK-qo-DeG">
-                                        <rect key="frame" x="155" y="0.0" width="145" height="34"/>
+                                        <rect key="frame" x="295" y="0.0" width="285" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <connections>
@@ -123,10 +121,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="gUy-g3-0It" userLabel="PM Clear Save">
-                                <rect key="frame" x="120" y="274" width="80" height="30"/>
+                                <rect key="frame" x="120" y="274" width="360" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7l0-os-Oqt" userLabel="ClearPM">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="30"/>
                                         <state key="normal" title="Clear"/>
                                         <connections>
                                             <action selector="clearWeightPMButtonPressed:" destination="tz1-ri-aeh" eventType="touchUpInside" id="dUd-vh-uDg"/>
@@ -171,11 +169,11 @@
                         <outlet property="labelEvening" destination="77g-xa-ali" id="qUk-PQ-5lp"/>
                         <outlet property="labelMorning" destination="xCp-N8-5Uc" id="h2L-8Z-hra"/>
                         <outlet property="labelPmTime" destination="g3G-kp-d2S" id="EJ8-cM-Pba"/>
-                        <outlet property="timeAMInput" destination="0Oz-JE-Xra" id="wFh-dW-0Hd"/>
-                        <outlet property="timePMInput" destination="cVd-c3-qI1" id="vCb-nG-JmQ"/>
-                        <outlet property="weightAM" destination="bbx-Qc-Tgp" id="BVp-bo-8sN"/>
+                        <outlet property="timeAMEntry" destination="0Oz-JE-Xra" id="wFh-dW-0Hd"/>
+                        <outlet property="timePMEntry" destination="cVd-c3-qI1" id="vCb-nG-JmQ"/>
+                        <outlet property="weightAMEntry" destination="bbx-Qc-Tgp" id="BVp-bo-8sN"/>
                         <outlet property="weightAMLabel" destination="Tgz-om-dEk" id="gAl-6x-Xgw"/>
-                        <outlet property="weightPM" destination="EoK-qo-DeG" id="1YS-Yo-CBl"/>
+                        <outlet property="weightPMEntry" destination="EoK-qo-DeG" id="1YS-Yo-CBl"/>
                         <outlet property="weightPMLabel" destination="zV0-lA-zHj" id="eKZ-ml-bnp"/>
                     </connections>
                 </viewController>

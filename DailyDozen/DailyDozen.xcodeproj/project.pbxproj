@@ -92,11 +92,13 @@
 		49BA514526424A3800944F72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BA514426424A3800944F72 /* Main.storyboard */; };
 		49BA51472642543B00944F72 /* SettingsLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BA51462642543B00944F72 /* SettingsLayout.storyboard */; };
 		49C646CB236F4A46000DA8DC /* UtilityLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C646CA236F4A46000DA8DC /* UtilityLayout.storyboard */; };
+		49CA08A626C3455C002D9F66 /* UnitsUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA08A526C3455C002D9F66 /* UnitsUtility.swift */; };
 		49D6448C245CEC3300814AD5 /* HealthWeightRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D6448B245CEC3300814AD5 /* HealthWeightRecord.swift */; };
 		49D9B07B240DCA1F000E9822 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9B07A240DCA1F000E9822 /* UIView.swift */; };
 		49DACC20266039D40064CD51 /* AlertActivitySpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DACC1F266039D40064CD51 /* AlertActivitySpinner.swift */; };
 		49DB104D238E255D00E77E52 /* DozeEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB104C238E255D00E77E52 /* DozeEntryViewModel.swift */; };
 		49DB104F238E257D00E77E52 /* TweakEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB104E238E257D00E77E52 /* TweakEntryViewModel.swift */; };
+		49E936C926C2234800810DE9 /* DailyDozenUnitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E936C826C2234800810DE9 /* DailyDozenUnitsTests.swift */; };
 		49EA7D61265F221800239BCA /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EA7D60265F221800239BCA /* UIApplication.swift */; };
 		49F0377B233AD9B600FFD2EE /* UIButtonCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F0377A233AD9B600FFD2EE /* UIButtonCheckbox.swift */; };
 		49F66B74258874EB00002DB2 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F66B73258874EB00002DB2 /* UITextField.swift */; };
@@ -419,11 +421,13 @@
 		49BA51462642543B00944F72 /* SettingsLayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsLayout.storyboard; sourceTree = "<group>"; };
 		49BB8C6A237373840047AFA4 /* DailyDozen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyDozen.entitlements; sourceTree = "<group>"; };
 		49C646CA236F4A46000DA8DC /* UtilityLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UtilityLayout.storyboard; sourceTree = "<group>"; };
+		49CA08A526C3455C002D9F66 /* UnitsUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsUtility.swift; sourceTree = "<group>"; };
 		49D6448B245CEC3300814AD5 /* HealthWeightRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthWeightRecord.swift; sourceTree = "<group>"; };
 		49D9B07A240DCA1F000E9822 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		49DACC1F266039D40064CD51 /* AlertActivitySpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertActivitySpinner.swift; sourceTree = "<group>"; };
 		49DB104C238E255D00E77E52 /* DozeEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DozeEntryViewModel.swift; sourceTree = "<group>"; };
 		49DB104E238E257D00E77E52 /* TweakEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweakEntryViewModel.swift; sourceTree = "<group>"; };
+		49E936C826C2234800810DE9 /* DailyDozenUnitsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDozenUnitsTests.swift; sourceTree = "<group>"; };
 		49EA7D60265F221800239BCA /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		49F0377A233AD9B600FFD2EE /* UIButtonCheckbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonCheckbox.swift; sourceTree = "<group>"; };
 		49F66B73258874EB00002DB2 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
@@ -873,6 +877,7 @@
 			isa = PBXGroup;
 			children = (
 				498A2278237CD81F007AF5FB /* DailyDozenTests.swift */,
+				49E936C826C2234800810DE9 /* DailyDozenUnitsTests.swift */,
 				498A227A237CD81F007AF5FB /* Info.plist */,
 				4966D7FA237DE9D3004F3A20 /* Resources */,
 			);
@@ -1160,6 +1165,7 @@
 				CFF72AFF1FB9BB70001CC2E9 /* LinkSettings.plist */,
 				495FA4202453EEF200DE3E58 /* LogService.swift */,
 				CFF72AFA1FB9A499001CC2E9 /* UnitsType.swift */,
+				49CA08A526C3455C002D9F66 /* UnitsUtility.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -1530,6 +1536,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				498A2279237CD81F007AF5FB /* DailyDozenTests.swift in Sources */,
+				49E936C926C2234800810DE9 /* DailyDozenUnitsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1618,6 +1625,7 @@
 				497A8F0C2474AFC8001BEDCA /* DataWeightValues.swift in Sources */,
 				CFC060931FBC57C800A901A5 /* DozeEntrySections.swift in Sources */,
 				CF5B28B11FA0A2C500D57A48 /* DozeItemStateCheckbox.swift in Sources */,
+				49CA08A626C3455C002D9F66 /* UnitsUtility.swift in Sources */,
 				CFBEE2321FDE963D005C0F45 /* InfoMenuAboutTableVC.swift in Sources */,
 				CF12918F1FC42DD300D1C17E /* DateCell.swift in Sources */,
 				CF2680021FB477AD004A6200 /* Date.swift in Sources */,
@@ -2067,7 +2075,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/DailyDozen/App/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 3.3.0;
+				MARKETING_VERSION = 3.2.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nutritionfacts.dailydozen.testml;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2089,7 +2097,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/DailyDozen/App/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 3.3.0;
+				MARKETING_VERSION = 3.2.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nutritionfacts.dailydozen.testml;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
