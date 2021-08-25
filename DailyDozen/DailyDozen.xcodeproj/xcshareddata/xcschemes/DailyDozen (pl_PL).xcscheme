@@ -38,7 +38,8 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       language = "pl"
       region = "PL"
-      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      onlyGenerateCoverageForSpecifiedTargets = "YES"
+      localizableStringsDataGatheringEnabled = "YES">
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -68,6 +69,11 @@
                BlueprintName = "DailyDozenUITests"
                ReferencedContainer = "container:DailyDozen.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "DailyDozenUITests/testLaunchPerformance()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

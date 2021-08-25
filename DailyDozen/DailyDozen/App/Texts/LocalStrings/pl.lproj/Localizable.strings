@@ -350,10 +350,10 @@
 "setting_doze_tweak_footer" = "Dla samego zdrowia użyj „Tylko Codzienny Tuzin”. Dla zdrowia i utraty wagi użyj „Codzienny Tuzin + 21 Adaptacji”.";
 
 /* Settings: units choice footer text */
-"settings_units_choice_footer" = "Ustaw jeden typ jednostek dla aplikacji lub aktywuj przełącznie przycisku w „Jednostki:”.";
+"setting_units_choice_footer" = "Ustaw jeden typ jednostek dla aplikacji lub aktywuj przełącznie przycisku w „Jednostki:”.";
 
 /* Settings: "Advanced Utilities" */
-"settings_advanced_utilities" = "Zaawansowane narzędzia";
+"setting_util_advanced" = "Zaawansowane narzędzia";
 
 /* Info About: "Welcome to my Daily Dozen!" */
 "info_app_about_welcome" = "Witaj w moim Codzienny Tuzin!";

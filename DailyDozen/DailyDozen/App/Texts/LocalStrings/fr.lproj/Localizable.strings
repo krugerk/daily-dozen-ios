@@ -224,10 +224,10 @@
 "setting_health_weight_txt" = "For Health and Weight Loss";
 
 /* Settings: "Advanced Utilities" */
-"settings_advanced_utilities" = "";
+"setting_util_advanced" = "";
 
 /* Settings: units choice footer text */
-"settings_units_choice_footer" = "Set to always be one unit type or enable the 'Units:' toggle button.";
+"setting_units_choice_footer" = "Set to always be one unit type or enable the 'Units:' toggle button.";
 
 /* Class = "UITableViewSection"; headerTitle = "21 Tweaks Visibility"; ObjectID = "WdR-XV-IyP"; */
 "settings.tweak.header" = "21 Tweak Visibility";

@@ -231,10 +231,10 @@ Only";
 "setting_doze_tweak_footer" = "For health alone, use 'Daily Dozen Only'. For health and weight loss use 'Daily Dozen + 21 Tweaks'.";
 
 /* Settings: units choice footer text */
-"settings_units_choice_footer" = "Set to always be one unit type or enable the 'Units:' toggle button.";
+"setting_units_choice_footer" = "Set to always be one unit type or enable the 'Units:' toggle button.";
 
 /* Settings: "Advanced Utilities" */
-"settings_advanced_utilities" = "Advanced Utilities";
+"setting_util_advanced" = "Advanced Utilities";
 
 /* Info About: "Welcome to my Daily Dozen!" */
 "info_app_about_welcome" = "Welcome to my Daily Dozen!";

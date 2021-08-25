@@ -303,10 +303,10 @@
 "setting_doze_tweak_footer" = "Solo para la salud, use \"Docena Diaria solamente\". Para la salud y la pérdida de peso, use \"Docena Diaria + 21 Ajustes\".";
 
 /* Settings: units choice footer text */
-"settings_units_choice_footer" = "Configure siempre un tipo de unidad o active el botón de alternancia 'Unidades:'.";
+"setting_units_choice_footer" = "Configure siempre un tipo de unidad o active el botón de alternancia 'Unidades:'.";
 
 /* Settings: "Advanced Utilities" */
-"settings_advanced_utilities" = "Utilidades Avanzadas";
+"setting_util_advanced" = "Utilidades Avanzadas";
 
 /* Info About: "Welcome to my Daily Dozen!" */
 "info_app_about_welcome" = "¡Bienvenido a Mi Docena Diaria!";
