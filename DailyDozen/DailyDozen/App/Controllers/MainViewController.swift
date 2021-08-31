@@ -171,7 +171,7 @@ class MainViewController: UIViewController {
                 image: UIImage(named: "ic_tabapp_21tweaks"),
                 tag: 1
             )
-            tabTweakItem.accessibilityIdentifier = "navtab_tweaks_access"
+            tabTweakItem.accessibilityIdentifier = "navtab_tweak_access"
             tabTweaksViewController.tabBarItem = tabTweakItem
             controllerArray.append(tabTweaksViewController)
         }

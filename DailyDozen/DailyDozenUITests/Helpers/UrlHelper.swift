@@ -1,5 +1,5 @@
 //
-//  UITestsHelper.swift
+//  UrlHelper.swift
 //  DailyDozenUITests
 //
 //  Copyright © 2021 Nutritionfacts.org. All rights reserved.
@@ -8,9 +8,9 @@
 import XCTest
 
 /// Manages paths base/locale/device/topic_timestamp for screenshots
-struct UITestsHelper {
+struct UrlHelper {
     // singleton
-    static let shared = UITestsHelper()
+    static let shared = UrlHelper()
     // properties
     private let _fm = FileManager.default
     private let _timestamp: String
@@ -30,7 +30,7 @@ struct UITestsHelper {
 
         #if targetEnvironment(simulator)
         guard let path = environment["XCTestBundlePath"] else {
-            fatalError("UITestsHelper:FAIL: could not find XCTestBundlePath")
+            fatalError("UrlHelper:FAIL: could not find XCTestBundlePath")
         }
         
         let url = URL(fileURLWithPath: path, isDirectory: true)
@@ -50,7 +50,7 @@ struct UITestsHelper {
             _urlBase = url
             print("\nSCREENSHOTS:\n\(_urlBase.path)")
         } catch {
-            fatalError("UITestsHelper:FAIL: init /Screenshots/ \(error)")
+            fatalError("UrlHelper:FAIL: init /Screenshots/ \(error)")
         }
 
         // Setup …/Screenshots/LOCALE/ directory
@@ -61,7 +61,7 @@ struct UITestsHelper {
         do {
             try _fm.createDirectory(at: _urlLocale, withIntermediateDirectories: true)
         } catch {
-            fatalError("UITestsHelper:FAIL: could create /dirLocale/ \(error)")
+            fatalError("UrlHelper:FAIL: could create /dirLocale/ \(error)")
         }   
         
         // Print info
@@ -96,7 +96,7 @@ struct UITestsHelper {
         do {
             try _fm.createDirectory(at: url, withIntermediateDirectories: true)
         } catch {
-            fatalError("UITestsHelper:FAIL: could create /dirNamedDevice/ \(error)")
+            fatalError("UrlHelper:FAIL: could create /dirNamedDevice/ \(error)")
         }
         return url
     }
@@ -106,7 +106,7 @@ struct UITestsHelper {
         do {
             try _fm.createDirectory(at: url, withIntermediateDirectories: true)
         } catch {
-            fatalError("UITestsHelper:FAIL: /dirTopic/ \(error)")
+            fatalError("UrlHelper:FAIL: /dirTopic/ \(error)")
         }   
         return url
     }
@@ -162,15 +162,20 @@ struct UITestsHelper {
     
     func writeScreenshot(_ screenshot: XCUIScreenshot, dir: URL, name: String) {
         #if targetEnvironment(simulator)
-        let png: Data = screenshot.pngRepresentation
-        let url = dir.appendingPathComponent("\(name).png")
-        
-        try? png.write(to: url)
-        
+        let pngData: Data = screenshot.pngRepresentation
+        writeScreenshot(data: pngData, dir: dir, name: name)
         #else
         return
-        
         #endif
     }
     
+    func writeScreenshot(data: Data, dir: URL, name: String) {
+        #if targetEnvironment(simulator)
+        let url = dir.appendingPathComponent(name)
+        try? data.write(to: url)        
+        #else
+        return
+        #endif
+    }
+
 }
