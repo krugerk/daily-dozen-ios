@@ -180,10 +180,10 @@
 "reminder.settings.vibrate" = "Vibración";
 
 /* 'On' as in 'On or Off' */
-"reminder.state.on"="On";
+"reminder.state.on"="encendido";
 
 /* 'Off' as in 'On or Off' */
-"reminder.state.off"="Off";
+"reminder.state.off"="apagado";
 
 /* Class = "UITableViewSection"; headerTitle = "Measurement Units"; ObjectID = "IFs-g0-SPV"; */
 "settings.units.header" = "Unidades de medida";
@@ -338,5 +338,14 @@
 
 /* Item History Legend: "Some completed" */
 "item_history_completed_some" = "Algunas Porciones";
+
+/* Settings: units control segment 0 "Imperial" */
+"settings_units_0_imperial" = "Imperial";
+
+/* Settings: units control segment 1 "Metric" */
+"settings_units_1_metric" = "Métrico";
+
+/* Settings: units control segment 2 "Toggle Units" */
+"settings_units_2_toggle" = "Toggle Units";
 
 /* file end */

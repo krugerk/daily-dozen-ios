@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "41BFC07F-D5C7-43E7-88AF-5842CA03E61E",
+      "name" : "Spanish",
+      "options" : {
+        "language" : "es",
+        "region" : "ES"
+      }
+    },
+    {
+      "id" : "80FD21FD-E7E2-4FF9-A231-B82BF5DB6001",
+      "name" : "Polish",
+      "options" : {
+        "language" : "pl",
+        "region" : "PL"
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:DailyDozen.xcodeproj",
+        "identifier" : "498A2275237CD81F007AF5FB",
+        "name" : "DailyDozenTests"
+      }
+    }
+  ],
+  "version" : 1
+}

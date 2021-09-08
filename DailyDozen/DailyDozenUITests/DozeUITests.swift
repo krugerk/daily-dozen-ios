@@ -38,6 +38,8 @@ class DozeUITests: XCTestCase {
         
         scrollHelper.setApp(app)
         snapHelper.setup(app: app)
+        scrollHelper.printAccessTree()
+        print("•• setUpWithError() completed")
     }
     
     /// Called after each test method invocation

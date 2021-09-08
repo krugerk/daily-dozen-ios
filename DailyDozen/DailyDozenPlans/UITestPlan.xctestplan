@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "9332B62A-4757-43DB-9FA1-3A4B5D68AD01",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:DailyDozen.xcodeproj",
+        "identifier" : "498A2283237CD88A007AF5FB",
+        "name" : "DailyDozenUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

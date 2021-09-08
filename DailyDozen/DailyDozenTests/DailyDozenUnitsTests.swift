@@ -5,6 +5,8 @@
 //  Copyright © 2021 Nutritionfacts.org. All rights reserved.
 //
 
+import Foundation
+
 import XCTest
 @testable import DailyDozen // module
 

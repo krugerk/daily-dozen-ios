@@ -269,4 +269,13 @@ Only";
 /* Item History Legend: "Some completed" */
 "item_history_completed_some" = "Some servings";
 
+/* Settings: units control segment 0 "Imperial" */
+"settings_units_0_imperial" = "Imperial";
+
+/* Settings: units control segment 1 "Metric" */
+"settings_units_1_metric" = "Metric";
+
+/* Settings: units control segment 2 "Toggle Units" */
+"settings_units_2_toggle" = "Toggle Units";
+
 /* file end */

@@ -7,7 +7,7 @@
 
 import XCTest
 
-/// awaitArrival(forElement: app.staticTexts["Some content"], timeout: 5)
+/// awaitArrival(element: app.staticTexts["Some content"], timeout: 5)
 extension XCTestCase {
     func awaitArrival(element: XCUIElement, timeout: TimeInterval) {
         let predicate = NSPredicate(format: "exists == 1")

@@ -69,6 +69,36 @@
                ReferencedContainer = "container:DailyDozen.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "49EC6E7926E70EC400F185E9"
+               BuildableName = "FirstLaunchTests.xctest"
+               BlueprintName = "FirstLaunchTests"
+               ReferencedContainer = "container:DailyDozen.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "498DDCB126E71261001DCE17"
+               BuildableName = "DailyDozenLaunchTests.xctest"
+               BlueprintName = "DailyDozenLaunchTests"
+               ReferencedContainer = "container:DailyDozen.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "498DDCBF26E712E2001DCE17"
+               BuildableName = "DailyDozenStartTests.xctest"
+               BlueprintName = "DailyDozenStartTests"
+               ReferencedContainer = "container:DailyDozen.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
