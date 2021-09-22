@@ -46,6 +46,9 @@
 		4959AD7926DB131C007E8BAB /* MapHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4959AD7826DB131C007E8BAB /* MapHelperTests.swift */; };
 		4959AD7B26DB1326007E8BAB /* MapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4959AD7626DABE3A007E8BAB /* MapHelper.swift */; };
 		4959AD7E26DB69C3007E8BAB /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4959AD7D26DB69C3007E8BAB /* XCTestCase.swift */; };
+		495D144626EBBA64009C5273 /* DailyDozenUIStartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495D144526EBBA64009C5273 /* DailyDozenUIStartTests.swift */; };
+		495D144D26EBBA6D009C5273 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4959AD7D26DB69C3007E8BAB /* XCTestCase.swift */; };
+		495D144E26EBBA7D009C5273 /* ScrollHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EDB7226D9E3F600283CCC /* ScrollHelper.swift */; };
 		495DAAEB23A06C330036077C /* WeightReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DAAEA23A06C330036077C /* WeightReport.swift */; };
 		495FA4212453EEF200DE3E58 /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495FA4202453EEF200DE3E58 /* LogService.swift */; };
 		4964604623AC524700FBD976 /* PopupPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964604523AC524700FBD976 /* PopupPickerView.swift */; };
@@ -68,7 +71,6 @@
 		49821BAA2383727D006F166E /* DailyTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49821BA92383727D006F166E /* DailyTracker.swift */; };
 		498A2279237CD81F007AF5FB /* DailyDozenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498A2278237CD81F007AF5FB /* DailyDozenTests.swift */; };
 		498D76A423709F9D00B5DF06 /* UtilityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D76A323709F9D00B5DF06 /* UtilityTableViewController.swift */; };
-		498DDCC326E712E2001DCE17 /* DailyDozenStartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498DDCC226E712E2001DCE17 /* DailyDozenStartTests.swift */; };
 		498F7244239D8B5C004E501B /* WeightHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498F7243239D8B5C004E501B /* WeightHistoryViewModel.swift */; };
 		498F7246239D90E2004E501B /* WeightEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498F7245239D90E2004E501B /* WeightEntryViewController.swift */; };
 		498F724D239E08C0004E501B /* FirstLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498F724C239E08C0004E501B /* FirstLaunchViewController.swift */; };
@@ -158,6 +160,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		495D144826EBBA64009C5273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFE698301F974B9700CD7905 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFE698371F974B9700CD7905;
+			remoteInfo = DailyDozen;
+		};
 		498A227B237CD81F007AF5FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CFE698301F974B9700CD7905 /* Project object */;
@@ -166,13 +175,6 @@
 			remoteInfo = DailyDozen;
 		};
 		498A2289237CD88A007AF5FB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CFE698301F974B9700CD7905 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CFE698371F974B9700CD7905;
-			remoteInfo = DailyDozen;
-		};
-		498DDCC526E712E2001DCE17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CFE698301F974B9700CD7905 /* Project object */;
 			proxyType = 1;
@@ -390,6 +392,9 @@
 		4959AD7626DABE3A007E8BAB /* MapHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHelper.swift; sourceTree = "<group>"; };
 		4959AD7826DB131C007E8BAB /* MapHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHelperTests.swift; sourceTree = "<group>"; };
 		4959AD7D26DB69C3007E8BAB /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		495D144326EBBA64009C5273 /* DailyDozenUIStartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyDozenUIStartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		495D144526EBBA64009C5273 /* DailyDozenUIStartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDozenUIStartTests.swift; sourceTree = "<group>"; };
+		495D144726EBBA64009C5273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495DAAEA23A06C330036077C /* WeightReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightReport.swift; sourceTree = "<group>"; };
 		495FA4202453EEF200DE3E58 /* LogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
 		4964604523AC524700FBD976 /* PopupPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPickerView.swift; sourceTree = "<group>"; };
@@ -416,12 +421,9 @@
 		498A2284237CD88A007AF5FB /* DailyDozenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyDozenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		498A2288237CD88A007AF5FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		498D76A323709F9D00B5DF06 /* UtilityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTableViewController.swift; sourceTree = "<group>"; };
-		498DDCC026E712E2001DCE17 /* DailyDozenStartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyDozenStartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		498DDCC226E712E2001DCE17 /* DailyDozenStartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDozenStartTests.swift; sourceTree = "<group>"; };
-		498DDCC426E712E2001DCE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		498DDCCA26E71497001DCE17 /* UnitTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTestPlan.xctestplan; sourceTree = "<group>"; };
 		498DDCCB26E714A5001DCE17 /* UITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITestPlan.xctestplan; sourceTree = "<group>"; };
-		498DDCCC26E714C9001DCE17 /* StartTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = StartTestPlan.xctestplan; sourceTree = "<group>"; };
+		498DDCCC26E714C9001DCE17 /* UIStartTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UIStartTestPlan.xctestplan; sourceTree = "<group>"; };
 		498F7243239D8B5C004E501B /* WeightHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightHistoryViewModel.swift; sourceTree = "<group>"; };
 		498F7245239D90E2004E501B /* WeightEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEntryViewController.swift; sourceTree = "<group>"; };
 		498F724C239E08C0004E501B /* FirstLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLaunchViewController.swift; sourceTree = "<group>"; };
@@ -517,6 +519,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		495D144026EBBA64009C5273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		498A2273237CD81F007AF5FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,13 +535,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		498A2281237CD88A007AF5FB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		498DDCBD26E712E2001DCE17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -901,6 +903,15 @@
 			path = WeightSection;
 			sourceTree = "<group>";
 		};
+		495D144426EBBA64009C5273 /* DailyDozenUIStartTests */ = {
+			isa = PBXGroup;
+			children = (
+				495D144526EBBA64009C5273 /* DailyDozenUIStartTests.swift */,
+				495D144726EBBA64009C5273 /* Info.plist */,
+			);
+			path = DailyDozenUIStartTests;
+			sourceTree = "<group>";
+		};
 		498170932391B33B0033882C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -966,15 +977,6 @@
 			path = DailyDozenUITests;
 			sourceTree = "<group>";
 		};
-		498DDCC126E712E2001DCE17 /* DailyDozenStartTests */ = {
-			isa = PBXGroup;
-			children = (
-				498DDCC226E712E2001DCE17 /* DailyDozenStartTests.swift */,
-				498DDCC426E712E2001DCE17 /* Info.plist */,
-			);
-			path = DailyDozenStartTests;
-			sourceTree = "<group>";
-		};
 		498F77C2239D7582003F970F /* WeightHistory */ = {
 			isa = PBXGroup;
 			children = (
@@ -997,8 +999,8 @@
 		49EC6E9326E7110B00F185E9 /* DailyDozenPlans */ = {
 			isa = PBXGroup;
 			children = (
-				498DDCCC26E714C9001DCE17 /* StartTestPlan.xctestplan */,
 				498DDCCA26E71497001DCE17 /* UnitTestPlan.xctestplan */,
+				498DDCCC26E714C9001DCE17 /* UIStartTestPlan.xctestplan */,
 				498DDCCB26E714A5001DCE17 /* UITestPlan.xctestplan */,
 			);
 			path = DailyDozenPlans;
@@ -1188,8 +1190,8 @@
 			children = (
 				CFE6983A1F974B9700CD7905 /* DailyDozen */,
 				49EC6E9326E7110B00F185E9 /* DailyDozenPlans */,
-				498DDCC126E712E2001DCE17 /* DailyDozenStartTests */,
 				498A2277237CD81F007AF5FB /* DailyDozenTests */,
+				495D144426EBBA64009C5273 /* DailyDozenUIStartTests */,
 				498A2285237CD88A007AF5FB /* DailyDozenUITests */,
 				CFE698391F974B9700CD7905 /* Products */,
 				D0E09D1F35AF7D3FF1EA14DC /* Pods */,
@@ -1203,7 +1205,7 @@
 				CFE698381F974B9700CD7905 /* DailyDozen.app */,
 				498A2276237CD81F007AF5FB /* DailyDozenTests.xctest */,
 				498A2284237CD88A007AF5FB /* DailyDozenUITests.xctest */,
-				498DDCC026E712E2001DCE17 /* DailyDozenStartTests.xctest */,
+				495D144326EBBA64009C5273 /* DailyDozenUIStartTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1308,6 +1310,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		495D144226EBBA64009C5273 /* DailyDozenUIStartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495D144A26EBBA64009C5273 /* Build configuration list for PBXNativeTarget "DailyDozenUIStartTests" */;
+			buildPhases = (
+				495D143F26EBBA64009C5273 /* Sources */,
+				495D144026EBBA64009C5273 /* Frameworks */,
+				495D144126EBBA64009C5273 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				495D144926EBBA64009C5273 /* PBXTargetDependency */,
+			);
+			name = DailyDozenUIStartTests;
+			productName = DailyDozenUIStartTests;
+			productReference = 495D144326EBBA64009C5273 /* DailyDozenUIStartTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		498A2275237CD81F007AF5FB /* DailyDozenTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 498A227F237CD81F007AF5FB /* Build configuration list for PBXNativeTarget "DailyDozenTests" */;
@@ -1346,24 +1366,6 @@
 			productReference = 498A2284237CD88A007AF5FB /* DailyDozenUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		498DDCBF26E712E2001DCE17 /* DailyDozenStartTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 498DDCC726E712E2001DCE17 /* Build configuration list for PBXNativeTarget "DailyDozenStartTests" */;
-			buildPhases = (
-				498DDCBC26E712E2001DCE17 /* Sources */,
-				498DDCBD26E712E2001DCE17 /* Frameworks */,
-				498DDCBE26E712E2001DCE17 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				498DDCC626E712E2001DCE17 /* PBXTargetDependency */,
-			);
-			name = DailyDozenStartTests;
-			productName = DailyDozenStartTests;
-			productReference = 498DDCC026E712E2001DCE17 /* DailyDozenStartTests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		CFE698371F974B9700CD7905 /* DailyDozen */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFE6984A1F974B9700CD7905 /* Build configuration list for PBXNativeTarget "DailyDozen" */;
@@ -1394,6 +1396,10 @@
 				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = Nutritionfacts.org;
 				TargetAttributes = {
+					495D144226EBBA64009C5273 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CFE698371F974B9700CD7905;
+					};
 					498A2275237CD81F007AF5FB = {
 						CreatedOnToolsVersion = 11.2;
 						ProvisioningStyle = Automatic;
@@ -1402,10 +1408,6 @@
 					498A2283237CD88A007AF5FB = {
 						CreatedOnToolsVersion = 11.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = CFE698371F974B9700CD7905;
-					};
-					498DDCBF26E712E2001DCE17 = {
-						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = CFE698371F974B9700CD7905;
 					};
 					CFE698371F974B9700CD7905 = {
@@ -1471,14 +1473,21 @@
 			projectRoot = "";
 			targets = (
 				CFE698371F974B9700CD7905 /* DailyDozen */,
-				498DDCBF26E712E2001DCE17 /* DailyDozenStartTests */,
 				498A2275237CD81F007AF5FB /* DailyDozenTests */,
+				495D144226EBBA64009C5273 /* DailyDozenUIStartTests */,
 				498A2283237CD88A007AF5FB /* DailyDozenUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		495D144126EBBA64009C5273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		498A2274237CD81F007AF5FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1488,13 +1497,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		498A2282237CD88A007AF5FB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		498DDCBE26E712E2001DCE17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1656,6 +1658,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		495D143F26EBBA64009C5273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495D144E26EBBA7D009C5273 /* ScrollHelper.swift in Sources */,
+				495D144D26EBBA6D009C5273 /* XCTestCase.swift in Sources */,
+				495D144626EBBA64009C5273 /* DailyDozenUIStartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		498A2272237CD81F007AF5FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1682,14 +1694,6 @@
 				4933C35B26D9C5DC00E03E37 /* InfoMenuUITests.swift in Sources */,
 				491EDB7326D9E3F600283CCC /* ScrollHelper.swift in Sources */,
 				49D8856F26D1889B002BD50B /* UrlHelper.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		498DDCBC26E712E2001DCE17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				498DDCC326E712E2001DCE17 /* DailyDozenStartTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1798,6 +1802,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		495D144926EBBA64009C5273 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFE698371F974B9700CD7905 /* DailyDozen */;
+			targetProxy = 495D144826EBBA64009C5273 /* PBXContainerItemProxy */;
+		};
 		498A227C237CD81F007AF5FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CFE698371F974B9700CD7905 /* DailyDozen */;
@@ -1807,11 +1816,6 @@
 			isa = PBXTargetDependency;
 			target = CFE698371F974B9700CD7905 /* DailyDozen */;
 			targetProxy = 498A2289237CD88A007AF5FB /* PBXContainerItemProxy */;
-		};
-		498DDCC626E712E2001DCE17 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CFE698371F974B9700CD7905 /* DailyDozen */;
-			targetProxy = 498DDCC526E712E2001DCE17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2019,6 +2023,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		495D144B26EBBA64009C5273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MG57YUZL5;
+				INFOPLIST_FILE = DailyDozenUIStartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nutritionfacts.DailyDozenUIStartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DailyDozen;
+			};
+			name = Debug;
+		};
+		495D144C26EBBA64009C5273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MG57YUZL5;
+				INFOPLIST_FILE = DailyDozenUIStartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nutritionfacts.DailyDozenUIStartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DailyDozen;
+			};
+			name = Release;
+		};
 		498A227D237CD81F007AF5FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2CB41DDE201AD844603D7163 /* Pods-DailyDozenTests.debug.xcconfig */;
@@ -2028,7 +2077,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2MG57YUZL5;
 				INFOPLIST_FILE = DailyDozenTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2053,7 +2102,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2MG57YUZL5;
 				INFOPLIST_FILE = DailyDozenTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2075,7 +2124,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2MG57YUZL5;
 				INFOPLIST_FILE = DailyDozenUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2098,7 +2147,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2MG57YUZL5;
 				INFOPLIST_FILE = DailyDozenUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2106,51 +2155,6 @@
 				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.nutritionfacts.apple.DailyDozenUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DailyDozen;
-			};
-			name = Release;
-		};
-		498DDCC826E712E2001DCE17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2MG57YUZL5;
-				INFOPLIST_FILE = DailyDozenStartTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nutritionfacts.DailyDozenStartTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DailyDozen;
-			};
-			name = Debug;
-		};
-		498DDCC926E712E2001DCE17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2MG57YUZL5;
-				INFOPLIST_FILE = DailyDozenStartTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nutritionfacts.DailyDozenStartTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2196,6 +2200,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2210,7 +2215,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2257,6 +2262,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -2265,8 +2271,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -2285,7 +2292,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2MG57YUZL5;
 				INFOPLIST_FILE = "$(SRCROOT)/DailyDozen/App/SupportingFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2310,7 +2317,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2MG57YUZL5;
 				INFOPLIST_FILE = "$(SRCROOT)/DailyDozen/App/SupportingFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2327,6 +2334,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		495D144A26EBBA64009C5273 /* Build configuration list for PBXNativeTarget "DailyDozenUIStartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495D144B26EBBA64009C5273 /* Debug */,
+				495D144C26EBBA64009C5273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		498A227F237CD81F007AF5FB /* Build configuration list for PBXNativeTarget "DailyDozenTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2341,15 +2357,6 @@
 			buildConfigurations = (
 				498A228C237CD88A007AF5FB /* Debug */,
 				498A228D237CD88A007AF5FB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		498DDCC726E712E2001DCE17 /* Build configuration list for PBXNativeTarget "DailyDozenStartTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				498DDCC826E712E2001DCE17 /* Debug */,
-				498DDCC926E712E2001DCE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

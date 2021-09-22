@@ -47,15 +47,6 @@
                title = "Run Script"
                scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;alias datetime=&apos;date &quot;+%Y%m%d_%H%M%S&quot;&apos;&#10;alias datetime_epoch=&apos;date &quot;+%s&quot;&apos;&#10;&#10;export FINDME_FILENAME=&quot;$HOME/Desktop/FINDME_`datetime`.txt&quot;&#10;&#10;echo &quot;### PWD&quot;          &gt; $FINDME_FILENAME&#10;PWD                    &gt;&gt; $FINDME_FILENAME&#10;echo &quot;### ENVIRONMENT&quot; &gt;&gt; $FINDME_FILENAME&#10;env                    &gt;&gt; $FINDME_FILENAME&#10;echo &quot;### EXPORT&quot;      &gt;&gt; $FINDME_FILENAME&#10;export                 &gt;&gt; $FINDME_FILENAME&#10;"
                shellToInvoke = "/bin/sh">
-               <EnvironmentBuildable>
-                  <BuildableReference
-                     BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "498A2275237CD81F007AF5FB"
-                     BuildableName = "DailyDozenTests.xctest"
-                     BlueprintName = "DailyDozenTests"
-                     ReferencedContainer = "container:DailyDozen.xcodeproj">
-                  </BuildableReference>
-               </EnvironmentBuildable>
             </ActionContent>
          </ExecutionAction>
       </PreActions>
@@ -70,14 +61,14 @@
       </CodeCoverageTargets>
       <TestPlans>
          <TestPlanReference
-            reference = "container:DailyDozenPlans/UnitTestPlan.xctestplan"
-            default = "YES">
+            reference = "container:DailyDozenPlans/UnitTestPlan.xctestplan">
          </TestPlanReference>
          <TestPlanReference
             reference = "container:DailyDozenPlans/UITestPlan.xctestplan">
          </TestPlanReference>
          <TestPlanReference
-            reference = "container:DailyDozenPlans/StartTestPlan.xctestplan">
+            reference = "container:DailyDozenPlans/UIStartTestPlan.xctestplan"
+            default = "YES">
          </TestPlanReference>
       </TestPlans>
       <Testables>
@@ -133,6 +124,16 @@
                BlueprintIdentifier = "498DDCBF26E712E2001DCE17"
                BuildableName = "DailyDozenStartTests.xctest"
                BlueprintName = "DailyDozenStartTests"
+               ReferencedContainer = "container:DailyDozen.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "495D144226EBBA64009C5273"
+               BuildableName = "DailyDozenUIStartTests.xctest"
+               BlueprintName = "DailyDozenUIStartTests"
                ReferencedContainer = "container:DailyDozen.xcodeproj">
             </BuildableReference>
          </TestableReference>

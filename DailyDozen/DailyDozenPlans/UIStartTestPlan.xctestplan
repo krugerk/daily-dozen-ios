@@ -15,8 +15,8 @@
     {
       "target" : {
         "containerPath" : "container:DailyDozen.xcodeproj",
-        "identifier" : "498DDCBF26E712E2001DCE17",
-        "name" : "DailyDozenStartTests"
+        "identifier" : "495D144226EBBA64009C5273",
+        "name" : "DailyDozenUIStartTests"
       }
     }
   ],

@@ -60,6 +60,16 @@
                ReferencedContainer = "container:DailyDozen.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "495D144226EBBA64009C5273"
+               BuildableName = "DailyDozenUIStartTests.xctest"
+               BlueprintName = "DailyDozenUIStartTests"
+               ReferencedContainer = "container:DailyDozen.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
