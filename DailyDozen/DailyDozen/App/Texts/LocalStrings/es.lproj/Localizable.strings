@@ -1,49 +1,49 @@
 /* Daily Dozen (proper noun) navigation tab */
-"navtab.doze"="Docena Diaria";
+"navtab.doze" = "Docena Diaria";
 /* 21 Tweaks (proper noun) navigation tab */
-"navtab.tweaks"="21 Ajustes";
+"navtab.tweaks" = "21 Ajustes";
 /* More Information navigation tab */
-"navtab.info"="Información";
+"navtab.info" = "Información";
 /* Preferences (aka Settings, Configuration) navigation tab. Choose word different from 'Tweaks' translation */
-"navtab.preferences"="Configuración";
+"navtab.preferences" = "Configuración";
 
 /* Records: Daily Tally */
-"dateButtonTitle.today"="Hoy";
-"dateBackButtonTitle"="Volver a hoy";
-"historyRecord.movingMean"="Media móvil";
-"historyRecordDoze.heading"="Historial de porciones";
-"historyRecordDoze.legend"="Porciones";
-"historyRecordTweak.heading"="Historial de ajustes";
-"historyRecordTweak.legend"="21 Ajustes";
-"historyRecordWeight.heading"="Historial de peso";
-"historyRecordWeight.titleImperial"="Peso (libras)";
-"historyRecordWeight.titleMetric"="Peso (kg)";
-"historyRecordWeight.legendMorning"="Mañana";
-"historyRecordWeight.legendEvening"="Noche";
-"weightEntry.heading"="Peso";
+"dateButtonTitle.today" = "Hoy";
+"dateBackButtonTitle" = "Volver a hoy";
+"historyRecord.movingMean" = "Media móvil";
+"historyRecordDoze.heading" = "Historial de porciones";
+"historyRecordDoze.legend" = "Porciones";
+"historyRecordTweak.heading" = "Historial de ajustes";
+"historyRecordTweak.legend" = "21 Ajustes";
+"historyRecordWeight.heading" = "Historial de peso";
+"historyRecordWeight.titleImperial" = "Peso (libras)";
+"historyRecordWeight.titleMetric" = "Peso (kg)";
+"historyRecordWeight.legendMorning" = "Mañana";
+"historyRecordWeight.legendEvening" = "Noche";
+"weightEntry.heading" = "Peso";
 
 /* URL path */
-"urlSegment.base"="https://nutritionfacts.org/";
-"urlSegment.lang"="es/";
+"urlSegment.base" = "https://nutritionfacts.org/";
+"urlSegment.lang" = "es/";
 
-"urlSegmentInfoMenu.videos"="es/videos";
-"urlSegmentInfoMenu.book"="es/comer-para-no-morir";
-"urlSegmentInfoMenu.cookbook"="es/libro-de-recetas";
-"urlSegmentInfoMenu.diet"="es/";
-"urlSegmentInfoMenu.challenge"="es/objetivo-la-docena-diaria";
-"urlSegmentInfoMenu.donate"="es/dona-a-nutritionfacts-org";
-"urlSegmentInfoMenu.subscribe"="es/suscribete";
-"urlSegmentInfoMenu.source"="es/open-source";
+"urlSegmentInfoMenu.videos" = "es/videos";
+"urlSegmentInfoMenu.book" = "es/comer-para-no-morir";
+"urlSegmentInfoMenu.cookbook" = "es/libro-de-recetas";
+"urlSegmentInfoMenu.diet" = "es/";
+"urlSegmentInfoMenu.challenge" = "es/objetivo-la-docena-diaria";
+"urlSegmentInfoMenu.donate" = "es/dona-a-nutritionfacts-org";
+"urlSegmentInfoMenu.subscribe" = "es/suscribete";
+"urlSegmentInfoMenu.source" = "es/open-source";
 
-"urlSegmentInfoMenu.team"="es/equipo";
+"urlSegmentInfoMenu.team" = "es/equipo";
 
 /* Units toggle button text: metric measurement system */
-"unitToggle.metric"="Métrico";
+"unitToggle.metric" = "Métrico";
 /* Units toggle button text: imperial measurement system */
-"unitToggle.imperial"="Imperial";
+"unitToggle.imperial" = "Imperial";
 
 /* progress: number '%d' of consecutive days completed. */
-"streakDaysFormat"="%d días";
+"streakDaysFormat" = "%d días";
 
 /* display heading. */
 "dozeBeans.heading" = "Legumbres";
@@ -91,11 +91,11 @@
 "otherVitaminD.heading" = "Vitamina D";
 
 /* doze other info tiltle */
-"dozeOtherInfo.title"="Suplementos";
+"dozeOtherInfo.title" = "Suplementos";
 /* doze other info message */
-"dozeOtherInfo.message"="La vitamina B12 es esencial para la salud, pero no cuenta para las porciones diarias.\n\nLa Vitamina B12 se incluye en esta aplicación para proporcionarte una manera fácil de realizar un seguimiento de su ingesta.";
+"dozeOtherInfo.message" = "La vitamina B12 es esencial para la salud, pero no cuenta para las porciones diarias.\n\nLa Vitamina B12 se incluye en esta aplicación para proporcionarte una manera fácil de realizar un seguimiento de su ingesta.";
 /* doze other info confirm */
-"dozeOtherInfo.confirm"="OK";
+"dozeOtherInfo.confirm" = "OK";
 
 
 /* display heading */
@@ -162,28 +162,28 @@
 "tweakWeightTwice.heading" = "Pesarse dos veces al día";
 
 /* daily_reminder_text alert text */
-"reminder.alert.text"="Actualiza las porciones de hoy";
+"reminder.alert.text" = "Actualiza las porciones de hoy";
 
 /* Daily Reminder (alert title, settings section heading) */
-"reminder.heading"="Recordatorio diario";
+"reminder.heading" = "Recordatorio diario";
 
 /* Enable Reminders (toggle switch label) */
-"reminder.settings.enable"="Activar el recordatorio";
+"reminder.settings.enable" = "Activar el recordatorio";
 
 /* remind_me_at */
-"reminder.settings.time"="Recuerdame a las";
+"reminder.settings.time" = "Recuerdame a las";
 
 /* play_sound */
-"reminder.settings.sound"="Sonido";
+"reminder.settings.sound" = "Sonido";
 
 /* vibrate */
 "reminder.settings.vibrate" = "Vibración";
 
 /* 'On' as in 'On or Off' */
-"reminder.state.on"="encendido";
+"reminder.state.on" = "encendido";
 
 /* 'Off' as in 'On or Off' */
-"reminder.state.off"="apagado";
+"reminder.state.off" = "apagado";
 
 /* Class = "UITableViewSection"; headerTitle = "Measurement Units"; ObjectID = "IFs-g0-SPV"; */
 "settings.units.header" = "Unidades de medida";

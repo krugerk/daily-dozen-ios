@@ -191,7 +191,6 @@
 		4916451523EE4D360077731D /* TweakTextsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakTextsProvider.swift; sourceTree = "<group>"; };
 		4916451723EE4E440077731D /* TweakDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakDetailViewController.swift; sourceTree = "<group>"; };
 		4916451923EE51310077731D /* TweakDetailDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakDetailDataProvider.swift; sourceTree = "<group>"; };
-		4916451E23EE53610077731D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/TweakDetailData.json; sourceTree = "<group>"; };
 		4916452023EE53640077731D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/TweakDetailData.json; sourceTree = "<group>"; };
 		491EDB7226D9E3F600283CCC /* ScrollHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollHelper.swift; sourceTree = "<group>"; };
 		492474A223DB677A00D7D918 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -201,7 +200,6 @@
 		4930360624760CBD00746D49 /* DatabaseMaintainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseMaintainer.swift; sourceTree = "<group>"; };
 		4933A74A23EE267500CE4631 /* DozeTextsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DozeTextsProvider.swift; sourceTree = "<group>"; };
 		4933A74C23EE28C500CE4631 /* DozeDetailInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DozeDetailInfo.swift; sourceTree = "<group>"; };
-		4933A75123EE2BC800CE4631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/DozeDetailData.json; sourceTree = "<group>"; };
 		4933A75323EE2BCB00CE4631 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/DozeDetailData.json; sourceTree = "<group>"; };
 		4933A75423EE39CC00CE4631 /* DozeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DozeDetailViewModel.swift; sourceTree = "<group>"; };
 		4933A75623EE49BB00CE4631 /* TweakDetailInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweakDetailInfo.swift; sourceTree = "<group>"; };
@@ -402,6 +400,8 @@
 		4965208626D6ECD500CE83C0 /* SnapHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapHelper.swift; sourceTree = "<group>"; };
 		4966D7FA237DE9D3004F3A20 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		496917DC238716BD00A9A743 /* RealmManagerLegacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManagerLegacy.swift; sourceTree = "<group>"; };
+		496A66B8270AB13200254531 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/DozeDetailData.json; sourceTree = "<group>"; };
+		496A66B9270AC48B00254531 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/TweakDetailData.json; sourceTree = "<group>"; };
 		497390A823A5941900492D92 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		497390AD23A5D4F800492D92 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		497390AE23A5D4F900492D92 /* SettingsReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsReminderViewController.swift; sourceTree = "<group>"; };
@@ -912,6 +912,15 @@
 			path = DailyDozenUIStartTests;
 			sourceTree = "<group>";
 		};
+		496A66E0270CDC2900254531 /* InfoPlist */ = {
+			isa = PBXGroup;
+			children = (
+				CFE698471F974B9700CD7905 /* Info.plist */,
+				492474A123DB677A00D7D918 /* InfoPlist.strings */,
+			);
+			path = InfoPlist;
+			sourceTree = "<group>";
+		};
 		498170932391B33B0033882C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1233,6 +1242,7 @@
 				CFE6983B1F974B9700CD7905 /* AppDelegate.swift */,
 				CFE698501F974F0F00CD7905 /* Controllers */,
 				CFAAB3751F9F3FCD00B24748 /* Extensions */,
+				496A66E0270CDC2900254531 /* InfoPlist */,
 				4955013623CD453200C72FB3 /* Resources */,
 				CFE698511F974F1800CD7905 /* SupportingFiles */,
 				CF22F07D1FA8ACC300F25B70 /* Texts */,
@@ -1256,8 +1266,6 @@
 		CFE698511F974F1800CD7905 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				CFE698471F974B9700CD7905 /* Info.plist */,
-				492474A123DB677A00D7D918 /* InfoPlist.strings */,
 				CFF72AFD1FB9BAAA001CC2E9 /* LinkService.swift */,
 				CFF72AFF1FB9BB70001CC2E9 /* LinkSettings.plist */,
 				495FA4202453EEF200DE3E58 /* LogService.swift */,
@@ -1823,7 +1831,6 @@
 		4916451F23EE53610077731D /* TweakDetailData.json */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4916451E23EE53610077731D /* Base */,
 				4916452023EE53640077731D /* es */,
 				494F23FC2530EFFF00C99246 /* zh-Hans */,
 				494F24192530F05B00C99246 /* zh-Hant */,
@@ -1866,6 +1873,7 @@
 				494F284A2531065A00C99246 /* pt */,
 				494F28672531070C00C99246 /* sr */,
 				494F2884253107F200C99246 /* sr-Latn */,
+				496A66B9270AC48B00254531 /* en */,
 			);
 			name = TweakDetailData.json;
 			sourceTree = "<group>";
@@ -1923,7 +1931,6 @@
 		4933A75223EE2BC800CE4631 /* DozeDetailData.json */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4933A75123EE2BC800CE4631 /* Base */,
 				4933A75323EE2BCB00CE4631 /* es */,
 				494F23FB2530EFFF00C99246 /* zh-Hans */,
 				494F24182530F05B00C99246 /* zh-Hant */,
@@ -1966,6 +1973,7 @@
 				494F28492531065A00C99246 /* pt */,
 				494F28662531070B00C99246 /* sr */,
 				494F2883253107F200C99246 /* sr-Latn */,
+				496A66B8270AB13200254531 /* en */,
 			);
 			name = DozeDetailData.json;
 			sourceTree = "<group>";
@@ -2291,7 +2299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2MG57YUZL5;
-				INFOPLIST_FILE = "$(SRCROOT)/DailyDozen/App/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DailyDozen/App/InfoPlist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2316,7 +2324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2MG57YUZL5;
-				INFOPLIST_FILE = "$(SRCROOT)/DailyDozen/App/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DailyDozen/App/InfoPlist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
