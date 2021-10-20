@@ -1,137 +1,137 @@
 {
   "itemsDict" : {
     "dozeBeans" : {
-      "heading" : "Beans",
+      "heading" : "Leguminosas",
       "servings" : [
         {
-          "imperial" : "¼ cup of hummus or bean dip",
-          "metric" : "60 g of hummus or bean dip"
+          "imperial" : "¼ xícara de homus ou patê de feijão",
+          "metric" : "60 g de homus ou patê de feijão"
         },
         {
-          "imperial" : "½ cup cooked beans, split peas, lentils, tofu, or tempeh",
-          "metric" : "130 g cooked beans, split peas, lentils, tofu, or tempeh"
+          "imperial" : "½ xícara de feijão, ervilha, lentilha, tofu ou tempê cozidos",
+          "metric" : "130 g de feijão, ervilha, lentilha, tofu ou tempê cozidos"
         },
         {
-          "imperial" : "1 cup of fresh peas or sprouted lentils",
-          "metric" : "150 g of fresh peas or sprouted lentils"
+          "imperial" : "1 xícara de ervilha fresca ou lentilha germinada",
+          "metric" : "150 g de ervilha fresca ou lentilha germinada"
         }
       ],
-      "topic" : "topics/beans",
+      "topic" : "topics\/beans",
       "varieties" : [
         {
-          "text" : "Black beans",
-          "topic" : "topics/black-beans"
+          "text" : "Feijão preto",
+          "topic" : "topics\/black-beans"
         },
         {
-          "text" : "Black-eyed peas",
+          "text" : "Feijão frade",
           "topic" : ""
         },
         {
-          "text" : "Butter beans",
+          "text" : "Feijão branco (lima)",
           "topic" : ""
         },
         {
-          "text" : "Cannellini beans",
+          "text" : "Feijão branco (cannellini)",
           "topic" : ""
         },
         {
-          "text" : "Chickpeas/Garbanzo Beans",
-          "topic" : "topics/chickpeas"
+          "text" : "Grão-de-bico",
+          "topic" : "topics\/chickpeas"
         },
         {
           "text" : "Edamame",
-          "topic" : "topics/edamame"
+          "topic" : "topics\/edamame"
         },
         {
-          "text" : "English peas",
+          "text" : "Ervilha inglesa",
           "topic" : ""
         },
         {
-          "text" : "Great northern beans",
+          "text" : "Feijão branco (great northern)",
           "topic" : ""
         },
         {
-          "text" : "Kidney beans",
-          "topic" : "topics/kidney-beans"
+          "text" : "Feijão vermelho grande",
+          "topic" : "topics\/kidney-beans"
         },
         {
-          "text" : "Lentils (beluga, french, and red varieties)",
-          "topic" : "topics/lentils"
+          "text" : "Lentilha (variedades beluga, francesa e vermelha)",
+          "topic" : "topics\/lentils"
         },
         {
-          "text" : "Miso",
-          "topic" : "topics/miso"
+          "text" : "Missô",
+          "topic" : "topics\/miso"
         },
         {
-          "text" : "Navy beans",
-          "topic" : "topics/navy-beans"
+          "text" : "Feijão branco (navy)",
+          "topic" : "topics\/navy-beans"
         },
         {
-          "text" : "Pinto beans",
-          "topic" : "topics/pinto-beans"
+          "text" : "Feijão carioca\/catarino",
+          "topic" : "topics\/pinto-beans"
         },
         {
-          "text" : "Small red beans",
+          "text" : "Feijão vermelho pequeno",
           "topic" : ""
         },
         {
-          "text" : "Split peas (yellow or green)",
-          "topic" : "topics/split-peas"
+          "text" : "Ervilha seca partida (amarela ou verde)",
+          "topic" : "topics\/split-peas"
         },
         {
-          "text" : "Tempeh",
-          "topic" : "topics/tempeh"
+          "text" : "Tempê",
+          "topic" : "topics\/tempeh"
         }
       ]
     },
     "dozeBerries" : {
-      "heading" : "Berries",
+      "heading" : "Frutas Silvestres",
       "servings" : [
         {
-          "imperial" : "½ cup fresh or frozen",
-          "metric" : "60 g fresh or frozen"
+          "imperial" : "½ xícara de frutas silvestres frescas ou congeladas",
+          "metric" : "60 g de frutas silvestres frescas ou congeladas"
         },
         {
-          "imperial" : "¼ cup dried",
-          "metric" : "40 g dried"
+          "imperial" : "¼ xícara de frutas silvestres secas",
+          "metric" : "40 g de frutas silvestres secas"
         }
       ],
-      "topic" : "topics/berries",
+      "topic" : "topics\/berries",
       "varieties" : [
         {
-          "text" : "Acai berries",
-          "topic" : "topics/acai-berries"
+          "text" : "Açaí",
+          "topic" : "topics\/acai-berries"
         },
         {
-          "text" : "Barberries",
-          "topic" : "topics/barberries"
+          "text" : "Bérberis",
+          "topic" : "topics\/barberries"
         },
         {
-          "text" : "Blackberries",
-          "topic" : "topics/blackberries"
+          "text" : "Amora",
+          "topic" : "topics\/blackberries"
         },
         {
-          "text" : "Blueberries",
-          "topic" : "topics/blueberries"
+          "text" : "Mirtilo",
+          "topic" : "topics\/blueberries"
         },
         {
-          "text" : "Cherries (sweet or tart)",
-          "topic" : "topics/cherries"
+          "text" : "Cereja (doces ou azedas)",
+          "topic" : "topics\/cherries"
         },
         {
-          "text" : "Concord grapes",
-          "topic" : "topics/grapes"
+          "text" : "Uva Concord",
+          "topic" : "topics\/grapes"
         },
         {
-          "text" : "Cranberries",
-          "topic" : "topics/cranberries"
+          "text" : "Arando\/oxicoco",
+          "topic" : "topics\/cranberries"
         },
         {
-          "text" : "Goji berries",
-          "topic" : "topics/goji-berries"
+          "text" : "Goji",
+          "topic" : "topics\/goji-berries"
         },
         {
-          "text" : "Kumquats",
+          "text" : "Kumquat",
           "topic" : ""
         },
         {
@@ -139,255 +139,255 @@
           "topic" : ""
         },
         {
-          "text" : "Raspberries (black or red)",
-          "topic" : "topics/raspberries"
+          "text" : "Framboesa (preta ou vermelha)",
+          "topic" : "topics\/raspberries"
         },
         {
-          "text" : "Strawberries",
-          "topic" : "topics/strawberries"
+          "text" : "Morango",
+          "topic" : "topics\/strawberries"
         }
       ]
     },
     "dozeBeverages" : {
-      "heading" : "Beverages",
+      "heading" : "Bebidas",
       "servings" : [
         {
-          "imperial" : "One glass (12 ounces)",
-          "metric" : "One glass (350 ml)"
+          "imperial" : "Um copo (12 onças)",
+          "metric" : "Um copo (350 ml)"
         }
       ],
-      "topic" : "topics/beverages",
+      "topic" : "topics\/beverages",
       "varieties" : [
         {
-          "text" : "Black tea",
-          "topic" : "topics/black-tea"
+          "text" : "Chá preto",
+          "topic" : "topics\/black-tea"
         },
         {
-          "text" : "Chai tea",
-          "topic" : "topics/chai-tea"
+          "text" : "Chá chai",
+          "topic" : "topics\/chai-tea"
         },
         {
-          "text" : "Vanilla chamomile tea",
-          "topic" : "topics/chamomile-tea"
+          "text" : "Chá de camomila com baunilha",
+          "topic" : "topics\/chamomile-tea"
         },
         {
-          "text" : "Coffee",
-          "topic" : "topics/coffee"
+          "text" : "Café",
+          "topic" : "topics\/coffee"
         },
         {
-          "text" : "Earl grey tea",
-          "topic" : "topics/earl-grey-tea"
+          "text" : "Chá Earl Grey",
+          "topic" : "topics\/earl-grey-tea"
         },
         {
-          "text" : "Green tea",
-          "topic" : "topics/green-tea"
+          "text" : "Chá verde",
+          "topic" : "topics\/green-tea"
         },
         {
-          "text" : "Hibiscus tea",
-          "topic" : "topics/hibiscus-tea"
+          "text" : "Chá de hibisco",
+          "topic" : "topics\/hibiscus-tea"
         },
         {
-          "text" : "Hot chocolate",
+          "text" : "Chocolate quente",
           "topic" : ""
         },
         {
-          "text" : "Jasmine tea",
-          "topic" : "topics/jasmine-tea"
-        },
-        {
-          "text" : "Lemon balm tea",
+          "text" : "Chá verde com aroma de jasmim",
           "topic" : ""
         },
         {
-          "text" : "Matcha tea",
-          "topic" : "topics/matcha"
+          "text" : "Chá de erva-cidreira",
+          "topic" : ""
         },
         {
-          "text" : "Almond blossom oolong tea",
-          "topic" : "topics/oolong-tea"
+          "text" : "Chá matcha",
+          "topic" : "topics\/matcha"
         },
         {
-          "text" : "Peppermint tea",
-          "topic" : "topics/peppermint"
+          "text" : "Chá oolong com aroma de amêndoas",
+          "topic" : "topics\/oolong-tea"
         },
         {
-          "text" : "Rooibos tea",
-          "topic" : "topics/rooibos-tea"
+          "text" : "Chá de hortelã",
+          "topic" : "topics\/peppermint"
         },
         {
-          "text" : "Water",
-          "topic" : "topics/water"
+          "text" : "Chá rooibos",
+          "topic" : "topics\/rooibos-tea"
         },
         {
-          "text" : "White tea",
-          "topic" : "topics/white-tea"
+          "text" : "Água",
+          "topic" : "topics\/water"
+        },
+        {
+          "text" : "Chá branco",
+          "topic" : "topics\/white-tea"
         }
       ]
     },
     "dozeExercise" : {
-      "heading" : "Exercise",
+      "heading" : "Exercícios",
       "servings" : [
         {
-          "imperial" : "90 minutes of moderate-intensity activity",
-          "metric" : "90 minutes of moderate-intensity activity"
+          "imperial" : "90 minutos de atividade de intensidade moderada",
+          "metric" : "90 minutos de atividade de intensidade moderada"
         },
         {
-          "imperial" : "40 minutes of vigorous-intensity activity",
-          "metric" : "40 minutes of vigorous-intensity activity"
+          "imperial" : "40 minutos de atividade de intensidade vigorosa",
+          "metric" : "40 minutos de atividade de intensidade vigorosa"
         }
       ],
-      "topic" : "topics/exercise",
+      "topic" : "topics\/exercise",
       "varieties" : [
         {
-          "text" : "Bicycling",
+          "text" : "Ciclismo",
           "topic" : ""
         },
         {
-          "text" : "Canoeing",
+          "text" : "Canoagem",
           "topic" : ""
         },
         {
-          "text" : "Dancing",
+          "text" : "Dança",
           "topic" : ""
         },
         {
-          "text" : "Dodgeball",
+          "text" : "Queimada\/Jogo do mata",
           "topic" : ""
         },
         {
-          "text" : "Downhill skiing",
+          "text" : "Esqui alpino",
           "topic" : ""
         },
         {
-          "text" : "Fencing",
+          "text" : "Esgrima",
           "topic" : ""
         },
         {
-          "text" : "Hiking",
+          "text" : "Caminhada",
           "topic" : ""
         },
         {
-          "text" : "Housework",
+          "text" : "Tarefas domésticas",
           "topic" : ""
         },
         {
-          "text" : "Ice-skating",
+          "text" : "Patinação no gelo",
           "topic" : ""
         },
         {
-          "text" : "Inline skating",
+          "text" : "Patinação inline",
           "topic" : ""
         },
         {
-          "text" : "Juggling",
+          "text" : "Malabarismo",
           "topic" : ""
         },
         {
-          "text" : "Jumping on a trampoline",
+          "text" : "Pular no trampolim",
           "topic" : ""
         },
         {
-          "text" : "Paddle boating",
+          "text" : "Remo",
           "topic" : ""
         },
         {
-          "text" : "Playing frisbee",
+          "text" : "Jogo de frisbee",
           "topic" : ""
         },
         {
-          "text" : "Roller-skating",
+          "text" : "Patinação",
           "topic" : ""
         },
         {
-          "text" : "Shooting baskets",
+          "text" : "Arremesso na cesta de basquete",
           "topic" : ""
         },
         {
-          "text" : "Shoveling light snow",
+          "text" : "Remover neve leve",
           "topic" : ""
         },
         {
-          "text" : "Skateboarding",
+          "text" : "Andar de skate",
           "topic" : ""
         },
         {
-          "text" : "Snorkeling",
+          "text" : "Mergulho com snorkel",
           "topic" : ""
         },
         {
-          "text" : "Surfing",
+          "text" : "Surf",
           "topic" : ""
         },
         {
-          "text" : "Swimming recreationally",
+          "text" : "Natação recreacional",
           "topic" : ""
         },
         {
-          "text" : "Tennis (doubles)",
+          "text" : "Tênis (duplas, 2vs2)",
           "topic" : ""
         },
         {
-          "text" : "Treading water",
+          "text" : "Caminhada na água",
           "topic" : ""
         },
         {
-          "text" : "Walking briskly (4 mph)",
+          "text" : "Andar rapidamente (6,4 km\/h)",
           "topic" : ""
         },
         {
-          "text" : "Water aerobics",
+          "text" : "Aeróbica aquática",
           "topic" : ""
         },
         {
-          "text" : "Waterskiing",
+          "text" : "Esqui aquático",
           "topic" : ""
         },
         {
-          "text" : "Yard work",
+          "text" : "Jardinagem",
           "topic" : ""
         },
         {
-          "text" : "Yoga",
+          "text" : "Ioga",
           "topic" : ""
         },
         {
-          "text" : "Backpacking",
+          "text" : "Caminhada de mochila",
           "topic" : ""
         },
         {
-          "text" : "Basketball",
+          "text" : "Basquete",
           "topic" : ""
         },
         {
-          "text" : "Bicycling uphill",
+          "text" : "Ciclismo em subida",
           "topic" : ""
         },
         {
-          "text" : "Circuit weight training",
+          "text" : "Treinos com pesos em circuito",
           "topic" : ""
         },
         {
-          "text" : "Cross-country skiing",
+          "text" : "Esqui cross-country",
           "topic" : ""
         },
         {
-          "text" : "Football",
+          "text" : "Futebol americano",
           "topic" : ""
         },
         {
-          "text" : "Hockey",
+          "text" : "Hóquei",
           "topic" : ""
         },
         {
-          "text" : "Jogging",
+          "text" : "Jogging\/Corrida",
           "topic" : ""
         },
         {
-          "text" : "Jumping jacks",
+          "text" : "Polichinelo",
           "topic" : ""
         },
         {
-          "text" : "Jumping rope",
+          "text" : "Pular corda",
           "topic" : ""
         },
         {
@@ -395,19 +395,19 @@
           "topic" : ""
         },
         {
-          "text" : "Push-ups",
+          "text" : "Flexões de braço",
           "topic" : ""
         },
         {
-          "text" : "Pull-ups",
+          "text" : "Flexões de braços em barra fixa (pull-ups)",
           "topic" : ""
         },
         {
-          "text" : "Racquetball",
+          "text" : "Raquetebol",
           "topic" : ""
         },
         {
-          "text" : "Rock climbing",
+          "text" : "Escalada",
           "topic" : ""
         },
         {
@@ -415,23 +415,23 @@
           "topic" : ""
         },
         {
-          "text" : "Running",
+          "text" : "Corrida",
           "topic" : ""
         },
         {
-          "text" : "Scuba diving",
+          "text" : "Mergulho",
           "topic" : ""
         },
         {
-          "text" : "Tennis (singles)",
+          "text" : "Tênis (1vs1)",
           "topic" : ""
         },
         {
-          "text" : "Soccer",
+          "text" : "Futebol",
           "topic" : ""
         },
         {
-          "text" : "Speed skating",
+          "text" : "Patinação em alta velocidade",
           "topic" : ""
         },
         {
@@ -439,676 +439,676 @@
           "topic" : ""
         },
         {
-          "text" : "Step aerobics",
+          "text" : "Aeróbica de step",
           "topic" : ""
         },
         {
-          "text" : "Swimming laps",
+          "text" : "Natação contínua",
           "topic" : ""
         },
         {
-          "text" : "Walking briskly uphill",
+          "text" : "Andar rapidamente em subida",
           "topic" : ""
         },
         {
-          "text" : "Water jogging",
+          "text" : "Jogging na água",
           "topic" : ""
         }
       ]
     },
     "dozeFlaxseeds" : {
-      "heading" : "Flaxseeds",
+      "heading" : "Linhaça",
       "servings" : [
         {
-          "imperial" : "1 tablespoon ground",
-          "metric" : "1 tablespoon ground"
+          "imperial" : "1 colher de sopa (moída\/triturada)",
+          "metric" : "1 colher de sopa (moída\/triturada)"
         }
       ],
-      "topic" : "topics/flax-seeds",
+      "topic" : "topics\/flax-seeds",
       "varieties" : [
         {
-          "text" : "Brown flaxseeds",
+          "text" : "Linhaça marrom",
           "topic" : ""
         },
         {
-          "text" : "Golden flaxseeds",
+          "text" : "Linhaça dourada",
           "topic" : ""
         }
       ]
     },
     "dozeFruitsOther" : {
-      "heading" : "Other Fruits",
+      "heading" : "Outras Frutas",
       "servings" : [
         {
-          "imperial" : "1 medium-sized fruit",
-          "metric" : "1 medium-sized fruit"
+          "imperial" : "1 fruta de tamanho médio",
+          "metric" : "1 fruta de tamanho médio"
         },
         {
-          "imperial" : "1 cup cut-up fruit",
-          "metric" : "120 g cut-up fruit"
+          "imperial" : "1 xícara de fruta cortada",
+          "metric" : "120 g de fruta cortada"
         },
         {
-          "imperial" : "¼ cup dried fruit",
-          "metric" : "40 g dried fruit"
+          "imperial" : "¼ xícara de fruta seca",
+          "metric" : "40 g de fruta seca"
         }
       ],
       "topic" : "",
       "varieties" : [
         {
-          "text" : "Apples",
-          "topic" : "topics/apples"
+          "text" : "Maçã",
+          "topic" : "topics\/apples"
         },
         {
-          "text" : "Apricots",
-          "topic" : "topics/apricots"
+          "text" : "Damasco seco",
+          "topic" : "topics\/apricots"
         },
         {
-          "text" : "Avocados",
-          "topic" : "topics/avocados"
+          "text" : "Abacate",
+          "topic" : "topics\/avocados"
         },
         {
-          "text" : "Bananas",
-          "topic" : "topics/bananas"
+          "text" : "Banana",
+          "topic" : "topics\/bananas"
         },
         {
-          "text" : "Cantaloupe",
-          "topic" : "topics/cantaloupe"
+          "text" : "Melão Gália\/Cantaloupe",
+          "topic" : "topics\/cantaloupe"
         },
         {
-          "text" : "Clementines",
+          "text" : "Tangerina clementina",
           "topic" : ""
         },
         {
-          "text" : "Dates",
-          "topic" : "topics/dates"
+          "text" : "Tâmara",
+          "topic" : "topics\/dates"
         },
         {
-          "text" : "Figs",
-          "topic" : "topics/figs"
-        },
-        {
-          "text" : "Grapefruit",
-          "topic" : "topics/grapefruit"
-        },
-        {
-          "text" : "Honeydew",
+          "text" : "Figo seco",
           "topic" : ""
         },
         {
-          "text" : "Kiwifruit",
-          "topic" : "topics/kiwifruit"
+          "text" : "Toranja",
+          "topic" : "topics\/grapefruit"
         },
         {
-          "text" : "Lemons",
-          "topic" : "topics/lemons"
-        },
-        {
-          "text" : "Limes",
-          "topic" : "topics/limes"
-        },
-        {
-          "text" : "Lychees",
+          "text" : "Melão Honeydew",
           "topic" : ""
         },
         {
-          "text" : "Mangos",
-          "topic" : "topics/mango"
+          "text" : "Kiwi",
+          "topic" : "topics\/kiwifruit"
         },
         {
-          "text" : "Nectarines",
+          "text" : "Limão amarelo",
+          "topic" : "topics\/lemons"
+        },
+        {
+          "text" : "Limão",
+          "topic" : "topics\/limes"
+        },
+        {
+          "text" : "Lichia",
           "topic" : ""
         },
         {
-          "text" : "Oranges",
-          "topic" : "topics/oranges"
+          "text" : "Manga",
+          "topic" : "topics\/mango"
         },
         {
-          "text" : "Papaya",
-          "topic" : "topics/papaya"
-        },
-        {
-          "text" : "Passion fruit",
+          "text" : "Nectarina",
           "topic" : ""
         },
         {
-          "text" : "Peaches",
-          "topic" : "topics/peaches"
+          "text" : "Laranja",
+          "topic" : "topics\/oranges"
         },
         {
-          "text" : "Pears",
-          "topic" : "topics/pears"
-        },
-        {
-          "text" : "Pineapple",
-          "topic" : "topics/pineapples"
-        },
-        {
-          "text" : "Plums (especially black plums)",
-          "topic" : "topics/plums"
-        },
-        {
-          "text" : "Pluots",
+          "text" : "Mamão",
           "topic" : ""
         },
         {
-          "text" : "Pomegranates",
-          "topic" : "topics/pomegranates"
-        },
-        {
-          "text" : "Prunes",
-          "topic" : "topics/prunes"
-        },
-        {
-          "text" : "Tangerines",
+          "text" : "Maracujá",
           "topic" : ""
         },
         {
-          "text" : "Watermelon",
-          "topic" : "topics/watermelon"
+          "text" : "Pêssego",
+          "topic" : "topics\/peaches"
+        },
+        {
+          "text" : "Pêra",
+          "topic" : "topics\/pears"
+        },
+        {
+          "text" : "Abacaxi\/Ananás",
+          "topic" : ""
+        },
+        {
+          "text" : "Ameixa (especialmente ameixa preta)",
+          "topic" : "topics\/plums"
+        },
+        {
+          "text" : "Damasco\/Alperce Pluot",
+          "topic" : ""
+        },
+        {
+          "text" : "Romã",
+          "topic" : "topics\/pomegranates"
+        },
+        {
+          "text" : "Ameixa seca",
+          "topic" : "topics\/prunes"
+        },
+        {
+          "text" : "Tangerina",
+          "topic" : ""
+        },
+        {
+          "text" : "Melancia",
+          "topic" : "topics\/watermelon"
         }
       ]
     },
     "dozeGreens" : {
-      "heading" : "Greens",
+      "heading" : "Verduras",
       "servings" : [
         {
-          "imperial" : "1 cup raw",
-          "metric" : "60 g raw"
+          "imperial" : "1 xícara de verduras cruas",
+          "metric" : "60 g de verduras cruas"
         },
         {
-          "imperial" : "½ cup cooked",
-          "metric" : "90 g cooked"
+          "imperial" : "½ xícara de verduras cozidas",
+          "metric" : "90 g de verduras cozidas"
         }
       ],
-      "topic" : "topics/greens",
+      "topic" : "topics\/greens",
       "varieties" : [
         {
-          "text" : "Arugula",
+          "text" : "Rúcula",
           "topic" : ""
         },
         {
-          "text" : "Beet greens",
-          "topic" : "topics/beets"
-        },
-        {
-          "text" : "Collard greens",
-          "topic" : "topics/collard-greens"
-        },
-        {
-          "text" : "Kale (black, green, and red)",
-          "topic" : "topics/kale"
-        },
-        {
-          "text" : "Mesclun mix (assorted young salad greens)",
-          "topic" : "topics/mesclun-mix"
-        },
-        {
-          "text" : "Mustard greens",
-          "topic" : "topics/mustard-greens"
-        },
-        {
-          "text" : "Sorrel",
+          "text" : "Folhas de beterraba",
           "topic" : ""
         },
         {
-          "text" : "Spinach",
-          "topic" : "topics/spinach"
+          "text" : "Couve galega",
+          "topic" : "topics\/collard-greens"
         },
         {
-          "text" : "Swiss chard",
-          "topic" : "topics/swiss-chard"
+          "text" : "Kale\/Couve-de-folhas (preta, verde e vermelha)",
+          "topic" : "topics\/kale"
         },
         {
-          "text" : "Turnip greens",
+          "text" : "Mistura de folhas tenras verdes variadas",
+          "topic" : ""
+        },
+        {
+          "text" : "Folhas de mostarda",
+          "topic" : "topics\/mustard-greens"
+        },
+        {
+          "text" : "Vinagreira\/Azeda",
+          "topic" : ""
+        },
+        {
+          "text" : "Espinafre",
+          "topic" : "topics\/spinach"
+        },
+        {
+          "text" : "Folhas de acelga\/beterraba branca",
+          "topic" : "topics\/swiss-chard"
+        },
+        {
+          "text" : "Folhas de nabo\/Nabiças",
           "topic" : ""
         }
       ]
     },
     "dozeNuts" : {
-      "heading" : "Nuts and Seeds",
+      "heading" : "Oleaginosas e Sementes",
       "servings" : [
         {
-          "imperial" : "¼ cup nuts or seeds",
-          "metric" : "30 g nuts or seeds"
+          "imperial" : "¼ xícara de oleaginosas ou sementes",
+          "metric" : "30 g de oleaginosas ou sementes"
         },
         {
-          "imperial" : "2 tablespoons nut or seed butter",
-          "metric" : "2 tablespoons nut or seed butter"
+          "imperial" : "2 colheres de sopa de manteiga\/pasta de oleaginosas ou sementes",
+          "metric" : "2 colheres de sopa de manteiga\/pasta de oleaginosas ou sementes"
         }
       ],
-      "topic" : "topics/nuts",
+      "topic" : "topics\/nuts",
       "varieties" : [
         {
-          "text" : "Almonds",
-          "topic" : "topics/almonds"
+          "text" : "Amêndoas",
+          "topic" : "topics\/almonds"
         },
         {
-          "text" : "Brazil nuts",
-          "topic" : "topics/brazil-nuts"
+          "text" : "Castanhas do Pará\/Brasil",
+          "topic" : "topics\/brazil-nuts"
         },
         {
-          "text" : "Cashews",
-          "topic" : "topics/cashews"
+          "text" : "Castanhas de cajú",
+          "topic" : "topics\/cashews"
         },
         {
-          "text" : "Chia seeds",
-          "topic" : "topics/chia-seeds"
+          "text" : "Sementes de chia",
+          "topic" : "topics\/chia-seeds"
         },
         {
-          "text" : "Hazelnuts",
-          "topic" : "topics/hazelnuts"
+          "text" : "Avelãs",
+          "topic" : "topics\/hazelnuts"
         },
         {
-          "text" : "Hemp seeds",
+          "text" : "Sementes de cânhamo",
           "topic" : ""
         },
         {
-          "text" : "Macadamia nuts",
-          "topic" : "topics/macadamia-nuts"
+          "text" : "Macadâmias",
+          "topic" : "topics\/macadamia-nuts"
         },
         {
-          "text" : "Pecans",
-          "topic" : "topics/pecans"
+          "text" : "Nozes pecãs",
+          "topic" : "topics\/pecans"
         },
         {
-          "text" : "Pistachios",
-          "topic" : "topics/pistachios"
+          "text" : "Pistaches",
+          "topic" : "topics\/pistachios"
         },
         {
-          "text" : "Pumpkin seeds",
-          "topic" : "topics/pumpkin-seeds"
+          "text" : "Sementes de abóbora",
+          "topic" : "topics\/pumpkin-seeds"
         },
         {
-          "text" : "Sesame seeds",
-          "topic" : "topics/sesame-seeds"
+          "text" : "Gergelim\/Sementes de sésamo",
+          "topic" : "topics\/sesame-seeds"
         },
         {
-          "text" : "Sunflower seeds",
-          "topic" : "topics/sunflower-seeds"
+          "text" : "Sementes de girassol",
+          "topic" : "topics\/sunflower-seeds"
         },
         {
-          "text" : "Walnuts",
-          "topic" : "topics/walnuts"
+          "text" : "Nozes",
+          "topic" : "topics\/walnuts"
         }
       ]
     },
     "dozeSpices" : {
-      "heading" : "Herbs and Spices",
+      "heading" : "Ervas e Especiarias",
       "servings" : [
         {
-          "imperial" : "¼ teaspoon of turmeric",
-          "metric" : "¼ teaspoon of turmeric"
+          "imperial" : "¼ colher de chá de cúrcuma\/açafrão-da-terra",
+          "metric" : "¼ colher de chá de cúrcuma\/açafrão-da-terra"
         },
         {
-          "imperial" : "Any other (salt-free) herbs and spices you enjoy",
-          "metric" : "Any other (salt-free) herbs and spices you enjoy"
+          "imperial" : "Qualquer outra erva (sem sal) e especiarias que goste",
+          "metric" : "Qualquer outra erva (sem sal) e especiarias que goste"
         }
       ],
-      "topic" : "topics/spices",
+      "topic" : "topics\/spices",
       "varieties" : [
         {
-          "text" : "Allspice",
-          "topic" : "topics/allspice"
+          "text" : "Pimenta dioica\/pimenta-da-jamaica",
+          "topic" : "topics\/allspice"
         },
         {
-          "text" : "Barberries",
-          "topic" : "topics/barberries"
+          "text" : "Bérberis",
+          "topic" : "topics\/barberries"
         },
         {
-          "text" : "Basil",
-          "topic" : "topics/basil"
+          "text" : "Manjericão",
+          "topic" : "topics\/basil"
         },
         {
-          "text" : "Bay leaves",
+          "text" : "Folhas de louro",
           "topic" : ""
         },
         {
-          "text" : "Cardamom",
-          "topic" : "topics/cardamom"
-        },
-        {
-          "text" : "Chili powder",
+          "text" : "Cardamomo",
           "topic" : ""
         },
         {
-          "text" : "Cilantro",
-          "topic" : "topics/cilantro"
-        },
-        {
-          "text" : "Cinnamon",
-          "topic" : "topics/cinnamon"
-        },
-        {
-          "text" : "Cloves",
-          "topic" : "topics/cloves"
-        },
-        {
-          "text" : "Coriander",
-          "topic" : "topics/coriander"
-        },
-        {
-          "text" : "Cumin",
-          "topic" : "topics/cumin"
-        },
-        {
-          "text" : "Curry powder",
-          "topic" : "topics/curry-powder"
-        },
-        {
-          "text" : "Dill",
+          "text" : "Chili em pó",
           "topic" : ""
         },
         {
-          "text" : "Fenugreek",
-          "topic" : "topics/fenugreek"
+          "text" : "Folhas de coentro",
+          "topic" : "topics\/cilantro"
         },
         {
-          "text" : "Garlic",
-          "topic" : "topics/garlic"
+          "text" : "Canela",
+          "topic" : "topics\/cinnamon"
         },
         {
-          "text" : "Ginger",
-          "topic" : "topics/ginger"
+          "text" : "Cravo",
+          "topic" : "topics\/cloves"
         },
         {
-          "text" : "Horseradish",
+          "text" : "Coentro (sementes)",
           "topic" : ""
         },
         {
-          "text" : "Lemongrass",
-          "topic" : "topics/lemongrass"
+          "text" : "Cominho",
+          "topic" : "topics\/cumin"
         },
         {
-          "text" : "Marjoram",
-          "topic" : "topics/marjoram"
+          "text" : "Curry\/Caril em pó",
+          "topic" : "topics\/curry-powder"
         },
         {
-          "text" : "Mustard powder",
-          "topic" : "topics/mustard-powder"
-        },
-        {
-          "text" : "Nutmeg",
-          "topic" : "topics/nutmeg"
-        },
-        {
-          "text" : "Oregano",
-          "topic" : "topics/oregano"
-        },
-        {
-          "text" : "Smoked paprika",
+          "text" : "Endro\/Aneto",
           "topic" : ""
         },
         {
-          "text" : "Parsley",
-          "topic" : "topics/parsley"
+          "text" : "Feno-grego\/Alforva",
+          "topic" : "topics\/fenugreek"
         },
         {
-          "text" : "Pepper",
-          "topic" : "topics/pepper"
+          "text" : "Alho",
+          "topic" : "topics\/garlic"
         },
         {
-          "text" : "Peppermint",
-          "topic" : "topics/peppermint"
+          "text" : "Gengibre",
+          "topic" : "topics\/ginger"
         },
         {
-          "text" : "Rosemary",
-          "topic" : "topics/rosemary"
-        },
-        {
-          "text" : "Saffron",
-          "topic" : "topics/saffron"
-        },
-        {
-          "text" : "Sage",
+          "text" : "Rábano-silvestre\/Armorácia",
           "topic" : ""
         },
         {
-          "text" : "Thyme",
-          "topic" : "topics/thyme"
+          "text" : "Capim-cidreira\/Capim-limão",
+          "topic" : ""
         },
         {
-          "text" : "Turmeric",
-          "topic" : "topics/turmeric"
+          "text" : "Manjerona",
+          "topic" : "topics\/marjoram"
         },
         {
-          "text" : "Vanilla",
+          "text" : "Mostarda em pó",
+          "topic" : "topics\/mustard-powder"
+        },
+        {
+          "text" : "Noz-moscada",
+          "topic" : "topics\/nutmeg"
+        },
+        {
+          "text" : "Orégano",
+          "topic" : "topics\/oregano"
+        },
+        {
+          "text" : "Páprica\/Páprica defumada",
+          "topic" : ""
+        },
+        {
+          "text" : "Salsinha",
+          "topic" : "topics\/parsley"
+        },
+        {
+          "text" : "Pimenta",
+          "topic" : "topics\/pepper"
+        },
+        {
+          "text" : "Hortelã-pimenta",
+          "topic" : "topics\/peppermint"
+        },
+        {
+          "text" : "Alecrim",
+          "topic" : "topics\/rosemary"
+        },
+        {
+          "text" : "Açafrão",
+          "topic" : "topics\/saffron"
+        },
+        {
+          "text" : "Sálvia",
+          "topic" : ""
+        },
+        {
+          "text" : "Tomilho",
+          "topic" : ""
+        },
+        {
+          "text" : "Açafrão-da-terra\/Cúrcuma",
+          "topic" : "topics\/turmeric"
+        },
+        {
+          "text" : "Baunilha",
           "topic" : ""
         }
       ]
     },
     "dozeVegetablesCruciferous" : {
-      "heading" : "Cruciferous Vegetables",
+      "heading" : "Vegetais Crucíferos",
       "servings" : [
         {
-          "imperial" : "½ cup chopped",
-          "metric" : "30–80 g chopped"
+          "imperial" : "½ xícara de crucíferos picados",
+          "metric" : "30–80 g de crucíferos picados"
         },
         {
-          "imperial" : "¼ cup Brussels or broccoli sprouts",
-          "metric" : "12 g Brussels or broccoli sprouts"
+          "imperial" : "¼ xícara de brotos de brócolis ou couve-de-bruxelas",
+          "metric" : "12 g de brotos de brócolis ou couve-de-bruxelas"
         },
         {
-          "imperial" : "1 tablespoon horseradish",
-          "metric" : "1 tablespoon horseradish"
+          "imperial" : "1 colher de sopa de rábano-silvestre",
+          "metric" : "1 colher de sopa de rábano-silvestre"
         }
       ],
       "topic" : "",
       "varieties" : [
         {
-          "text" : "Arugula",
+          "text" : "Rúcula",
           "topic" : ""
         },
         {
-          "text" : "Bok choy",
-          "topic" : "topics/bok-choy"
+          "text" : "Couve chinesa (bok choy)",
+          "topic" : "topics\/bok-choy"
         },
         {
-          "text" : "Broccoli (incl. Romanesco)",
-          "topic" : "topics/broccoli"
+          "text" : "Brócolis\/Brócolos (inclui couve-romanesca)",
+          "topic" : "topics\/broccoli"
         },
         {
-          "text" : "Brussels sprouts",
-          "topic" : "topics/brussels-sprouts"
+          "text" : "Couve-de-bruxelas",
+          "topic" : "topics\/brussels-sprouts"
         },
         {
-          "text" : "Cabbage (green, red and savoy)",
-          "topic" : "topics/cabbage"
+          "text" : "Repolho (verde, roxo e savoy)",
+          "topic" : "topics\/cabbage"
         },
         {
-          "text" : "Cauliflower (white, green, orange and purple)",
-          "topic" : "topics/cauliflower"
+          "text" : "Couve-flor (branca, verde, laranja e roxa)",
+          "topic" : "topics\/cauliflower"
         },
         {
-          "text" : "Collard greens",
-          "topic" : "topics/collard-greens"
+          "text" : "Couve\/Couve-galega",
+          "topic" : "topics\/collard-greens"
         },
         {
-          "text" : "Horseradish",
+          "text" : "Rábano-silvestre\/Armorácia",
           "topic" : ""
         },
         {
-          "text" : "Kale (black, green, and red)",
-          "topic" : "topics/kale"
+          "text" : "Kale\/Couve-de-folhas (preta, verde e vermelha)",
+          "topic" : "topics\/kale"
         },
         {
-          "text" : "Kohlrabi (green and purple)",
-          "topic" : "topics/kohlrabi"
-        },
-        {
-          "text" : "Mustard greens",
-          "topic" : "topics/mustard-greens"
-        },
-        {
-          "text" : "Radishes",
-          "topic" : "topics/radishes"
-        },
-        {
-          "text" : "Turnip greens",
+          "text" : "Couve-rábano (verde e roxa)",
           "topic" : ""
         },
         {
-          "text" : "Watercress",
-          "topic" : "topics/watercress"
+          "text" : "Folhas de mostarda",
+          "topic" : "topics\/mustard-greens"
+        },
+        {
+          "text" : "Rabanetes",
+          "topic" : ""
+        },
+        {
+          "text" : "Folhas de nabo\/Nabiças",
+          "topic" : ""
+        },
+        {
+          "text" : "Agrião",
+          "topic" : "topics\/watercress"
         }
       ]
     },
     "dozeVegetablesOther" : {
-      "heading" : "Other Vegetables",
+      "heading" : "Outros Vegetais",
       "servings" : [
         {
-          "imperial" : "1 cup raw leafy vegetables",
-          "metric" : "60 g raw leafy vegetables"
+          "imperial" : "1 xícara de vegetais folhosos crus",
+          "metric" : "60 g de vegetais folhosos crus"
         },
         {
-          "imperial" : "½ cup raw or cooked nonleafy vegetables",
-          "metric" : "50 g raw or cooked nonleafy vegetables"
+          "imperial" : "½ xícara de vegetais não-folhosos crus ou cozidos",
+          "metric" : "50 g de vegetais não-folhosos crus ou cozidos"
         },
         {
-          "imperial" : "½ cup vegetable juice",
-          "metric" : "125 ml vegetable juice"
+          "imperial" : "½ xícara de suco\/sumo de vegetais",
+          "metric" : "125 ml de suco\/sumo de vegetais"
         },
         {
-          "imperial" : "¼ cup dried mushrooms",
-          "metric" : "7 g dried mushrooms"
+          "imperial" : "¼ xícara de cogumelos secos",
+          "metric" : "7 g de cogumelos secos"
         }
       ],
       "topic" : "",
       "varieties" : [
         {
-          "text" : "Artichokes",
-          "topic" : "topics/artichokes"
+          "text" : "Alcachofra",
+          "topic" : "topics\/artichokes"
         },
         {
-          "text" : "Asparagus",
-          "topic" : "topics/asparagus"
+          "text" : "Aspargo",
+          "topic" : "topics\/asparagus"
         },
         {
-          "text" : "Beets",
-          "topic" : "topics/beets"
+          "text" : "Beterraba",
+          "topic" : "topics\/beets"
         },
         {
-          "text" : "Bell peppers",
-          "topic" : "topics/bell-peppers"
+          "text" : "Pimentão",
+          "topic" : "topics\/bell-peppers"
         },
         {
-          "text" : "Carrots",
-          "topic" : "topics/carrots"
+          "text" : "Cenoura",
+          "topic" : "topics\/carrots"
         },
         {
-          "text" : "Corn",
-          "topic" : "topics/corn"
+          "text" : "Milho",
+          "topic" : "topics\/corn"
         },
         {
-          "text" : "Garlic",
-          "topic" : "topics/garlic"
+          "text" : "Alho",
+          "topic" : "topics\/garlic"
         },
         {
-          "text" : "Mushrooms (button, oyster, portobello, and shiitake)",
-          "topic" : "topics/mushrooms"
+          "text" : "Cogumelos (champignon, pleurotus, portobello e shitake)",
+          "topic" : "topics\/mushrooms"
         },
         {
-          "text" : "Okra",
-          "topic" : "topics/okra"
+          "text" : "Quiabo",
+          "topic" : "topics\/okra"
         },
         {
-          "text" : "Onions",
-          "topic" : "topics/onions"
+          "text" : "Cebola",
+          "topic" : "topics\/onions"
         },
         {
-          "text" : "Purple potatoes",
-          "topic" : "topics/potatoes"
+          "text" : "Batata roxa",
+          "topic" : "topics\/potatoes"
         },
         {
-          "text" : "Pumpkin",
-          "topic" : "topics/pumpkin"
+          "text" : "Abóbora moranga",
+          "topic" : "topics\/pumpkin"
         },
         {
-          "text" : "Sea vegetables (arame, dulse, and nori)",
-          "topic" : "topics/sea-vegetables"
+          "text" : "Algas (arame, dulse e nori)",
+          "topic" : "topics\/sea-vegetables"
         },
         {
-          "text" : "Snap peas",
+          "text" : "Ervilha torta",
           "topic" : ""
         },
         {
-          "text" : "Squash (delicata, summer, and spaghetti squash varieties)",
-          "topic" : "topics/squash"
+          "text" : "Abóbora (variedades delicata, amarela\/verão e espaguete)",
+          "topic" : "topics\/squash"
         },
         {
-          "text" : "Sweet potatoes/yams",
-          "topic" : "topics/sweet-potatoes"
+          "text" : "Batata doce\/inhame",
+          "topic" : "topics\/sweet-potatoes"
         },
         {
-          "text" : "Tomatoes",
-          "topic" : "topics/tomatoes"
+          "text" : "Tomate",
+          "topic" : "topics\/tomatoes"
         },
         {
-          "text" : "Zucchini",
-          "topic" : "topics/zucchini"
+          "text" : "Abobrinha\/Curgete",
+          "topic" : "topics\/zucchini"
         }
       ]
     },
     "dozeWholeGrains" : {
-      "heading" : "Whole Grains",
+      "heading" : "Grãos Integrais",
       "servings" : [
         {
-          "imperial" : "½ cup hot cereal or cooked grains, pasta, or corn kernels",
-          "metric" : "100 g hot cereal or cooked grains, pasta, or corn kernels"
+          "imperial" : "½ xícara de cereais ou grãos cozidos, massas ou grãos de milho",
+          "metric" : "100 g de cereais ou grãos cozidos, massas ou grãos de milho"
         },
         {
-          "imperial" : "1 cup cold cereal",
-          "metric" : "50 g cold cereal"
+          "imperial" : "1 xícara de cereais matinais",
+          "metric" : "50 g de cereais matinais"
         },
         {
-          "imperial" : "1 tortilla or slice of bread",
-          "metric" : "1 tortilla or slice of bread"
+          "imperial" : "1 tortilha ou fatia de pão",
+          "metric" : "1 tortilha ou fatia de pão"
         },
         {
-          "imperial" : "½ a bagel or English muffin",
-          "metric" : "½ a bagel or English muffin"
+          "imperial" : "½ bagel ou muffin inglês",
+          "metric" : "½ bagel ou muffin inglês"
         },
         {
-          "imperial" : "3 cups popped popcorn",
-          "metric" : "30 g popped popcorn"
+          "imperial" : "3 xícaras de pipoca",
+          "metric" : "30 g de pipoca"
         }
       ],
-      "topic" : "topics/grains",
+      "topic" : "topics\/grains",
       "varieties" : [
         {
-          "text" : "Barley",
-          "topic" : "topics/barley"
+          "text" : "Cevada",
+          "topic" : "topics\/barley"
         },
         {
-          "text" : "Buckwheat",
-          "topic" : "topics/buckwheat"
+          "text" : "Trigo-sarraceno",
+          "topic" : "topics\/buckwheat"
         },
         {
-          "text" : "Millet",
-          "topic" : "topics/millet"
+          "text" : "Painço",
+          "topic" : "topics\/millet"
         },
         {
-          "text" : "Oats",
-          "topic" : "topics/oats"
+          "text" : "Aveia",
+          "topic" : "topics\/oats"
         },
         {
-          "text" : "Popcorn",
-          "topic" : "topics/popcorn"
+          "text" : "Pipoca",
+          "topic" : "topics\/popcorn"
         },
         {
           "text" : "Quinoa",
-          "topic" : "topics/quinoa"
+          "topic" : "topics\/quinoa"
         },
         {
-          "text" : "Rye",
-          "topic" : "topics/rye"
+          "text" : "Centeio",
+          "topic" : "topics\/rye"
         },
         {
-          "text" : "Teff",
-          "topic" : "topics/teff"
+          "text" : "Teff\/Tefe",
+          "topic" : ""
         },
         {
-          "text" : "Whole-wheat pasta",
-          "topic" : "topics/pasta"
+          "text" : "Massa integral",
+          "topic" : "topics\/pasta"
         }
       ]
     },
@@ -1117,7 +1117,7 @@
       "servings" : [
 
       ],
-      "topic" : "topics/vitamin-b12",
+      "topic" : "topics\/vitamin-b12",
       "varieties" : [
 
       ]
