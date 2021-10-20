@@ -1,9 +1,12 @@
-/* Bundle name */
-CFBundleName = "DailyDozen";
+/* User-visible application name. Visible under icon. Used by Siri. */
+"CFBundleDisplayName" = "DailyDozen";
+
+/* User-visible application short name (15 Characters max) */
+"CFBundleName" = "DailyDozen";
 
 /* Privacy - Health Share Usage Description */
-NSHealthShareUsageDescription = "The 21 Tweaks feature accesses your HealthKit data to provide updates to your daily weight measurements.";
+"NSHealthShareUsageDescription" = "The 21 Tweaks feature accesses your HealthKit data to provide updates to your daily weight measurements.";
 
 /* Privacy - Health Update Usage Description */
-NSHealthUpdateUsageDescription = "The 21 Tweaks feature can write weight data to HealthKit to help you keep track of your progress.";
+"NSHealthUpdateUsageDescription" = "The 21 Tweaks feature can write weight data to HealthKit to help you keep track of your progress.";
 

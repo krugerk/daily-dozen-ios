@@ -209,7 +209,7 @@
 "setting_doze_only_choice" = "Daily Dozen Only";
 
 /* First Launch: "Daily Dozen + 21 Tweaks" */
-"setting_doze_tweak_btn" = "Daily Dozen + 21 Tweaks";
+"setting_doze_tweak_btn" = "Daily Dozen +\n21 Tweaks";
 
 /* Settings: "Daily Dozen + 21 Tweaks" */
 "setting_doze_tweak_choice" = "Daily Dozen + 21 Tweak";
@@ -224,16 +224,16 @@
 "setting_health_weight_txt" = "For Health and Weight Loss";
 
 /* Settings: "Advanced Utilities" */
-"setting_util_advanced" = "";
+"setting_util_advanced" = "Advanced Utilities";
 
 /* Settings: units choice footer text */
 "setting_units_choice_footer" = "Set to always be one unit type or enable the 'Units:' toggle button.";
 
 /* Class = "UITableViewSection"; headerTitle = "21 Tweaks Visibility"; ObjectID = "WdR-XV-IyP"; */
-"settings.tweak.header" = "21 Tweak Visibility";
+"setting_tweak_header" = "21 Tweak Visibility";
 
 /* Class = "UITableViewSection"; headerTitle = "Measurement Units"; ObjectID = "IFs-g0-SPV"; */
-"settings.units.header" = "";
+"setting_units_header" = "Measurement Units";
 
 /* progress: number '%d' of consecutive days completed. */
 "streakDaysFormat" = "%d days";

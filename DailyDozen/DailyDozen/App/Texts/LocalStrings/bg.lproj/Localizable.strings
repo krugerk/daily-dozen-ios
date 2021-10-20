@@ -1,10 +1,3 @@
-/* 
-  Localizable.strings
-  DailyDozen
-
-  Copyright © 2019 Nutritionfacts.org. All rights reserved.
-*/
-
 /* Daily Dozen (proper noun) navigation tab */
 "navtab.doze" = "Daily Dozen";
 /* 21 Tweaks (proper noun) navigation tab */
@@ -118,10 +111,10 @@
 "reminder.state.off" = "Off";
 
 /* Class = "UITableViewSection"; headerTitle = "Measurement Units"; ObjectID = "IFs-g0-SPV"; */
-"settings.units.header" = "Measurement Units";
+"setting_units_header" = "Measurement Units";
 
 /* Class = "UITableViewSection"; headerTitle = "21 Tweaks Visibility"; ObjectID = "WdR-XV-IyP"; */
-"settings.tweak.header" = "21 Tweaks Visibility";
+"setting_tweak_header" = "21 Tweaks Visibility";
 
 /* entry section header: "Supplements" */
 "dozeOtherInfo.section" = "Supplements";
@@ -214,12 +207,10 @@
 "setting_health_weight_txt" = "For Health and Weight Loss";
 
 /* First Launch: "Daily Dozen Only" */
-"setting_doze_only_btn" = "Daily Dozen
-Only";
+"setting_doze_only_btn" = "Daily Dozen\nOnly";
 
 /* First Launch: "Daily Dozen + 21 Tweaks" */
-"setting_doze_tweak_btn" = "Daily Dozen +
-21 Tweaks";
+"setting_doze_tweak_btn" = "Daily Dozen +\n21 Tweaks";
 
 /* Settings: "Daily Dozen Only" */
 "setting_doze_only_choice" = "Daily Dozen Only";
@@ -252,11 +243,7 @@ Only";
 "info_app_about_oss_credits" = "The following open source libraries are used: RealmSwift, Charts, FSCalendar, SimpleAnimation and ActiveLabel.";
 
 /* Info About: created by text */
-"info_app_about_created_by" = "This app was created by:
-- NutritionFacts.org
-- Christi Richards
-- Konstantin Khokhlov
-- Marc Campbell";
+"info_app_about_created_by" = "This app was created by:\n- NutritionFacts.org\n- Christi Richards\n- Konstantin Khokhlov\n- Marc Campbell";
 
 /* Item History Heading: "History" */
 "item_history_heading" = "History";

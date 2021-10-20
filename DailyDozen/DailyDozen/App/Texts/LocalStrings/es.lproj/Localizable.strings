@@ -186,10 +186,10 @@
 "reminder.state.off" = "apagado";
 
 /* Class = "UITableViewSection"; headerTitle = "Measurement Units"; ObjectID = "IFs-g0-SPV"; */
-"settings.units.header" = "Unidades de medida";
+"setting_units_header" = "Unidades de medida";
 
 /* Class = "UITableViewSection"; headerTitle = "21 Tweaks Visibility"; ObjectID = "WdR-XV-IyP"; */
-"settings.tweak.header" = "Visibilidad de 21 Ajustes";
+"setting_tweak_header" = "Visibilidad de 21 Ajustes";
 
 /* About this app */
 "info.about.title" = "Sobre esta app";
@@ -291,7 +291,7 @@
 "setting_doze_only_btn" = "Docena Diaria solamente";
 
 /* First Launch: "Daily Dozen + 21 Tweaks" */
-"setting_doze_tweak_btn" = "Docena Diaria + 21 Ajustes";
+"setting_doze_tweak_btn" = "Docena Diaria +\n21 Ajustes";
 
 /* Settings: "Daily Dozen Only" */
 "setting_doze_only_choice" = "Docena Diaria\nsolamente";
@@ -324,11 +324,7 @@
 "info_app_about_oss_credits" = "Las siguientes open source libraries fueron utilizadas: RealmSwift, Charts, FSCalendar, SimpleAnimation and ActiveLabel.";
 
 /* Info About: created by text */
-"info_app_about_created_by" = "Esta app fue creada por:
-- NutritionFacts.org
-- Christi Richards
-- Konstantin Khokhlov
-- Marc Campbell";
+"info_app_about_created_by" = "Esta app fue creada por:\n- NutritionFacts.org\n- Christi Richards\n- Konstantin Khokhlov\n- Marc Campbell";
 
 /* Item History Heading: "History" */
 "item_history_heading" = "Historia";

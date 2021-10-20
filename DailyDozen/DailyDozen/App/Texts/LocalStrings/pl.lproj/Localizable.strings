@@ -125,10 +125,10 @@
 "reminder.state.on" = "Włączone";
 
 /* Class = "UITableViewSection"; headerTitle = "21 Tweaks Visibility"; ObjectID = "WdR-XV-IyP"; */
-"settings.tweak.header" = "Widoczność 21 Adaptacji";
+"setting_tweak_header" = "Widoczność 21 Adaptacji";
 
 /* Class = "UITableViewSection"; headerTitle = "Measurement Units"; ObjectID = "IFs-g0-SPV"; */
-"settings.units.header" = "Jednostki miary";
+"setting_units_header" = "Jednostki miary";
 
 /* progress: number '%d' of consecutive days completed. */
 "streakDaysFormat" = "%d dni";
@@ -344,7 +344,7 @@
 "setting_doze_only_choice" = "Tylko Codzienny Tuzin";
 
 /* Settings: "Daily Dozen + 21 Tweaks" */
-"setting_doze_tweak_choice" = "Codzienny Tuzin + 21 Adaptacji";
+"setting_doze_tweak_choice" = "Codzienny Tuzin +\n21 Adaptacji";
 
 /* Settings: Tweaks visibility footer text */
 "setting_doze_tweak_footer" = "Dla samego zdrowia użyj „Tylko Codzienny Tuzin”. Dla zdrowia i utraty wagi użyj „Codzienny Tuzin + 21 Adaptacji”.";
@@ -371,11 +371,7 @@
 "info_app_about_oss_credits" = "Używane są następujące biblioteki open source: RealmSwift, Charts, FSCalendar, SimpleAnimation i ActiveLabel.";
 
 /* Info About: created by text */
-"info_app_about_created_by" = "Ta aplikacja została stworzona przez:
-- NutritionFacts.org
-- Christi Richards
-- Konstantin Khokhlov
-- Marc Campbell";
+"info_app_about_created_by" = "Ta aplikacja została stworzona przez:\n- NutritionFacts.org\n- Christi Richards\n- Konstantin Khokhlov\n- Marc Campbell";
 
 /* Item History Heading: "History" */
 "item_history_heading" = "Historia";
