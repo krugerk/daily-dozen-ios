@@ -2,233 +2,233 @@
   "itemsDict" : {
     "tweakCompleteIntentions" : {
       "activity" : {
-        "imperial" : "Complete Your Implementation Intentions",
-        "metric" : "Complete Your Implementation Intentions"
+        "imperial" : "",
+        "metric" : ""
       },
       "description" : [
-        "Every two months, create three new implementation intentions—\"if X, then Y\" plans to perform a particular behavior in a specific context—and check each one of them off as you complete them every day."
+        "כל חודשיים, צרו שלוש כוונות יישום חדשות - \"אם X, אז Y\" לקידום התנהגות מסוימת בהקשר ספציפי - וסמנו כל אחת מהן כאשר אתם משלימים אותן מדי יום."
       ],
-      "heading" : "Complete Your Implementation Intentions",
+      "heading" : "כל חודשיים, צור שלוש כוונות יישום חדשות - \"אם X, אז Y\" מתכנן לבצע התנהגות מסוימת בהקשר ספציפי - ובדוק כל אחת מהן כאשר אתה משלים אותן מדי יום.",
       "topic" : ""
     },
     "tweakDailyBlackCumin" : {
       "activity" : {
-        "imperial" : "Black Cumin (Nigella sativa) (¼ tsp)",
-        "metric" : "Black Cumin (Nigella sativa) (¼ tsp)"
+        "imperial" : "כמון שחור (1/4 כפית)",
+        "metric" : "כמון שחור (1/4 כפית)"
       },
       "description" : [
-        "As noted in the Appetite Suppression section, a systematic review and meta-analysis of randomized, controlled weight-loss trials found that about a quarter teaspoon of black cumin powder every day appears to reduce body mass index within a span of a couple of months. Note that black cumin is different from regular cumin, for which the dosing is different."
+        "כפי שצוין בסעיף דיכוי התיאבון, סקירה שיטתית ומטא-אנליזה של ניסויים אקראיים ומבוקרים לירידה במשקל מצאו כי כרבע כפית אבקת כמון שחורה מדי יום מורידה את מדד מסת הגוף בתוך טווח של מספר חודשים. שימו לב שכמון שחור שונה מכמון רגיל, שהמינון שלו שונה."
       ],
-      "heading" : "Black Cumin (¼ tsp)",
+      "heading" : "כמון שחור (1/4 כפית)",
       "topic" : ""
     },
     "tweakDailyCumin" : {
       "activity" : {
-        "imperial" : "Cumin (Cuminum cyminum) (½ tsp with lunch and dinner)",
-        "metric" : "Cumin (Cuminum cyminum) (½ tsp with lunch and dinner)"
+        "imperial" : "כמון (1/2 כפית עם ארוחות צהריים וערב)",
+        "metric" : "כמון (1/2 כפית עם ארוחות צהריים וערב)"
       },
       "description" : [
-        "Overweight women randomized to add a half teaspoon of cumin to their lunches and dinners beat out the control group by four more pounds and an extra inch off their waists. There is also evidence to support the use of the spice saffron, but a pinch a day would cost a dollar, whereas a teaspoon of cumin costs less than ten cents."
+        "נשים הסובלות מעודף משקל הוסיפו באקראי להוסיף חצי כפית כמון לארוחות הצהריים והערב שלהן והביסו את קבוצת הביקורת בארבעה קילוגרמים נוספים וב-2.5 סמ\"ר נוספים מהמותניים שלהן. ישנן גם עדויות התומכות בשימוש בזעפרן, אך קמצוץ ביום יעלה 4 שקלים, בעוד שכפית כמון עולה פחות מ-30 אגורות."
       ],
-      "heading" : "Cumin (½ tsp with lunch and dinner)",
+      "heading" : "כמון (1/2 כפית עם ארוחות צהריים וערב)",
       "topic" : ""
     },
     "tweakDailyDeflourDiet" : {
       "activity" : {
-        "imperial" : "Deflour Your Diet",
-        "metric" : "Deflour Your Diet"
+        "imperial" : "טירפו את התזונה שלכם",
+        "metric" : "טירפו את התזונה שלכם"
       },
       "description" : [
-        "Check this box every day your whole grain servings are in the form of intact grains. The powdering of even 100 percent whole grains robs our microbiomes of the starch that would otherwise be ferried down to our colons enclosed in unbroken cell walls."
+        "סמנו תיבה זו בכל יום בו מנות הדגנים המלאות שלכם הן בצורת דגנים שלמים. האבקה של אפילו 100% דגנים מלאים שודדת את המיקרוביומים שלנו מהעמילן שאחרת היה יורד אל המעי הגס שלנו שהיה סגור בדפנות תאים בלתי עבירות."
       ],
-      "heading" : "Deflour Your Diet",
+      "heading" : "טירפו את התזונה שלכם",
       "topic" : ""
     },
     "tweakDailyFrontLoad" : {
       "activity" : {
-        "imperial" : "Front-Load Your Calories",
-        "metric" : "Front-Load Your Calories"
+        "imperial" : "חזית- טענו את הקלוריות שלכם",
+        "metric" : "חזית- טענו את הקלוריות שלכם"
       },
       "description" : [
-        "There are metabolic benefits to distributing more calories to earlier in the day, so make breakfast (ideally) or lunch your largest meal of the day in true king/prince/pauper style."
+        "יש יתרונות מטבוליים לצריכת קלוריות מוקדם יותר ביום, לכן הפכו את ארוחת הבוקר (באופן אידיאלי) או ארוחת הצהריים לארוחה הגדולה ביותר ביום בסגנון מלך/נסיך/עני"
       ],
-      "heading" : "Front-Load Your Calories",
+      "heading" : "חזית- טענו את הקלוריות שלכם",
       "topic" : ""
     },
     "tweakDailyGarlic" : {
       "activity" : {
-        "imperial" : "Garlic Powder (¼ tsp)",
-        "metric" : "Garlic Powder (¼ tsp)"
+        "imperial" : "אבקת שום (1/4 כפית)",
+        "metric" : "אבקת שום (1/4 כפית)"
       },
       "description" : [
-        "Randomized, double-blind, placebo-controlled studies have found that as little as a daily quarter teaspoon of garlic powder can reduce body fat at a cost of perhaps two cents a day."
+        "מחקרים אקראיים, כפולי סמיות, מבוקרי פלסבו, מצאו שכרבע כפית אבקת שום ביום בלבד יכולה להפחית את שומן הגוף במחיר של כ-8 אגורות ביום."
       ],
-      "heading" : "Garlic Powder (¼ tsp)",
+      "heading" : "אבקת שום (1/4 כפית)",
       "topic" : ""
     },
     "tweakDailyGinger" : {
       "activity" : {
-        "imperial" : "Ground Ginger (1 tsp) or Cayenne Pepper (½ tsp)",
-        "metric" : "Ground Ginger (1 tsp) or Cayenne Pepper (½ tsp)"
+        "imperial" : "זנגויל טחון (1 כפית) או פלפל קאיין (1/2 כפית)",
+        "metric" : "זנגויל טחון (1 כפית) או פלפל קאיין (1/2 כפית)"
       },
       "description" : [
-        "Randomized controlled trials have found that ¼ teaspoon to 1½ teaspoons a day of ground ginger significantly decreased body weight for just pennies a day. It can be as easy as stirring the ground spice into a cup of hot water. Note: Ginger may work better in the morning than evening. Chai tea is a tasty way to combine the green tea and ginger tricks into a single beverage. Alternately, for BAT activation, you can add one raw jalapeño pepper or a half teaspoon of red pepper powder (or, presumably, crushed red pepper flakes) into your daily diet. To help beat the heat, you can very thinly slice or finely chop the jalapeño to reduce its bite to little prickles, or mix the red pepper into soup or the whole-food vegetable smoothie I featured in one of my cooking videos on NutritionFacts.org."
+        "ניסויים מבוקרים אקראיים מצאו כי ¼ כפית עד 1.5 כפיות ביום של זנגויל טחון הורידה משמעותית את משקל הגוף בפרוטות בלבד ביום. זה יכול להיות קל כמו ערבוב התבלין הטחון בכוס מים חמים. הערה: זנגויל עשוי לעבוד טוב יותר בבוקר מאשר בערב. תה צ'אי הוא דרך טעימה לשלב את התה הירוק ויכולות הזנגויל למשקה אחד. לחלופין, להפעלת BAT, ניתן להוסיף לתפריט היומי שלכם פלפל ירוק חריף גולמי או חצי כפית אבקת פלפל אדום (או, ככל הנראה, פתיתי פלפל אדום כתוש). כדי לעזור להתמודד עם החום, אתם יכולים לפרוס דק מאוד או לקצוץ את הפלפל הירוק החריף כדי לצמצם את הנגיסות לכמויות קטנות, או לערבב את הפלפל האדום במרק או שייק הירקות מכל האוכל שהצגתי באחד מסרטי הבישול שלי ב- NutritionFacts.org ."
       ],
-      "heading" : "Ground Ginger (1 tsp) or Cayenne Pepper (½ tsp)",
+      "heading" : "זנגויל טחון (1 כפית) או פלפל קאיין (1/2 כפית)",
       "topic" : ""
     },
     "tweakDailyGreenTea" : {
       "activity" : {
-        "imperial" : "Green Tea (3 cups)",
-        "metric" : "Green Tea (3 cups)"
+        "imperial" : "תה ירוק (3 כוסות)",
+        "metric" : "תה ירוק (3 כוסות)"
       },
       "description" : [
-        "Drink three cups a day between meals (waiting at least an hour after a meal so as to not interfere with iron absorption). During meals, drink water, black coffee, or hibiscus tea mixed 6:1 with lemon verbena, but never exceed three cups of fluid an hour (important given my water preloading advice). Take advantage of the reinforcing effect of caffeine by drinking your green tea along with something healthy you wish you liked more, but don't consume large amounts of caffeine within six hours of bedtime. Taking your tea without sweetener is best, but if you typically sweeten your tea with honey or sugar, try yacon syrup instead."
+        "שתו שלוש כוסות ביום בין הארוחות (המתינו לפחות שעה לאחר הארוחה כדי לא להפריע לספיגת הברזל). במהלך הארוחות, יש לשתות מים, קפה שחור או תה היביסקוס מעורבב 6: 1 עם לימון ורבנה, אך לעולם אל תישתו יותר משלוש כוסות נוזל בשעה (חשוב בהתחשב בעצותי לטעינת מים מראש). נצלו את האפקט המחזק של הקפאין על ידי שתיית התה הירוק שלכם יחד עם משהו בריא שהייתם רוצים לאהוב יותר, אך אל תצרכו כמויות גדולות של קפאין שש שעות לפני השינה. עדיף לשתות את התה  ללא ממתיק, אך אם אתם ממתיקים את התה בדבש או בסוכר, נסה במקום זאת סירופ יאקון."
       ],
-      "heading" : "Green Tea (3 cups)",
+      "heading" : "תה ירוק (3 כוסות)",
       "topic" : ""
     },
     "tweakDailyHydrate" : {
       "activity" : {
-        "imperial" : "Stay Hydrated",
-        "metric" : "Stay Hydrated"
+        "imperial" : "שתו מספיק",
+        "metric" : "שתו מספיק"
       },
       "description" : [
-        "Check this box if your urine never appears darker than a pale yellow.\n\nNote that if you're eating riboflavin-fortified foods (such as nutritional yeast), then base this instead on getting nine cups of unsweetened beverages a day for women (which would be taken care of by the green tea and water preloading recommendations) or thirteen cups a day for men.\n\nIf you have heart or kidney issues, don't increase fluid intake at all without first talking with your physician.\n\nRemember, diet soda may be calorie-free, but it's not consequence-free, as we learned in the Low in Added Sugar section."
+        "סמנו תיבה זו אם השתן שלכם אף פעם לא נראה כהה יותר מאשר צהוב בהיר. שימו לב שאם אתם אוכלים מזונות מועשרים בריבופלבין (כגון שמרים תזונתיים), אז הסתמכו במקום זאת על  שתיית 9 כוסות של משקאות לא ממותקים ביום לנשים (שיושגו ע\"י ההמלצות לשתיה של תה ירוק ומים), או 13 כוסות ביום לגברים. אם אתם סובלים מבעיות לב או כליות, אל תגדילו כלל את צריכת הנוזלים מבלי לדבר תחילה עם רופאכם. זכרו, סודה לדיאטה עשויה להיות נטולת קלוריות, אך היא אינה נטולת תוצאות, כפי שלמדנו בסעיף על סוכר נמוך."
       ],
-      "heading" : "Stay Hydrated",
+      "heading" : "שתו מספיק",
       "topic" : ""
     },
     "tweakDailyNutriYeast" : {
       "activity" : {
-        "imperial" : "Nutritional Yeast (2 tsp)",
-        "metric" : "Nutritional Yeast (2 tsp)"
+        "imperial" : "שמרי בירה (2 כפיות)",
+        "metric" : "שמרי בירה (2 כפיות)"
       },
       "description" : [
-        "Two teaspoons of baker's, brewer's, or nutritional yeast contains roughly the amount of beta 1,3/1,6 glucans found in randomized, double-blind, placebo-controlled clinical trials to facilitate weight loss."
+        "שתי כפיות של שמרי אופים, בירה או  תזונתיים מכילות בערך את כמות הבטא 1,3/1,6 גלוקנים שנמצאו בניסויים קליניים אקראיים, כפולי סמיות, מבוקרי פלסבו, כמקלים על ירידה במשקל."
       ],
-      "heading" : "Nutritional Yeast (2 tsp)",
+      "heading" : "שמרי בירה (2 כפיות)",
       "topic" : ""
     },
     "tweakDailyTimeRestrict" : {
       "activity" : {
-        "imperial" : "Time-Restrict Your Eating",
-        "metric" : "Time-Restrict Your Eating"
+        "imperial" : "הגבלת זמן האכילה שלכם",
+        "metric" : "הגבלת זמן האכילה שלכם"
       },
       "description" : [
-        "Confine eating to a daily window of time of your choosing under twelve hours in length that you can stick to consistently, seven days a week. Given the circadian benefits of reducing evening food intake, the window should end before 7:00 p.m."
+        "הגדירו חלון אכילה יומי לבחירכם של פחות מ-12 שעות שאתם יכולים להצמד אליו בעקביות, שבעה ימים בשבוע. בהתחשב ביתרונות השעון הביולוגי להפחתת אכילה בלילה, חלון האכילה צריך להסתיים ב-19:00."
       ],
-      "heading" : "Time-Restrict Your Eating",
+      "heading" : "הגבלת זמן האכילה שלכם",
       "topic" : ""
     },
     "tweakExerciseTiming" : {
       "activity" : {
-        "imperial" : "Optimize Exercise Timing",
-        "metric" : "Optimize Exercise Timing"
+        "imperial" : "יעלו את זמן הספורט",
+        "metric" : "יעלו את זמן הספורט"
       },
       "description" : [
-        "The Daily Dozen's recommendation for optimum exercise duration for longevity is ninety minutes of moderately intense activity a day, which is also the optimum exercise duration for weight loss. Anytime is good, and the more, the better, but there may be an advantage to exercising in a fasted state, at least six hours after your last meal. Typically, this would mean before breakfast, but if you timed it right, you could exercise midday before a late lunch or, if lunch is eaten early enough, before dinner. This is the timing for nondiabetics. Diabetics and prediabetics should instead start exercising thirty minutes after the start of a meal and ideally go for at least an hour to completely straddle the blood sugar peak. If you had to choose a single meal to exercise after, it would be dinner, due to the circadian rhythm of blood sugar control that wanes throughout the day. Ideally, though, breakfast would be the largest meal of the day, and you'd exercise after that—or, even better, after every meal."
+        "ההמלצה של The Daily Dozen למשך זמן האימון האופטימלי לאורך החיים היא תשעים דקות של פעילות אינטנסיבית בינונית ביום, שהיא גם משך האימון האופטימלי לירידה במשקל. בכל עת טוב, וככל שיותר, יותר טוב, אך יתכן שיש יתרון לפעילות גופנית בצום, לפחות שש שעות לאחר הארוחה האחרונה שלך. בדרך כלל זה אומר לפני ארוחת הבוקר, אבל אם תזמנתם את זה נכון, תוכלו להתאמן בצהריים לפני ארוחת צהריים מאוחרת או, אם ארוחת הצהריים נאכלת מוקדם מספיק, לפני ארוחת הערב. זהו העיתוי לשאינם חולי סוכרת. חולי סוכרת וטרום חולי סוכרת צריכים במקום זאת להתחיל להתאמן שלושים דקות לאחר תחילת הארוחה ולפנות לכך באופן אידיאלי לפחות שעה כדי לחצות את שיא הסוכר בדם. אם הייתם צריכים לבחור ארוחה אחת שתתאמנו אחריה, זו תהיה ארוחת ערב, בגלל קצב השעון הביולוגי ששליטתו ברמת הסוכר בדם דועכת לאורך כל היום. אך באופן אידיאלי, ארוחת הבוקר תהיה הארוחה הגדולה ביותר ביום, ואימון לאחר מכן - או, אפילו יותר טוב, אחרי כל ארוחה."
       ],
-      "heading" : "Optimize Exercise Timing",
+      "heading" : "יעלו את זמן הספורט",
       "topic" : ""
     },
     "tweakMeal20Minutes" : {
       "activity" : {
-        "imperial" : "Follow the Twenty-Minute Rule",
-        "metric" : "Follow the Twenty-Minute Rule"
+        "imperial" : "עיקבו אחר חוק 20 הדקות",
+        "metric" : "עיקבו אחר חוק 20 הדקות"
       },
       "description" : [
-        "Whether through increasing viscosity or the number of chews, or decreasing bite size and eating rate, dozens of studies have demonstrated that no matter how we boost the amount of time food is in our mouths, it can result in lower caloric intake. So extend meal duration to at least twenty minutes to allow your natural satiety signals to take full effect. How? By choosing foods that take longer to eat and eating them in a way that prolongs the time they stay in your mouth. Think bulkier, hardier, chewier foods in smaller, well-chewed bites."
+        "בין אם העלאת הצמיגות או כמות הלעיסות, או הקטנת גודל הנשיכה וקצב האכילה, עשרות מחקרים הוכיחו שאין זה משנה כמה אנו מגבירים את משך הזמן שהמזון נמצא בפינו, זה יכול להסתכם בכמות קלוריות קטנה יותר. אז האריכו את משך הארוחה לפחות ל-20 דקות כדי לאפשר לאיתותי השובע הטבעי להגיע למלוא השפעתם. כיצד? ע\"י בחירת מאכלים שלוקח זמן רב יותר לאכול ולאוכלם בדרך שמאריכה את הזמן שהם נשארים בפיכם. חישבו נפוח יותר, קשה יותר, לעיסים יותר בנשיכות קטנות ולעוסות היטב."
       ],
-      "heading" : "Follow the Twenty-Minute Rule",
+      "heading" : "עיקבו אחר חוק 20 הדקות",
       "topic" : ""
     },
     "tweakMealNegCal" : {
       "activity" : {
-        "imperial" : "Preload with \"Negative Calorie\" Foods",
-        "metric" : "Preload with \"Negative Calorie\" Foods"
+        "imperial" : "טענו מראש עם מזונות עם \"קלוריות שליליות\"",
+        "metric" : "טענו מראש עם מזונות עם \"קלוריות שליליות\""
       },
       "description" : [
-        "As the first course, start each meal with an apple or a Green Light soup or salad containing fewer than one hundred calories per cup."
+        "כמנה ראשונה, התחילו כל ארוחה בתפוח או מרק ירוק או סלט המכיל פחות ממאה קלוריות לכוס."
       ],
-      "heading" : "Preload with \"Negative Calorie\" Foods",
+      "heading" : "טענו מראש עם מזונות עם \"קלוריות שליליות\"",
       "topic" : ""
     },
     "tweakMealUndistracted" : {
       "activity" : {
-        "imperial" : "Enjoy Undistracted Meals",
-        "metric" : "Enjoy Undistracted Meals"
+        "imperial" : "תהנו מארוחות ללא הפרעה",
+        "metric" : "תהנו מארוחות ללא הפרעה"
       },
       "description" : [
-        "Don't eat while watching TV or playing on your phone. Give yourself a check for each meal you're able to eat without distraction."
+        "אל תאכלו תוך כדי צפיה בטלויזיה או תוך כדי משחק בפלאפון. תנו לעצמכם צ'ק על כל פעם הצלחתם לאכול ללא הפרעות"
       ],
-      "heading" : "Enjoy Undistracted Meals",
+      "heading" : "תהנו מארוחות ללא הפרעה",
       "topic" : ""
     },
     "tweakMealVinegar" : {
       "activity" : {
-        "imperial" : "Incorporate Vinegar (2 tsp with each meal)",
-        "metric" : "Incorporate Vinegar (2 tsp with each meal)"
+        "imperial" : "שלבו חומץ (2 כפיות בכל ארוחה)",
+        "metric" : "שלבו חומץ (2 כפיות בכל ארוחה)"
       },
       "description" : [
-        "Never drink vinegar straight. Instead, flavor meals or dress a side salad with any of the sweet and savory vinegars out there. If you want to drink it, make sure to mix it in a glass of water and, afterward, be sure to rinse your mouth out with water to protect your tooth enamel."
+        "לעולם אל תישתו חומץ ישירות. במקום זה, הוסיפו טעם לארוחות או הכינו מטבל לסלט עם כל חומץ מתוק וערב לחיך שיש לכם. אם תירצו לשתות אותו, אל תשכחו לערבב אותו בכוס מים ולאחר ששתיתם יש לשטוף את הפה במים כדי למנוע פגיעה באמייל השן"
       ],
-      "heading" : "Incorporate Vinegar (2 tsp with each meal)",
+      "heading" : "שלבו חומץ (2 כפיות בכל ארוחה)",
       "topic" : ""
     },
     "tweakMealWater" : {
       "activity" : {
-        "imperial" : "Preload with Water",
-        "metric" : "Preload with Water"
+        "imperial" : "הטענו מראש עם מים",
+        "metric" : "הטענו מראש עם מים"
       },
       "description" : [
-        "Time your metabolism-boosting two cups of cool or cold unflavored water before each meal to also take advantage of its preload benefits."
+        "זמנו את חילוף החומרים שלכם- שתי כוסות מים קרירים או קרים ללא טעמים לפני כל ארוחה כדי ליהנות גם מיתרונות הלקיחה המוקדמת שלהם."
       ],
-      "heading" : "Preload with Water",
+      "heading" : "הטענו מראש עם מים",
       "topic" : ""
     },
     "tweakNightlyFast" : {
       "activity" : {
-        "imperial" : "Fast After 7:00 p.m.",
-        "metric" : "Fast After 7:00 p.m."
+        "imperial" : "צומו לאחר 19:00",
+        "metric" : "צומו לאחר 19:00"
       },
       "description" : [
-        "Due to our circadian rhythms, food eaten at night is more fattening than the exact same food eaten earlier in the day, so fast every night for at least twelve hours starting before 7:00 p.m. The fewer calories after sundown, the better."
+        "בשל מקצבי היממה שלנו, אוכל שנאכל בלילה משמין יותר מאותו אוכל בדיוק שנאכל מוקדם יותר ביום, אז צומו כל לילה במשך שתים עשרה שעות לפחות החל מהשעה 19:00. כמה שפחות קלוריות אחרי השקיעה, כך ייטב."
       ],
-      "heading" : "Fast After 7:00 pm",
+      "heading" : "צומו לאחר 19:00",
       "topic" : ""
     },
     "tweakNightlySleep" : {
       "activity" : {
-        "imperial" : "Get Sufficient Sleep",
-        "metric" : "Get Sufficient Sleep"
+        "imperial" : "קבלו שינה מספיקה",
+        "metric" : "קבלו שינה מספיקה"
       },
       "description" : [
-        "Check this box if you get at least seven hours of sleep at your regular bedtime."
+        "סמנו תיבה זו אם אתם ישנים לפחות 7 שעות שינה בזמן השינה הרגיל שלכם"
       ],
-      "heading" : "Get Sufficient Sleep",
+      "heading" : "קבלו שינה מספיקה",
       "topic" : ""
     },
     "tweakNightlyTrendelenbrug" : {
       "activity" : {
-        "imperial" : "Experiment with Mild Trendelenburg",
-        "metric" : "Experiment with Mild Trendelenburg"
+        "imperial" : "התנסו ב-Trendelenburg מתון",
+        "metric" : "התנסו ב-Trendelenburg מתון"
       },
       "description" : [
-        "Try spending at least four hours a night lying with your body tilted head-down six degrees by elevating the posts at the foot of your bed by eight inches (or by nine inches if you have a California king). Be extremely careful when you get out of bed, as this causes orthostatic intolerance in most people, even if you're young and healthy—meaning if you get up too fast, you can feel dizzy, faint, or light-headed and could fall and hurt yourself. So get up slowly. Drinking two cups of cold water thirty minutes before rising may also help prevent this potentially hazardous side effect.\n\nIMPORTANT: Do not try this at home at all if you have any heart or lung issues, acid reflux, or problems with your brain (like head trauma) or eyes (even a family history of glaucoma disqualifies you). Also do not try this until you ask your physician if they think it's safe for you to sleep in mild Trendelenburg."
+        "נסו להקדיש לפחות ארבע שעות בלילה בשכיבה כשגופכם מוטה ראש כלפי מטה שש מעלות על ידי הרמת העמודים למרגלות המיטה בשמונה סנטימטרים (או תשעה סנטימטרים אם יש לכם California king). היזהרו במיוחד כאשר אתo קמים מהמיטה, מכיוון שזה גורם לחוסר סובלנות אורתוסטטית אצל רוב האנשים, גם אם אתם צעירים ובריאים-כלומר אם אתם קמים מהר מדי, אתם יכולים להרגיש סחרחורת, חולשה או ראש קל ועלולים ליפול ולפגוע בעצמכם. אז קומו לאט. שתיית שתי כוסות מים קרים שלושים דקות לפני העלייה עשויה לסייע גם במניעת תופעת לוואי שעלולה להיות מסוכנת. *חשוב: אל תנסו זאת בבית כלל אם יש לכם בעיות לב או ריאה, ריפלוקס חומצי או בעיות במוח (כמו טראומת ראש) או עיניים (אפילו היסטוריה משפחתית של גלאוקומה פוסלת אתכם). גם אל תנסו את זה עד שתשאלו את הרופא שלכם אם הוא חושב שזה בטוח לכם לישון בטרנדלנבורג מתון*"
       ],
-      "heading" : "Experiment with Mild Trendelenburg",
+      "heading" : "התנסו ב-Trendelenburg מתון",
       "topic" : ""
     },
     "tweakWeightTwice" : {
       "activity" : {
-        "imperial" : "Weigh Yourself Twice a Day",
-        "metric" : "Weigh Yourself Twice a Day"
+        "imperial" : "שיקלו את עצמכם פעמיים ביום",
+        "metric" : "שיקלו את עצמכם פעמיים ביום"
       },
       "description" : [
-        "Regular self-weighing is considered crucial for long-term weight control, but there is insufficient evidence to support a specific frequency of weighing. My recommendation is based on the one study that found that twice daily—upon waking and right before bed—appeared superior to once a day (about six versus two pounds of weight loss over twelve weeks)."
+        "שקילה עצמית סדירה נחשבת מכרעת לבקרת משקל ארוכת טווח, אך אין מספיק הוכחות לתמיכה בתדירות שקילה מסוימת. ההמלצה שלי מבוססת על המחקר האחד שמצא כי פעמיים ביום - כשמתעוררים ומיד לפני השינה - נראית עדיפה על פעם ביום (כששה לעומת שני קילוגרמים של ירידה במשקל במשך שנים עשר שבועות)."
       ],
-      "heading" : "Weigh Yourself Twice a Day",
+      "heading" : "שיקלו את עצמכם פעמיים ביום",
       "topic" : ""
     }
   }

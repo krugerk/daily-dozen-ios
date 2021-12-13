@@ -1,3 +1,6 @@
+/* DailyDozen Localizable.strings (pl) */
+/* Copyright © 2021 Nutritionfacts.org. All rights reserved. */
+
 /* Back to today */
 "dateBackButtonTitle" = "Powrót do dzisiaj";
 
@@ -50,7 +53,7 @@
 "dozeWholeGrains.heading" = "Pełnoziarniste zboża";
 
 /* (No Comment) */
-"historyRecord.movingMean" = "Moving Average";
+"historyRecord.movingAverage" = "Moving Average";
 
 /* Servings History */
 "historyRecordDoze.heading" = "Historia porcji";

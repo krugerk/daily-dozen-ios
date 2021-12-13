@@ -1,257 +1,448 @@
-/* Daily Dozen (proper noun) navigation tab */
-"navtab.doze" = "Daily Dozen";
-/* 21 Tweaks (proper noun) navigation tab */
-"navtab.tweaks" = "21 Tweaks";
-/* More Information navigation tab */
-"navtab.info" = "Info";
-/* Preferences (aka Settings, Configuration) navigation tab. Choose word different from 'Tweaks' translation */
-"navtab.preferences" = "Settings";
+/* DailyDozen Localizable.strings (lt) */
+/* Copyright © 2021 Nutritionfacts.org. All rights reserved. */
 
-/* Records: Daily Tally */
-"dateButtonTitle.today" = "Today";
+/* Info Menu About: line 0 */
+"apple.info.about.0" = "Welcome to my Daily Dozen!";
+
+/* Info Menu About: line 1 */
+"apple.info.about.1" = "Use this app on a daily basis to keep track of the foods and advice I recommend for optimal health and longevity in my books How Not to Die and How Not to Diet.";
+
+/* Info Menu About: line 2 */
+"apple.info.about.2" = "Daily Dozen";
+
+/* Info Menu About: line 3 */
+"apple.info.about.3" = "version 3.2.11";
+
+/* Info Menu About: line 4 */
+"apple.info.about.4" = "This app was created by: NutritionFacts.org, Christi Richards, Konstantin Khokhlov, and Marc Campbell";
+
+/* Info Menu About: line 5 */
+"apple.info.about.5" = "The following open source libraries are used: RealmSwift, Charts, FSCalendar, SimpleAnimation, ActiveLabel.";
+
+/* Date Button Title: ‘Back to today’ */
 "dateBackButtonTitle" = "Back to today";
-"historyRecord.movingMean" = "Moving Average";
-"historyRecordDoze.heading" = "Servings History";
-"historyRecordDoze.legend" = "Servings";
-"historyRecordTweak.heading" = "Tweaks History";
-"historyRecordTweak.legend" = "Tweaks";
-"historyRecordWeight.heading" = "Weight History";
-"historyRecordWeight.titleImperial" = "Weight (lbs)";
-"historyRecordWeight.titleMetric" = "Weight (kg)";
-"historyRecordWeight.legendMorning" = "Morning";
-"historyRecordWeight.legendEvening" = "Evening";
-"weightEntry.heading" = "Weight";
 
-/* URL path */
-"urlSegment.base" = "https://nutritionfacts.org/";
-"urlSegment.lang" = "";
+/* Date Button Title: ‘Today’ */
+"dateButtonTitle.today" = "Today";
 
-"urlSegmentInfoMenu.videos" = "videos";
-"urlSegmentInfoMenu.book" = "book";
-"urlSegmentInfoMenu.cookbook" = "cookbook";
-"urlSegmentInfoMenu.diet" = "how-not-to-diet";
-"urlSegmentInfoMenu.challenge" = "daily-dozen-challenge";
-"urlSegmentInfoMenu.donate" = "donate";
-"urlSegmentInfoMenu.subscribe" = "subscribe";
-"urlSegmentInfoMenu.source" = "open-source";
-
-"urlSegmentInfoMenu.team" = "team";
-
-/* Units toggle button text: metric measurement system */
-"unitToggle.metric" = "METRIC";
-/* Units toggle button text: imperial measurement system */
-"unitToggle.imperial" = "IMPERIAL";
-
-/* progress: number '%d' of consecutive days completed. */
-"streakDaysFormat" = "%d days";
-
-/* ***** Daily Dozen ***** */
+/* heading for daily data entry item */
 "dozeBeans.heading" = "Beans";
-"dozeBerries.heading" = "Berries";
-"dozeFruitsOther.heading" = "Other Fruits";
-"dozeVegetablesCruciferous.heading" = "Cruciferous Vegetables";
-"dozeGreens.heading" = "Greens";
-"dozeVegetablesOther.heading" = "Other Vegetables";
-"dozeFlaxseeds.heading" = "Flaxseeds";
-"dozeNuts.heading" = "Nuts and Seeds";
-"dozeSpices.heading" = "Herbs and Spices";
-"dozeWholeGrains.heading" = "Whole Grains";
-"dozeBeverages.heading" = "Beverages";
-"dozeExercise.heading" = "Exercise";
-/* ***** Daily Dozen Other ***** */
-"otherVitaminB12.heading" = "Vitamin B12";
-"otherVitaminD.heading" = "Vitamin D";
-"otherOmega3.heading" = "Plant-based Omega 3s";
-/* ***** Daily Dozen Supplements ***** */
-"dozeOtherInfo.title" = "Supplements";
-"dozeOtherInfo.message" = "Vitamin B12 is essential for your health but does not count towards your daily servings.\n\nVitamin B12 is included in this app to provide you with an easy way to track your intake.";
-"dozeOtherInfo.confirm" = "OK";
-/* ***** 21 Tweaks ***** */
-"tweakMealWater.heading" = "Preload Water";
-"tweakMealNegCal.heading" = "Negative Calorie Preload";
-"tweakMealVinegar.heading" = "Incorporate Vinegar";
-"tweakMealUndistracted.heading" = "Undistracted Meals";
-"tweakMeal20Minutes.heading" = "Twenty-minute Rule";
-"tweakDailyBlackCumin.heading" = "Black Cumin";
-"tweakDailyGarlic.heading" = "Garlic Powder";
-"tweakDailyGinger.heading" = "Ginger or Cayenne";
-"tweakDailyNutriYeast.heading" = "Nutritional Yeast";
-"tweakDailyCumin.heading" = "Cumin";
-"tweakDailyGreenTea.heading" = "Green Tea";
-"tweakDailyHydrate.heading" = "Stay Hydrated";
-"tweakDailyDeflourDiet.heading" = "Deflour Diet";
-"tweakDailyFrontLoad.heading" = "Front-load Calories";
-"tweakDailyTimeRestrict.heading" = "Time-restrict Eating";
-"tweakExerciseTiming.heading" = "Exercising Timing";
-"tweakWeightTwice.heading" = "Weigh Twice Daily";
-"tweakCompleteIntentions.heading" = "Complete Intentions";
-"tweakNightlyFast.heading" = "Fast After 7:00 p.m.";
-"tweakNightlySleep.heading" = "Sufficient Sleep";
-"tweakNightlyTrendelenbrug.heading" = "Trendelenburg";
 
-/* daily_reminder_text alert text */
+/* https://nutritionfacts.org/topics/beans */
+"dozeBeans.topic" = "topics/beans";
+
+/* heading for daily data entry item */
+"dozeBerries.heading" = "Berries";
+
+/* https://nutritionfacts.org/topics/berries */
+"dozeBerries.topic" = "topics/berries";
+
+/* heading for daily data entry item */
+"dozeBeverages.heading" = "Beverages";
+
+/* https://nutritionfacts.org/topics/beverages */
+"dozeBeverages.topic" = "topics/beverages";
+
+/* heading for daily data entry item */
+"dozeExercise.heading" = "Exercise";
+
+/* https://nutritionfacts.org/topics/exercise */
+"dozeExercise.topic" = "topics/exercise";
+
+/* heading for daily data entry item */
+"dozeFlaxseeds.heading" = "Flaxseeds";
+
+/* https://nutritionfacts.org/topics/flax-seeds */
+"dozeFlaxseeds.topic" = "topics/flax-seeds";
+
+/* heading for daily data entry item */
+"dozeFruitsOther.heading" = "Other Fruits";
+
+/* https://nutritionfacts.org/topics/fruit */
+"dozeFruitsOther.topic" = "topics/fruit";
+
+/* heading for daily data entry item */
+"dozeGreens.heading" = "Greens";
+
+/* https://nutritionfacts.org/topics/greens */
+"dozeGreens.topic" = "topics/greens";
+
+/* heading for daily data entry item */
+"dozeNuts.heading" = "Nuts and Seeds";
+
+/* https://nutritionfacts.org/topics/nuts */
+"dozeNuts.topic" = "topics/nuts";
+
+/* Daily Dozen supplement info alert: dismissal button text */
+"dozeOtherInfo.confirm" = "OK";
+
+/* Daily Dozen supplement info alert: message */
+"dozeOtherInfo.message" = "Vitamin B12 is essential for your health but does not count towards your daily servings.\n\nVitamin B12 is included in this app to provide you with an easy way to track your intake.";
+
+/* Daily Dozen daily entry section heading */
+"dozeOtherInfo.section" = "Supplements";
+
+/* Daily Dozen supplement info alert: title */
+"dozeOtherInfo.title" = "Supplements";
+
+/* heading for daily data entry item */
+"dozeSpices.heading" = "Herbs and Spices";
+
+/* https://nutritionfacts.org/topics/spices */
+"dozeSpices.topic" = "topics/spices";
+
+/* heading for daily data entry item */
+"dozeVegetablesCruciferous.heading" = "Cruciferous Vegetables";
+
+/* https://nutritionfacts.org/topics/cruciferous-vegetables */
+"dozeVegetablesCruciferous.topic" = "topics/cruciferous-vegetables";
+
+/* heading for daily data entry item */
+"dozeVegetablesOther.heading" = "Other Vegetables";
+
+/* https://nutritionfacts.org/topics/vegetables */
+"dozeVegetablesOther.topic" = "topics/vegetables";
+
+/* heading for daily data entry item */
+"dozeWholeGrains.heading" = "Whole Grains";
+
+/* https://nutritionfacts.org/topics/grains */
+"dozeWholeGrains.topic" = "topics/grains";
+
+/* Doze Detail View subheading: ‘Serving Sizes’ */
+"doze_detail_section_sizes" = "Serving Sizes";
+
+/* Doze Detail View subheading: ‘Types’ */
+"doze_detail_section_types" = "Types";
+
+/* Doze Entry View heading: ‘Servings’ */
+"doze_entry_header" = "Servings";
+
+/*  */
+"historyRecord.movingAverage" = "Moving Average";
+
+/* History View */
+"historyRecordDoze.heading" = "Servings History";
+
+/* History View */
+"historyRecordDoze.legend" = "Servings";
+
+/* History View */
+"historyRecordTweak.heading" = "Tweaks History";
+
+/* History View */
+"historyRecordTweak.legend" = "Tweaks";
+
+/* History View */
+"historyRecordWeight.heading" = "Weight History";
+
+/* History View */
+"historyRecordWeight.legendEvening" = "Evening";
+
+/* History View */
+"historyRecordWeight.legendMorning" = "Morning";
+
+/* History View */
+"historyRecordWeight.titleImperial" = "Weight (lbs)";
+
+/* History View */
+"historyRecordWeight.titleMetric" = "Weight (kg)";
+
+/* History View: calendar scale control */
+"history_scale_choice_day" = "Day";
+
+/* History View: calendar scale control */
+"history_scale_choice_month" = "Month";
+
+/* History View: calendar scale control */
+"history_scale_choice_year" = "Year";
+
+/* History View: scale text */
+"history_scale_label" = "Time Scale";
+
+/* Info About View */
+"info.about.title" = "About this app";
+
+/* Info About View */
+"info_app_about" = "About";
+
+/* Info About View Application Name: ‘Daily Dozen’ */
+"info_app_about_app_name" = "Daily Dozen";
+
+/* Info About View */
+"info_app_about_overview" = "Use this app on a daily basis to keep track of the foods and advice I recommend for optimal health and longevity in my books How Not to Die and How Not to Diet.";
+
+/* Info About View Application release version */
+"info_app_about_version" = "version 3.2.11";
+
+/* Info About View */
+"info_app_about_welcome" = "Welcome to my Daily Dozen!";
+
+/* Info Menu: book title */
+"info_book_how_not_to_die" = "Book: How Not to Die";
+
+/* Info Menu: book title */
+"info_book_how_not_to_die_cookbook" = "Book: How Not to Die Cookbook";
+
+/* Info Menu: book title */
+"info_book_how_not_to_diet" = "Book: How Not to Diet";
+
+/* Info Menu */
+"info_webpage_daily_dozen_challenge" = "Daily Dozen Challenge";
+
+/* Info Menu */
+"info_webpage_donate" = "Donate";
+
+/* Info Menu */
+"info_webpage_open_source" = "Open Source";
+
+/* Info Menu */
+"info_webpage_subscribe" = "Subscribe";
+
+/* Info Menu */
+"info_webpage_videos_latest" = "Latest Videos";
+
+/* Item History Legend: ‘All completed’ */
+"item_history_completed_all" = "All servings";
+
+/* Item History Legend: ‘Some completed’ */
+"item_history_completed_some" = "Some servings";
+
+/* Item History Heading */
+"item_history_heading" = "History";
+
+/* Main Navigation Tab Control: ‘Daily Dozen’ (proper noun) */
+"navtab.doze" = "Daily Dozen";
+
+/* Main Navigation Tab Control: show more information */
+"navtab.info" = "Information";
+
+/* Main Navigation Tab Control: ‘Preferences’ synonyms: Settings, Configuration. Choose a translations with is different from Tweaks. */
+"navtab.preferences" = "Preferences";
+
+/* Main Navigation Tab Control: ‘21 Tweaks’ (proper noun) */
+"navtab.tweaks" = "21 Tweaks";
+
+/* https://nutritionfacts.org/topics/omega-3-fatty-acids */
+"otherOmega3.topic" = "topics/omega-3-fatty-acids";
+
+/* heading for daily data entry item */
+"otherVitaminB12.heading" = "Vitamin B12";
+
+/* https://nutritionfacts.org/topics/vitamin-b12 */
+"otherVitaminB12.topic" = "topics/vitamin-b12";
+
+/* https://nutritionfacts.org/topics/vitamin-d-supplements */
+"otherVitaminD.topic" = "topics/vitamin-d-supplements";
+
+/* Alert notification text */
 "reminder.alert.text" = "Update your servings for today";
 
 /* Daily Reminder (alert title, settings section heading) */
 "reminder.heading" = "Daily Reminder";
 
-/* Enable Reminders (toggle switch label) */
+/* Daily Reminder On/Off toggle switch label */
 "reminder.settings.enable" = "Enable Reminders";
 
-/* remind_me_at */
-"reminder.settings.time" = "Remind me at";
-
-/* play_sound */
+/* Daily Reminder sound control heading */
 "reminder.settings.sound" = "Play Sound";
 
-/* 'On' as in 'On or Off' */
-"reminder.state.on" = "On";
+/* Daily Reminder time control heading */
+"reminder.settings.time" = "Remind me at";
 
-/* 'Off' as in 'On or Off' */
+/* Android notification `vibrate` */
+"reminder.settings.vibrate" = "Vibrate";
+
+/* ‘Off’ as in ‘On (enabled) or Off (disabled)’, Daily Reminder is not enabled */
 "reminder.state.off" = "Off";
 
-/* Class = "UITableViewSection"; headerTitle = "Measurement Units"; ObjectID = "IFs-g0-SPV"; */
-"setting_units_header" = "Measurement Units";
+/* ‘On’ as in ‘On (enabled) or Off (disable)’. Daily Reminder is enabled */
+"reminder.state.on" = "On";
 
-/* Class = "UITableViewSection"; headerTitle = "21 Tweaks Visibility"; ObjectID = "WdR-XV-IyP"; */
-"setting_tweak_header" = "21 Tweaks Visibility";
-
-/* entry section header: "Supplements" */
-"dozeOtherInfo.section" = "Supplements";
-
-/* Daily Dozen Header: "Servings" */
-"doze_entry_header" = "Servings";
-
-/* Daily Dozen Header: "21 Tweaks" */
-"tweak_entry_header" = "21 Tweaks";
-
-/* Weight Entry: "Morning (upon waking)" */
-"weight_entry_morning" = "Morning (upon waking)";
-
-/* Weight Entry: "Evening (right before bed)" */
-"weight_entry_evening" = "Evening (right before bed)";
-
-/* Weight Entry: "Time" */
-"weight_entry_time" = "Time";
-
-/* Weight Entry: "Clear" */
-"weight_entry_clear" = "Clear";
-
-/* Weight Entry Units: "kg" */
-"weight_entry_units_kg" = "kg";
-
-/* Weight Entry Units: "lbs" */
-"weight_entry_units_lbs" = "lbs";
-
-/* History Label: "Time Scale" */
-"history_scale_label" = "Time Scale";
-
-/* History Scale Choice: "Day" */
-"history_scale_choice_day" = "Day";
-
-/* History Scale Choice: "Month" */
-"history_scale_choice_month" = "Month";
-
-/* History Scale Choice: "Year" */
-"history_scale_choice_year" = "Year";
-
-/* Weight History Action: "Edit Data" */
-"weight_history_edit_data" = "Edit Data";
-
-/* Doze Detail Section: "Sizes" */
-"doze_detail_section_sizes" = "Servings Sizes";
-
-/* Doze Detail Section: "Types" */
-"doze_detail_section_types" = "Types";
-
-/* Tweak Detail Section: "Activity" */
-"tweak_detail_section_activity" = "Activity";
-
-/* Tweak Detail Section: "Description" */
-"tweak_detail_section_description" = "Description";
-
-/* "Units:" */
-"units_label" = "Units:";
-
-/* Info: "About" */
-"info_app_about" = "About";
-
-/*  Info: How Not to Die (Book) */
-"info_book_how_not_to_die" = "How Not to Die";
-
-/* Info: How Not to Die Cookbook (Book) */
-"info_book_how_not_to_die_cookbook" = "How Not to Die Cookbook";
-
-/* Info: How Not to Diet (Book) */
-"info_book_how_not_to_diet" = "How Not to Diet";
-
-/* Info: "Daily Dozen Challenge" */
-"info_webpage_daily_dozen_challenge" = "Daily Dozen Challenge";
-
-/* Info: "Donate" */
-"info_webpage_donate" = "Donate";
-
-/* Info: "Open Source" */
-"info_webpage_open_source" = "Open Source";
-
-/* Info: "Subscribe" */
-"info_webpage_subscribe" = "Subscribe";
-
-/*  Info: "Latest Videos" */
-"info_webpage_videos_latest" = "Latest Videos";
-
-/* First Launch: "For Health Alone" */
-"setting_health_alone_txt" = "For Health Alone";
-
-/* First Launch: "For Health and Weight Loss" */
-"setting_health_weight_txt" = "For Health and Weight Loss";
-
-/* First Launch: "Daily Dozen Only" */
+/* First Launch Setting: button text */
 "setting_doze_only_btn" = "Daily Dozen\nOnly";
 
-/* First Launch: "Daily Dozen + 21 Tweaks" */
-"setting_doze_tweak_btn" = "Daily Dozen +\n21 Tweaks";
-
-/* Settings: "Daily Dozen Only" */
+/* Preference Settings View: selection button text */
 "setting_doze_only_choice" = "Daily Dozen Only";
 
-/* Settings: "Daily Dozen + 21 Tweaks" */
+/* First Launch Setting: button text */
+"setting_doze_tweak_btn" = "Daily Dozen +\n21 Tweaks";
+
+/* Preference Settings View: selection button text */
 "setting_doze_tweak_choice" = "Daily Dozen + 21 Tweaks";
 
-/* Settings: Tweaks visibility footer text */
-"setting_doze_tweak_footer" = "For health alone, use 'Daily Dozen Only'. For health and weight loss use 'Daily Dozen + 21 Tweaks'.";
+/* Preference Settings View: brief description text below Tweaks visibility control. */
+"setting_doze_tweak_footer" = "For health alone, use “Daily Dozen Only”. For health and weight loss use “Daily Dozen + 21 Tweaks”.";
 
-/* Settings: units choice footer text */
-"setting_units_choice_footer" = "Set to always be one unit type or enable the 'Units:' toggle button.";
+/* First Launch Setting: brief description above ‘Daily Dozen Only’ button. */
+"setting_health_alone_txt" = "For Health Alone";
 
-/* Settings: "Advanced Utilities" */
+/* First Launch Setting: brief description above ‘Daily Dozen + 21 Tweaks’ button. */
+"setting_health_weight_txt" = "For Health and Weight Loss";
+
+/* Preference Settings View: tweaks visibilty subsection heading */
+"setting_tweak_header" = "21 Tweak Visibility";
+
+/* Preference Settings View: Part of ‘Imperial/Metric/Toggle Units’ selector */
+"setting_units_0_imperial" = "Imperial";
+
+/* Preference Settings View: Part of ‘Imperial/Metric/Toggle Units’ selector */
+"setting_units_1_metric" = "Metric";
+
+/* Preference Settings View: Part of ‘Imperial/Metric/Toggle Units’ selector */
+"setting_units_2_toggle" = "Toggle Units";
+
+/* Preference Settings View: brief description text below units control. */
+"setting_units_choice_footer" = "Set to always be one unit type or enable the ‘Units:’ toggle button.";
+
+/* Preference Settings View */
+"setting_units_header" = "Measurement Units";
+
+/* Preference Settings View */
 "setting_util_advanced" = "Advanced Utilities";
 
-/* Info About: "Welcome to my Daily Dozen!" */
-"info_app_about_welcome" = "Welcome to my Daily Dozen!";
+/* ‘Streak’ count. Synonym: ‘Progress‘. Formatted number ‘%d’ for consecutive days completed. Place translated text for ‘days’ on the right or left of ‘%d’ based on language directionality. */
+"streakDaysFormat" = "%d days";
 
-/* Info About: application name */
-"info_app_about_app_name" = "Daily Dozen";
+/* heading for daily data entry item */
+"tweakCompleteIntentions.heading" = "Complete Your Implementation Intentions";
 
-/* Info About: overview text */
-"info_app_about_overview" = "Use this app on a daily basis to keep track of the foods and advice I recommend for optimal health and longevity in my books How Not to Die and How Not to Diet.";
+/* heading for daily data entry item */
+"tweakDailyBlackCumin.heading" = "Black Cumin (¼ tsp)";
 
-/* Info About: version number */
-"info_app_about_version" = "version 3.2.11";
+/* heading for daily data entry item */
+"tweakDailyCumin.heading" = "Cumin (½ tsp with lunch and dinner)";
 
-/* Info About: open source software credits */
-"info_app_about_oss_credits" = "The following open source libraries are used: RealmSwift, Charts, FSCalendar, SimpleAnimation and ActiveLabel.";
+/* heading for daily data entry item */
+"tweakDailyDeflourDiet.heading" = "Deflour Your Diet";
 
-/* Info About: created by text */
-"info_app_about_created_by" = "This app was created by:\n- NutritionFacts.org\n- Christi Richards\n- Konstantin Khokhlov\n- Marc Campbell";
+/* heading for daily data entry item */
+"tweakDailyFrontLoad.heading" = "Front-Load Your Calories";
 
-/* Item History Heading: "History" */
-"item_history_heading" = "History";
+/* heading for daily data entry item */
+"tweakDailyGarlic.heading" = "Garlic Powder (¼ tsp)";
 
-/* Item History Legend: "All completed" */
-"item_history_completed_all" = "All servings";
+/* heading for daily data entry item */
+"tweakDailyGinger.heading" = "Ground Ginger (1 tsp) or Cayenne Pepper (½ tsp)";
 
-/* Item History Legend: "Some completed" */
-"item_history_completed_some" = "Some servings";
+/* heading for daily data entry item */
+"tweakDailyGreenTea.heading" = "Green Tea (3 cups)";
+
+/* heading for daily data entry item */
+"tweakDailyHydrate.heading" = "Stay Hydrated";
+
+/* heading for daily data entry item */
+"tweakDailyNutriYeast.heading" = "Nutritional Yeast (2 tsp)";
+
+/* heading for daily data entry item */
+"tweakDailyTimeRestrict.heading" = "Time-Restrict Your Eating";
+
+/* heading for daily data entry item */
+"tweakExerciseTiming.heading" = "Optimize Exercise Timing";
+
+/* heading for daily data entry item */
+"tweakMeal20Minutes.heading" = "Follow the Twenty-Minute Rule";
+
+/* heading for daily data entry item */
+"tweakMealNegCal.heading" = "Preload with “Negative Calorie” Foods";
+
+/* heading for daily data entry item */
+"tweakMealUndistracted.heading" = "Enjoy Undistracted Meals";
+
+/* heading for daily data entry item */
+"tweakMealVinegar.heading" = "Incorporate Vinegar (2 tsp with each meal)";
+
+/* heading for daily data entry item */
+"tweakMealWater.heading" = "Preload with Water";
+
+/* heading for daily data entry item */
+"tweakNightlyFast.heading" = "Fast After 7:00 pm";
+
+/* heading for daily data entry item */
+"tweakNightlySleep.heading" = "Get Sufficient Sleep";
+
+/* heading for daily data entry item */
+"tweakNightlyTrendelenbrug.heading" = "Experiment with Mild Trendelenburg";
+
+/* heading for daily data entry item */
+"tweakWeightTwice.heading" = "Weigh Yourself Twice a Day";
+
+/* Tweaks Detail view section heading */
+"tweak_detail_section_activity" = "Activity";
+
+/* Tweaks Detail view section heading */
+"tweak_detail_section_description" = "Description";
+
+/* Tweaks daily entry header */
+"tweak_entry_header" = "21 Tweaks";
+
+/* Units toggle button text: imperial measurement system */
+"unitToggle.imperial" = "imperial";
+
+/* Units toggle button text: metric measurement system */
+"unitToggle.metric" = "metric";
+
+/*  */
+"units_label" = "Units";
+
+/* URL path */
+"urlSegment.base" = "https://nutritionfacts.org/";
+
+/*  */
+"urlSegment.lang" = "";
+
+/* main info menu: book */
+"urlSegmentInfoMenu.book" = "book";
+
+/* main info menu: daily-dozen-challenge */
+"urlSegmentInfoMenu.challenge" = "daily-dozen-challenge";
+
+/* main info menu: cookbook */
+"urlSegmentInfoMenu.cookbook" = "cookbook";
+
+/* main info menu: how-not-to-diet */
+"urlSegmentInfoMenu.diet" = "how-not-to-diet";
+
+/* main info menu: donate */
+"urlSegmentInfoMenu.donate" = "donate";
+
+/* main info menu: open-source */
+"urlSegmentInfoMenu.source" = "open-source";
+
+/* main info menu: subscribe */
+"urlSegmentInfoMenu.subscribe" = "subscribe";
+
+/* team */
+"urlSegmentInfoMenu.team" = "team";
+
+/* main info menu: videos */
+"urlSegmentInfoMenu.videos" = "videos";
+
+/* Label for hyperlink to nutritionfacts.org video topics */
+"videos.link.label" = "Videos";
+
+/* Weight Daily Entry: heading */
+"weightEntry.heading" = "Weight";
+
+/* Weight Daily Entry: clear button which deletes values */
+"weight_entry_clear" = "Clear";
+
+/* Weight Daily Entry: label */
+"weight_entry_evening" = "Evening (right before bed)";
+
+/* Weight Daily Entry: label */
+"weight_entry_morning" = "Morning (upon waking)";
+
+/* Weight Daily Entry: label */
+"weight_entry_time" = "Time";
+
+/* Weight Daily Entry Units: label */
+"weight_entry_units_kg" = "kg";
+
+/* Weight Daily Entry Units: label */
+"weight_entry_units_lbs" = "lbs";
+
+/* Weight Daily Entry: edit button to change values */
+"weight_history_edit_data" = "Edit Data";
 
 /* file end */

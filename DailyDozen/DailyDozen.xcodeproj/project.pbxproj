@@ -432,6 +432,10 @@
 		499267F0264C595E0012DB7D /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		499B82FA239CD4D300E4AD19 /* WeightHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightHistoryViewController.swift; sourceTree = "<group>"; };
 		49AC03B625802506006CC073 /* RoundedTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextfield.swift; sourceTree = "<group>"; };
+		49AF196A27582D740023E68C /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49AF196B27582D740023E68C /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
+		49AF196C27582D740023E68C /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ca; path = ca.lproj/DozeDetailData.json; sourceTree = "<group>"; };
+		49AF196D27582D740023E68C /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ca; path = ca.lproj/TweakDetailData.json; sourceTree = "<group>"; };
 		49B935D626DBFF56001C4DB6 /* CGUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGUtil.swift; sourceTree = "<group>"; };
 		49B93E4F2477361100144C80 /* DatabaseBuiltInTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseBuiltInTest.swift; sourceTree = "<group>"; };
 		49B97FF625F5F47F009BA5A9 /* DozeEntryPagerLayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DozeEntryPagerLayout.storyboard; sourceTree = "<group>"; };
@@ -1474,6 +1478,7 @@
 				pt,
 				sr,
 				"sr-Latn",
+				ca,
 			);
 			mainGroup = CFE6982F1F974B9700CD7905;
 			productRefGroup = CFE698391F974B9700CD7905 /* Products */;
@@ -1874,6 +1879,7 @@
 				494F28672531070C00C99246 /* sr */,
 				494F2884253107F200C99246 /* sr-Latn */,
 				496A66B9270AC48B00254531 /* en */,
+				49AF196D27582D740023E68C /* ca */,
 			);
 			name = TweakDetailData.json;
 			sourceTree = "<group>";
@@ -1924,6 +1930,7 @@
 				494F28472531065900C99246 /* pt */,
 				494F28642531070B00C99246 /* sr */,
 				494F2881253107F100C99246 /* sr-Latn */,
+				49AF196A27582D740023E68C /* ca */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1974,6 +1981,7 @@
 				494F28662531070B00C99246 /* sr */,
 				494F2883253107F200C99246 /* sr-Latn */,
 				496A66B8270AB13200254531 /* en */,
+				49AF196C27582D740023E68C /* ca */,
 			);
 			name = DozeDetailData.json;
 			sourceTree = "<group>";
@@ -2024,6 +2032,7 @@
 				494F28482531065A00C99246 /* pt */,
 				494F28652531070B00C99246 /* sr */,
 				494F2882253107F200C99246 /* sr-Latn */,
+				49AF196B27582D740023E68C /* ca */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -2208,7 +2217,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2270,7 +2278,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

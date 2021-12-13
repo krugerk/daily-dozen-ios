@@ -1,3 +1,6 @@
+/* DailyDozen Localizable.strings (fr) */
+/* Copyright © 2021 Nutritionfacts.org. All rights reserved. */
+
 /* Back to today */
 "dateBackButtonTitle" = "Back to today";
 
@@ -74,7 +77,7 @@
 "history_scale_label" = "Time Scale";
 
 /* (No Comment) */
-"historyRecord.movingMean" = "Moving Average";
+"historyRecord.movingAverage" = "Moving Average";
 
 /* Servings History */
 "historyRecordDoze.heading" = "Servings History";
