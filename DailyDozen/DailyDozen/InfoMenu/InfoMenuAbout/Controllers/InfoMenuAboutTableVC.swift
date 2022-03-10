@@ -54,7 +54,7 @@ class InfoMenuAboutTableVC: UITableViewController {
         let barItem = UIBarButtonItem(title: "Done", style: .done, target: nil, action: nil)
         barItem.tintColor = UIColor.white
         navigationItem.setLeftBarButton(barItem, animated: false)
-
+        
         infoAppAboutAppName.text = NSLocalizedString("info_app_about_app_name", comment: "")
         infoAppAboutCreatedBy.text = NSLocalizedString("info_app_about_created_by", comment: "")
         infoAppAboutOssCredits.text = NSLocalizedString("info_app_about_oss_credits", comment: "")

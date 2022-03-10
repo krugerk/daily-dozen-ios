@@ -98,7 +98,7 @@ class DozeUITests: XCTestCase {
     func scrollSnapAll(topic: String, max: Int = 10) {
         var count = 0
         let url = urlHelper.dirTopic(topic)
-                
+        
         awaitArrival(element: app.windows.firstMatch, timeout: 2.0)
         
         //_ = app.buttons
