@@ -1,24 +1,6 @@
 /* DailyDozen Localizable.strings (de) */
 /* Copyright © 2021 Nutritionfacts.org. All rights reserved. */
 
-/* Info Menu About: line 0 */
-"info_app_about_welcome" = "Willkommen zu meinem Täglichen Dutzend!";
-
-/* Info Menu About: line 1 */
-"info_app_about_overview" = "Verwenden Sie diese App täglich, um den Überblick über die Lebensmittel und Ratschläge zu behalten, die ich in meinen Büchern How Not to Die und How Not to Diet für optimale Gesundheit und Langlebigkeit empfehle.";
-
-/* Info Menu About: line 2 */
-"info_app_about_app_name" = "Das Tägliche Dutzend";
-
-/* Info Menu About: line 3 */
-"info_app_about_version" = "Version 3.2.11";
-
-/* Info Menu About: line 4 */
-"info_app_about_created_by" = "Diese App wurde erstellt von: NutritionFacts.org, Christi Richards, Konstantin Khokhlov, und Marc Campbell";
-
-/* Info Menu About: line 5 */
-"info_app_about_oss_credits" = "Die folgenden Open-Source-Bibliotheken werden verwendet: RealmSwift, Charts, FSCalendar, SimpleAnimation, ActiveLabel.";
-
 /* Date Button Title: ‘Back to today’ */
 "dateBackButtonTitle" = "Zurück zu heute";
 
@@ -167,7 +149,13 @@
 "info_app_about" = "Über";
 
 /* Info About View Application Name: ‘Daily Dozen’ */
-"info_app_about_app_name" = "Das tägliche Dutzend";
+"info_app_about_app_name" = "Das Tägliche Dutzend";
+
+/* Info Menu About: line 4 */
+"info_app_about_created_by" = "Diese App wurde erstellt von: NutritionFacts.org, Christi Richards, Konstantin Khokhlov, und Marc Campbell";
+
+/* Info Menu About: line 5 */
+"info_app_about_oss_credits" = "Die folgenden Open-Source-Bibliotheken werden verwendet: RealmSwift, Charts, FSCalendar, SimpleAnimation, ActiveLabel.";
 
 /* Info About View */
 "info_app_about_overview" = "Verwenden Sie diese App täglich, um den Überblick über die Lebensmittel und Ratschläge zu behalten, die ich in meinen Büchern How Not to Die und How Not to Diet für optimale Gesundheit und Langlebigkeit empfehle.";
@@ -262,13 +250,13 @@
 /* First Launch Setting: button text */
 "setting_doze_only_btn" = "Nur Tägliches Dutzend";
 
-/*  */
+/* Preference Settings View: selection button text */
 "setting_doze_only_choice" = "Nur Tägliches Dutzend";
 
 /* First Launch Setting: button text */
 "setting_doze_tweak_btn" = "Tägliches Dutzend + 21 Optimierungen";
 
-/*  */
+/* Preference Settings View: selection button text */
 "setting_doze_tweak_choice" = "Tägliches Dutzend + 21 Optimierungen";
 
 /* Preference Settings View: brief description text below Tweaks visibility control. */
